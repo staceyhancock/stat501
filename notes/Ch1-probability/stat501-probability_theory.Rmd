@@ -63,7 +63,7 @@ d. DeMorgan's Laws & $(A \cup B)^c = A^c \cap B^c$\\
 
 - __DEF 1.1.5:__ Two events $A$ and $B$ are _disjoint_ (or _mutually exclusive_) if $A \cap B = \emptyset$. The events $A_1,A_2, ...$ are _pairwise disjoint_ (or _mutually exclusive_) if $A_i \cap A_j = \emptyset$ for all $i \neq j$. 
 
-- __DEF 1.1.6__ If $A_1,A_2, ...$ are pairwise disjoint and $\cup_{i = 0}^{\infty} A_i = S$, then the collection $A_1,A_2, ...$ forms a _partition_ of $S$ 
+- __DEF 1.1.6__ If $A_1,A_2, ...$ are pairwise disjoint and $\cup_{i = 0}^{\infty} A_i = S$, then the collection $A_1,A_2, ...$ forms a _partition_ of $S$.
 
 ## 1.2 Basics of Probability Theory
 
@@ -154,7 +154,7 @@ __Proof:__
 
 2. $P(A \cup B) = P(A) + P(B) - P(A\cap B)$ \newpage
 
-3. if $A \subset B$, then $P(A) \leq P(B)$ \vspace{3.5in}
+3. If $A \subset B$, then $P(A) \leq P(B)$ \vspace{3.5in}
 
 
 #### Results for Collections of Events \newline
