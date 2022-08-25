@@ -186,7 +186,7 @@ __Proof:__ \vspace{5in}
 
 __Examples__  
 
-1. Consider two sets,$A,B \in \mathcal{B}$ and suppose $P(A) = P(B) = 0.95$. What is the minimum possible probability of their intersection? \vspace{2in}
+1. Consider two sets, $A,B \in \mathcal{B}$, and suppose $P(A) = P(B) = 0.95$. What is the minimum possible probability of their intersection? \vspace{2in}
 
 
 2. Create an example with two sets $A,B \in \mathcal{B}$ in which Bonferroni’s Inequality isn’t all that useful.
