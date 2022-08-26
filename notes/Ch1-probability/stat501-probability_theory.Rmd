@@ -180,7 +180,7 @@ __Proof:__
 
 #### Bonferroni’s Inequality \newline
 
-If $P$ is a probability function and $A_1,A_2,...,A_n \in \mathcal{B}$, then $\displaystyle P\left(\cap_{i = 1}^{\infty}A_i\right) \geq \sum_{i = 1}^{\infty} P(A_i)- (n-1)$
+If $P$ is a probability function and $A_1,A_2,...,A_n \in \mathcal{B}$, then $\displaystyle P\left(\cap_{i = 1}^{n}A_i\right) \geq \sum_{i = 1}^{n} P(A_i)- (n-1)$
 
 __Proof:__ \vspace{5in}
 
