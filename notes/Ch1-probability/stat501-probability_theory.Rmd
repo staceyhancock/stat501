@@ -272,7 +272,7 @@ __Calculating probabilities when sampling with replacement or with indistinguish
 - When sampling _with replacement_, each outcome in the unordered sample space corresponds to \underline{\hspace{1in}} outcomes in the ordered sample space.
 
 __Example 1.2.19:__ 
-Write out the outcomes in the unordered and ordered sample spaces and find each outcome's probability when sampling $r=2$ items from $n=3$ distinct objects.
+Write out the outcomes in the unordered and ordered sample spaces and find each outcome's probability when sampling $r=2$ items from $n=3$ distinct objects _with replacement_.
 \vspace{2.5in}
 
 __Example:__
