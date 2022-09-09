@@ -78,7 +78,6 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Friday_
 
 * Section 1.6: Density and mass functions
-* _No class_: Videos over material will be posted in D2L
 
 ---
 
