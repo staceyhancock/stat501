@@ -194,7 +194,7 @@ __Examples__
 \vspace{2in}
 
 
-
+<!-- TODO: Add Inclusion-Exclusion identity here (Miscellanea 1.8.1 in textbook) -->
 
 
 
@@ -613,7 +613,7 @@ __Probability Mass Function (_pmf_)__
 \textbf{DEF 1.6.1} The \emph{probability mass function (pmf)} of a discrete random variable $X$, denoted $f_X(x)$, is given by \vspace{0.5in}
 \end{mdframed}
 
-For a discrete random variable $X$, let $\mathcal{X} = \{x_1,x_2,...\}$ be the set of possible discrete values that the random variable can assume with non-zero probability, i.e., $f_X(x_j) = P(X = x_j) = p_j > 0 \forall x_j \in \mathcal{X}$. _Note: $\mathcal{X}$ is called the ___support___ of $X$._ The $pmf$ of $X$ is  represented by, \vspace{1in} 
+For a discrete random variable $X$, let $\mathcal{X} = \{x_1,x_2,...\}$ be the set of possible discrete values that the random variable can assume with non-zero probability, i.e., $f_X(x_j) = P(X = x_j) = p_j > 0 ~~\forall~ x_j \in \mathcal{X}$. _Note: $\mathcal{X}$ is called the ___support___ of $X$._ The $pmf$ of $X$ is  represented by, \vspace{1in} 
 
 Furthermore, for discrete random variables, there is a special relationship between the CDFs and the pmfs: \vspace{1in}
 
@@ -686,5 +686,5 @@ curve(1 - (x + 1)^-2, from = 0, to = 8,
 ```
 
 
-c. Suppose Dr. Hancock is interested in rewiring her garage door switch because it appears to have lost power. She's getting wire straight off the machine (i.e., beginning is good wire just after a flaw) and she needs 3 meters of wire. What is the probability that a flaw occurs in Katie's wire between 0.40 and 0.45 meters? Find this probability using both the pdf of $X$ and the cdf of $X$, and represent this probability on the graphs above. __Be sure to write clear and correct mathematical notation to represent the probability you desire!__ 
+c. Suppose Dr. Hancock is interested in rewiring her garage door switch because it appears to have lost power. She's getting wire straight off the machine (i.e., beginning is good wire just after a flaw) and she needs 3 meters of wire. What is the probability that a flaw occurs in her wire between 0.40 and 0.45 meters? Find this probability using both the pdf of $X$ and the cdf of $X$, and represent this probability on the graphs above. __Be sure to write clear and correct mathematical notation to represent the probability you desire!__ 
 
