@@ -34,10 +34,10 @@ However, suppose that none of the potential factors tested actually have an effe
     c. If the researchers would like to limit the family-wise Type 1 error rate to at most $0.10$,
     what significance level should they use for each of the 15 tests?
 
-3. Let $A$ and $B$ be two events in sample space $S$.  
+3. Let $A$ and $B$ be two events in sample space $S$ where $P(A) > 0$ and $P(B) > 0$.  
     a. Prove or disprove: $P(A^C | B) = 1 - P(A | B)$.
     b. Prove or disprove: $P(A | B^C) = 1 - P(A | B)$.
-    c. Prove or disprove: $If P(A|B) > P(A)$, then $P(B|A) > P(B)$.
+    c. Prove or disprove: If $P(A|B) > P(A)$, then $P(B|A) > P(B)$.
     
 4. Dr. Stoneguy, a wealthy diamond dealer, decides to reward her daughter by allowing
 her to select one of two boxes at random. Each box contains 3 stones.
