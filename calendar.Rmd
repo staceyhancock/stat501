@@ -68,16 +68,17 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Section 1.4: Random variables
+* Section 1.3: Conditional probability and independence (cont)
 
 #### _Wednesday_
 
+* Section 1.4: Random variables
 * Section 1.5: Distribution functions
 * **Homework 2 due** (Sections 1.2.3-1.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
-* Section 1.6: Density and mass functions
+* Section 1.5: Distribution functions (cont)
 
 ---
 
@@ -85,16 +86,16 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Section 2.1: Distributions of functions of a random variable 
+* Section 1.6: Density and mass functions
 
 #### _Wednesday_
 
-* Section 2.1: Distributions of functions of a random variable (cont)
+* Section 1.6: Density and mass functions (cont)
 * **_QUIZ 2_**: Sections 1.2.3-1.3
 
 #### _Friday_
 
-* Section 2.2: Expected values
+* Section 2.1: Distributions of functions of a random variable 
 
 ---
 
@@ -102,18 +103,16 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Section 2.3: Moments and moment generating functions
+* Section 2.1: Distributions of functions of a random variable (cont)
 
 #### _Wednesday_
 
-* Section 2.3: Moments and moment generating functions (cont)
-* Section 2.6: Cumulant generating functions and characteristic functions
-* (Skip Section 2.4)
-* **Homework 3 due** (Sections 1.4-2.1) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* Section 2.2: Expected values
+* **Homework 3 due** (Sections 1.4-1.6) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
-* Sections 3.1 and 3.2: Discrete families of distributions
+* Section 2.3: Moments and moment generating functions
 
 ---
 
@@ -121,16 +120,18 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Sections 3.1 and 3.2: Discrete families of distributions (cont)
+* Section 2.3: Moments and moment generating functions (cont)
+* Section 2.6: Cumulant generating functions and characteristic functions
+* (Skip Section 2.4)
 
 #### _Wednesday_
 
-* Section 3.3: Continuous families of distributions
-* **_QUIZ 3_**: Sections 1.4-2.1
+* Sections 3.1 and 3.2: Discrete families of distributions
+* **_QUIZ 3_**: Sections 1.4-1.6
 
 #### _Friday_
 
-* Section 3.3: Continuous families of distributions (cont)
+* Sections 3.1 and 3.2: Discrete families of distributions (cont)
 
 ---
 
@@ -138,18 +139,19 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Section 3.4: Exponential families
+* Section 3.3: Continuous families of distributions
 
 #### _Wednesday_
 
-* Section 3.5: Location and scale families
-* **Homework 4 due** (Sections 2.2-2.3, 3.1-3.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* Section 3.3: Continuous families of distributions (cont)
+* **Homework 4 due** (Sections 2.1-2.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 
 #### _Friday_
 
+* Section 3.4: Exponential families
+* Section 3.5: Location and scale families
 * Section 3.6: Inequalities and Identities
-
 
 ---
 
@@ -162,7 +164,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 4.1 (cont): Joint and marginal distributions
-* **_QUIZ 4_**: Sections 2.2-2.3, 3.1-3.3
+* **_QUIZ 4_**: Sections 2.1-2.3, 3.1-3.3
 
 #### _Friday_
 

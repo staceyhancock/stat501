@@ -4,6 +4,8 @@ subtitle: Due Wednesday, Aug 31 by 5:00pm in Gradescope
 output: pdf_document
 ---
 
+<!-- Material covered: Sections 1.1-1.2.2 -->
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
