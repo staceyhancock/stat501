@@ -145,7 +145,7 @@ __Example__ Let $X$ be a RV with _pdf_ $f_X(x) = \frac{1}{4}I_{(-1, 3)}(x).$ Fin
 \vspace{3.5in}
 
 \begin{mdframed}
-\textbf{THM 2.1.10 (Probability Integral Transformation)} Let $X$ have continuous CDF, $F_X(x)$ and define the random variable $Y$ as $Y = F_X(x)$. Then $Y$ is uniformly distributed on (0,1). That is, 
+\textbf{THM 2.1.10 (Probability Integral Transformation)} Let $X$ have continuous CDF, $F_X(x)$ and define the random variable $Y$ as $Y = F_X(X)$. Then $Y$ is uniformly distributed on (0,1). That is, 
 $$
 P(Y \leq y) = \begin{cases} 0 & y \leq 0\\ y & 0 < y < 1\\ 1 & y \geq 1\end{cases}
 $$. 
@@ -198,6 +198,8 @@ qqplot(qexp(ppoints(500), 1), x_samp,
 
 Ideally, we would know with certainty the outcome an experiment. However, this is often unrealistic, and we are instead left to deal with a random variable, i.e., a function from the sample space into the real numbers. By weighting the values of a random variable according to its probability distribution, we obtain what's known as the expected value, or expectation, of the random variable. This number is a measure of center that represents a "typical" value of the random variable, giving us an idea of what we might expect to happen in the long run.
 
+\vspace{.1in}
+
 \begin{mdframed}
 \textbf{DEF 2.2.1 (Expected Value)} The \emph{expected value} or mean of a random variable $g(X)$, denoted by $E(g(X))$, is 
 
@@ -210,13 +212,16 @@ __Note:__ $E(g(X))$ exists and is finite $\iff$ $E(|g(X)|) < \infty$. That is, i
 
 \vspace{0.2in}
 
+
+<!-- TODO: Add more space here. Give special case of $E(X)$, then talk about expected value as a weighted average and give example using average of finite population. -->
+
 __Examples__ 
 
 - Meaghan, the president of the student chapter of the American Statistical Association at MSU has a fundraising idea for her club. She proposes a game in which a fair die is thrown. The player will pay $5 to play and will win $2 for each dot that appears on their roll. Suppose Emmanuel wanders by Meaghan's Catapalooza booth and sees the opportunity to play the game. Is it worth it for Emmanuel to pay $5 to play? 
 
 \newpage 
 
-- A machine produces copper wire, and occasionally there is a flaw at some point along the wire. The length of wire (in meters) produced between successive flaws is a continuous random variable $X$ with _pdf_ $f_X(x) = 2(1+x)-3I_{(0,\infty)}(x)$. What is the expected length of the wire produced between sucessive flaws? 
+- A machine produces copper wire, and occasionally there is a flaw at some point along the wire. The length of wire (in meters) produced between successive flaws is a continuous random variable $X$ with _pdf_ $f_X(x) = 2(1+x)^{-3}I_{(0,\infty)}(x)$. What is the expected length of the wire produced between sucessive flaws? 
 
 \vspace{2.75in}
 
