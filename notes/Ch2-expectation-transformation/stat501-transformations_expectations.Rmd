@@ -262,9 +262,17 @@ The various moments of a distribution are an important class of expectations.
 
 \begin{mdframed}
 \textbf{DEF 2.3.1 (Moments)} \\
-For each integer $n$, the $n^{th}$ \textbf{moment} of $X$ (or $F_X(x)$), $\mu_n'$ is $\mu_n' =$ \vspace{.2in}
+For each integer $n$, the $n^{th}$ \textbf{moment} of $X$ (or $F_X(x)$), $\mu_n'$ is  
 
-The $n^{th}$ \textbf{central moment} of $X$, $\mu_n$, is $\mu_n =$ \hspace{1.7in} where $\mu = \mu_1' = E(X)$.
+$\mu_n' =$
+\vspace{.2in}
+
+The $n^{th}$ \textbf{central moment} of $X$, $\mu_n$, is  
+
+$\mu_n =$  
+\vspace{.2in}
+
+where $\mu = \mu_1' = E(X)$.
 \vspace{.2in}
 \end{mdframed}
 
@@ -272,16 +280,22 @@ The $n^{th}$ \textbf{central moment} of $X$, $\mu_n$, is $\mu_n =$ \hspace{1.7in
 
 \begin{mdframed}
 \textbf{DEF 2.3.2 (Variance/Standard Deviation)} \\
-The \textbf{variance} of a random variable $X$ is its \emph{second central moment} $Var(X)$ =  
+The \textbf{variance} of a random variable $X$ is its \emph{second central moment},  
+
+$Var(X) = \sigma^2_X =$  
 \vspace{.2in}
 
-The positive square root of $Var(X)$ is the \emph{standard deviation} of $X$ 
+The positive square root of $Var(X)$ is the \emph{standard deviation} of $X$:  
+
+$SD(X) = \sigma = $
 \vspace{.2in}
 \end{mdframed}
 
-__More Facts About the Variance__ 
+__More Facts About the Variance and Standard Deviation__ 
 
 - The first moment of a random variable, $\mu_X = \mu_1' = E(X)$ must exist (i.e., be finite) in order for its second central moment, $Var(X) = \sigma_X^2$ to exist (i.e., be finite). In other words, $Var(X)$ can only exist if $E(X)$ exists. However, if $E(X)$ exists, $Var(X)$ does not necessarily exist. Therefore, $E(X)$ existing is a necessary, but not sufficient condition for $Var(X)$ existing.
+
+- The variance is the average _squared_ deviation from the mean, by definition. Since the standard deviation is the square root of the variance, it is often interpreted as an "average" distance from the mean, but note that the true average deviation from the mean is zero: $E(X-\mu) = E(X) - \mu = \mu - \mu = 0$. 
 
 \vspace{.1in}
 
@@ -305,7 +319,7 @@ __Example (Revisited)__ Consider a game in which a fair die is thrown. The playe
 
 \vspace{3.5in}
 
-__Example (Revisited)__ A machine produces copper wire, and occasionally there is a flaw at some point along the wire. The length of wire (in meters) produced between successive flaws is a continuous random variable $X$ with _pdf_, $f_X(x) = 2(1+x)-3I_{(0,\infty)}(x)$. What is the variance of the length of wire produced between successive flaws?
+__Example (Revisited)__ A machine produces copper wire, and occasionally there is a flaw at some point along the wire. The length of wire (in meters) produced between successive flaws is a continuous random variable $X$ with _pdf_, $f_X(x) = 2(1+x)^{-3}I_{(0,\infty)}(x)$. What is the variance of the length of wire produced between successive flaws?
 
 
 
@@ -315,7 +329,7 @@ __Example__ A __Poisson__ random variable is a special discrete RV with _pmf_:
 
 $$f_X(x) = \begin{cases} \frac{e^{-\lambda}\lambda^x}{x!} & x = 0,1,2,3,...\\ 0 & else \end{cases}$$
 
-The Poisson distribution "counts" things in a fixed amount of time space, volume, etc. For example, the number of accidents at an intersection in a week, the number of hits to a website each minute, and the number of plants of a particular species found in a 1 $m^2$ area are all examples of random variables that may be modeled by a Poisson distribution. The constant, $\lambda$ is a parameter of the distribution; it determines the numerical characteristics of the distribution. Find the expected value and variance of a Poisson random variable.
+The Poisson distribution "counts" things in a fixed amount of time space, volume, etc. For example, the number of accidents at an intersection in a week, the number of hits to a website each minute, and the number of plants of a particular species found in a 1 $m^2$ area are all examples of random variables that may be modeled by a Poisson distribution. The constant, $\lambda$, is a parameter of the distribution; it determines the numerical characteristics of the distribution. Find the expected value and variance of a Poisson random variable.
 
 \newpage 
 
@@ -353,7 +367,7 @@ __Example__ Suppose $X$ is a Poisson random variable with _pmf_: $\displaystyle 
 
 __Example__ Suppose $X$ is a Gamma random variable with parameters $\alpha$ and $\beta$. In this case, 
 $$
-\displaystyle f_X(x) = \frac{x^{\alpha -1 e^{-x/\beta}}}{\Gamma(\alpha)\beta^\alpha}I_{(0,\infty)}(x).
+\displaystyle f_X(x) = \frac{x^{\alpha -1} e^{-x/\beta}}{\Gamma(\alpha)\beta^\alpha}I_{(0,\infty)}(x).
 $$
 Find the moment generating function of $X$ and use it to find the mean and variance of $X$.  
 
