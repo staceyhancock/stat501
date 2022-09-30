@@ -1,0 +1,158 @@
+---
+title: 'STAT 501 Fall 2022 Course Notes'
+date: "Chapter 3: Common Families of Distributions (Sections 3.4-3.6)"
+output: 
+  pdf_document: 
+      includes: 
+        in_header: ../header.tex
+fontsize: 12 pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, height = 5, width = 5, out.width="0.5\\linewidth", fig.align="center")
+```
+
+## 3.4 Exponential Families
+
+Families of pmfs or pdfs that belong to the exponential family have properties that make statistical inference in both the frequentist and Bayesian context simpler mathematically! 
+
+\begin{mdframed}
+\textbf{DEF 3.4.1: Exponential Family:} A family of pdfs or pmfs is called an exponential family if it can be expressed as: 
+$f(x|\theta) = h(x)c(\boldsymbol{\theta})exp\left\{\sum_{i = 1}^kt_i(x)w_i(\boldsymbol{\theta})\right\}$ 
+
+where $h(x)$ and $t_1(x), t_2(x), ..., t_k(x)$ are real-valued functions of $x$ alone (cannot depend on $\boldsymbol{\theta}$) and $c(\theta)$ and $w_1(\boldsymbol{\theta}),...,w_k(\boldsymbol{\theta})$ are real-valued functions of $\theta$ alone (cannot depend on $x$).
+\end{mdframed}
+
+\underline{Notes:}
+
+- To verify that a family of pdfs or pmfs is an exponential family, we must identify the functions $h(x),c(\boldsymbol{\theta}), w_i(\boldsymbol{\theta})$, and $t_i(x)$ and show that the family has the form provided above in DEF 3.4.1.
+
+- A __curved exponential family__ is a family of densities of the form provided in DEF 3.4.1 for which the dimension of the vector $\boldsymbol{\theta}$ is $d < k$. If $d = k$ the family is a __full exponential family__. 
+
+__Examples__ Determine whether the family of pdfs/pmfs is an exponential family...
+
+- Let $X \sim Binomial(n,p)$. Assume $0 < p < 1$. 
+
+\newpage
+
+- Let $X \sim Normal(\mu, \sigma^2)$. Assume $\mu \in (-\infty, \infty)$ and $\sigma^2 > 0$. 
+
+\vspace{4.5in}
+
+- Let $X \sim Pareto(\alpha, \beta)$. Then $f_X(x|\alpha, \beta) = \displaystyle \frac{\beta\alpha^\beta}{x^{\beta +1}}I_{(\alpha, 0)}(x)$; $\alpha$, $\beta > 0$. 
+
+\newpage
+
+## 3.5 Location and Scale Families
+
+We've discussed common families of continuous distributions, and in this section, we investigate different techniques for constructing families of distributions that are useful for modeling. These families include location families, scale families, and location-scale families, and the general process for constructing each of these three types of families is similar: specify a standard (or reference) pdf, and then transform that pdf in a specified way.
+
+\begin{mdframed}
+\textbf{THM 3.5.1: Theorem about PDFs:} Let $f_X(x)$ be any pdf and let $\mu$ and $\sigma >0$ be any given constants. Then the function $g(x|\mu, \sigma) = \frac{1}{\sigma}f_X\left(\frac{x- \mu}{\sigma}\right)$ is a pdf. 
+\end{mdframed}
+
+__Proof:__ on onwn (see p. 116 in text)
+
+\begin{mdframed}
+\textbf{THM 3.5.2: Location family:} Let $f_X(x)$ be any pdf. Then the family of pdfs $f_X(x-\mu)$, indexed by the parameter $\mu$, $-\infty < \mu < \infty$, is called the \textbf{location family} with the standard pdf $f_X(x)$ and $\mu$ is called the location parameter for the family. That is, the standard (or reference) pdf is where $\mu = 0$. 
+\end{mdframed}
+
+__Note:__ The location parameter $\mu$ shifts the graph of the pdf along the x-axis while keeping the same shape...
+
+__Examples__ Consider the two pdfs and the standard pdf below. What does the parameter $\eta$ represent for each distribution? What will happen if $\eta$ is shifted? 
+
+```{r, fig.width=10, fig.height=7, out.width="0.8\\linewidth"}
+par(mfrow = c(1,2))
+curve(dexp(x, rate = 1), from = 0, to = 10, lwd = 2, 
+      xlim = c(-5,10), ylab = expression(f[X](x)), 
+      main = latex2exp::TeX("$f_X(x|\\eta) = e^{-(x-\\eta)}I_{(\\eta, \\infty)}(x)$"))
+
+curve(extraDistr::dlaplace(x), from = -5, to = 5, lwd = 2, 
+      ylab = expression(f[X](x)), main = latex2exp::TeX("$f_X(x|\\eta) = \\frac{1}{2}e^{-abs(x-\\eta)}I_{(-\\infty, \\infty)}(x)$"))
+```
+
+\newpage 
+
+What are some commonly used location families? \vspace{.5in}
+
+
+\begin{mdframed}
+\textbf{THM 3.5.4: Scale family:} Let $f_X(x)$ be any pdf. Then the family of pdfs $\displaystyle \frac{1}{\sigma}f_X\left(\frac{x}{\sigma}\right)$, indexed by the parameter $\sigma$, $\sigma > 0$, is called the \textbf{scale family} with the standard pdf $f_X(x)$ and $\sigma$ is called the scale parameter for the family. That is, the standard (or reference) pdf is where $\sigma = 1$. 
+\end{mdframed}
+
+__Note:__ The scale parameter $\sigma$ either stretches ($\sigma > 1$) or contracts ($\sigma < 1$) the graph of $f_X(x)$, while keeping the same basic shape and the center the same. 
+
+```{r, fig.width=10, fig.height=7, echo = FALSE, out.width="0.8\\linewidth"}
+par(mfrow = c(1,2))
+curve(dexp(x, rate = 1), from = 0, to = 10, lwd = 2, 
+      xlim = c(0,10), ylab = expression(f[X](x)), 
+      ylim = c(0,1), 
+      main = latex2exp::TeX("$f_X(x|\\beta) = \\frac{1}{\\beta}e^{-x/\\beta}I_{(0, \\infty)}(x)$"))
+curve(dexp(x, rate = 2), add = T, col = "maroon", 
+      lty = 2, lwd = 2)
+curve(dexp(x, rate = 0.5), add = T, col = "darkgreen", 
+      lty = 3, lwd = 2)
+curve(dexp(x, rate = 0.2), add = T, col = "blue", 
+      lty = 4, lwd = 2)
+legend("topright", legend = c(latex2exp::TeX("$\\beta = 1$"),
+                              latex2exp::TeX("$\\beta = 0.5$"), 
+                              latex2exp::TeX("$\\beta = 2$"), 
+                              latex2exp::TeX("$\\beta = 5$")), 
+       col = c("black", "maroon", "darkgreen", 
+               "blue"), lwd = rep(2, 4), lty = c(1:4), bty = "n")
+library(extraDistr)
+curve(dlaplace(x), from = -5, to = 5, lwd = 2, 
+      ylab = expression(f[X](x)), ylim = c(0,1), 
+      main = latex2exp::TeX("$f_X(x|\\beta) = \\frac{1}{2\\beta}e^{-abs(x)/\\beta}I_{(-\\infty, \\infty)}(x)$"))
+curve(dlaplace(x, sigma = 0.5), add = T, col = "maroon", 
+      lty = 2, lwd = 2)
+curve(dlaplace(x, sigma = 2), add = T, col = "darkgreen", 
+      lty = 3, lwd = 2)
+curve(dlaplace(x, sigma = 5), add = T, col = "blue", 
+      lty = 4, lwd = 2)
+legend("topright", legend = c(latex2exp::TeX("$\\beta = 1$"),
+                              latex2exp::TeX("$\\beta = 0.5$"), 
+                              latex2exp::TeX("$\\beta = 2$"), 
+                              latex2exp::TeX("$\\beta = 5$")), 
+       col = c("black", "maroon", "darkgreen", 
+               "blue"), lwd = rep(2, 4), lty = c(1:4), bty = "n")
+```
+
+What are some examples of commonly used scale families? 
+\vspace{1in}
+
+\begin{mdframed}
+\textbf{THM 3.5.6: Generating location, scale, and location-scale families:} Let $\mu$ be any real number and let $\sigma$ be any postive real numer. Then, $X$ is a random variable wtih pdf $f_X(x) = \frac{1}{\sigma}f_X\left(\frac{x- \mu}{\sigma}\right)$ if and only if there exists a random variable $Z$ with pdf $f_Z(z)$ and $X = \sigma Z + \mu$. 
+\end{mdframed}
+
+__Proof:__ On your own (see p. 120 in text)
+
+__Take home message:__ We can start with _any_ pdf $f_X(x)$ and generate a family of pdfs by introducing a location and/or scale parameter in the manner described above! Essentially, we can generate location, scale, and location-scale families by subjecting a random variable with standard pdf to a family of transformations. 
+
+## 3.6 Inequalities and Identities  
+
+__Chebychev's Inequality (THM 3.6.1)__: Let $X$ be a random variable and let $g(x)$ be a non-negative function. Then for any $r > 0$, $P(g(X)\geq r) \leq \frac{E[g(X)]}{r}$
+
+
+
+
+\vspace{5in}
+
+__Example__ A special case of Chebychev's Inequality involves the following non-negative function: $\displaystyle g(x)= \frac{(x-\mu)^2}{\sigma^2}$, where $\mu = E(X)$ and $\sigma^2 = Var(X)$. 
+
+\vfill
+
+_Note: Chebychev's Theorem (particularly in its classic expression shown above) enables us to find bounds for probabilities that may be difficult or tedious to obtain. Often, we can also use it to obtain means and variances of random variables without specifying the distribution of the variable._ 
+
+\newpage 
+
+__Stein’s Lemma__ (Lemma 3.6.5) Let $X \sim N(\mu, \sigma^2)$ and let $g$ be a differentiable function satisfying $E[|g'(X)|] < \infty$. Then, $E[g(X)(X - \mu)] = \sigma^2E[g'(X)]$. 
+
+- Note: This lemma is most useful for calculating higher-order moments.
+- Proof: On your own (see p. 124 in text)
+
+__Example:__ Let $X \sim N(\mu, \sigma^2)$. Find $E(X^3)$ 
+
+
+
+
