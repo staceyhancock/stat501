@@ -176,7 +176,7 @@ plot(x_supp ~ y_supp, type = "l",
 y <- runif(n = 500, min = 0, max = 1)
 
 # probability integral transformation (PIT)
-x_samp <- -log(1 - y)
+x_samp <- -log(1 - y) # F^{-1}(y)
 
 # compare samples to actual exp(1) dist
 hist(x_samp, nclass = 25, freq = F, 
