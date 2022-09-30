@@ -418,7 +418,7 @@ Let $F_X(x)$ and $F_Y(y)$ be two CDFs, all of whose moments exist.
 
 1.	If $X$ and $Y$ have bounded support, then $F_X(u) = F_Y(u)$ for all $u$ if and only if $E(X^r) = E(Y^r)$ for all integers $r = 0,1,2,...$ 
 
-2.	If the moment generating functions exist and $M_X(t) = M_Y(t)$for all $t$ in some neighborhood of zero, then $F_X(u) = F_Y(u)$ for all $u$. 
+2.	If the moment generating functions exist and $M_X(t) = M_Y(t)$ for all $t$ in some neighborhood of zero, then $F_X(u) = F_Y(u)$ for all $u$. 
 \end{mdframed}
 \vspace{.1in}
 
