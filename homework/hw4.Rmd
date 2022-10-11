@@ -31,7 +31,7 @@ Suppose that the compound's selling price depends on its alcohol content. Specif
 
 2. The failure of a circuit board interrupts work that utilizes a computing system until a new board is delivered. Let $Y$ be the delivery time (in days), and assume the moment generating function of $Y$ is
 $$
-M_X(t) = \frac{e^{5t}-e^t}{4t}
+M_Y(t) = \frac{e^{5t}-e^t}{4t}
 $$
 for all $t \neq 0$.  
  
