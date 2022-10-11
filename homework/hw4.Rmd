@@ -24,8 +24,8 @@ $$
 Suppose that the compound's selling price depends on its alcohol content. Specifically, if $\frac{1}{3} < x < \frac{2}{3}$, the compound sells for $c_1$ dollars per gallon; otherwise it sells for $c_2$ dollars per gallon.  The production cost is $c_3$ dollars per gallon. Let $Y$ be the profit per gallon.
 
     a. Find the probability function (pdf or pmf) of $Y$.  
-    b. Find the expected value of $Y$. Write a sentence interpreting this value in context of the problem.  
-    c. Find the standard deviation of $Y$. Write a sentence interpreting this value in context of the problem.
+    b. Find the expected value of $Y$. Write a sentence interpreting this value in context of the problem when $c_1 = 40$, $c_2 = 30$, and $c_3 = 15$.  
+    c. Find the standard deviation of $Y$. Write a sentence interpreting this value in context of the problem when $c_1 = 40$, $c_2 = 30$, and $c_3 = 15$. .
 
 \vspace{.1in}
 
@@ -36,7 +36,7 @@ $$
 for all $t \neq 0$.  
  
     a. Use the table of common distributions in the back of our textbook (p. 621--626) to identify the probability distribution of $Y$ by its mgf. (To completely specify the distribution of a random variable, you must give its name as well as values for its parameters.)  
-    b. Use the mgf to find $E(Y)$ and $E(Y^2)$. Then verify your answers using the mean and variance given in the table of common distributions.  
+    b. Use the mgf to find $E(Y)$ and $E(Y^2)$. Then verify your answers using the mean and variance given in the table of common distributions. _Hint_: See additional notes on mgfs.
     c. Suppose the cost of a board failure and interruption is represented by $C = 500+100Y^2 - 25Y$. Find the expected cost associated with a single failed circuit board.  
     d. Now suppose the cost associated with a single failed circuit board is changed and represented instead by $A = 500 + 60Y^2$. Find the variance of this new cost.
 
