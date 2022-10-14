@@ -54,11 +54,16 @@ We've discussed common families of continuous distributions, and in this section
 
 __Proof:__ On your own (see p. 116 in text)
 
+<!-- Add space here to show that this is the pdf of $Y = \sigma X + \mu$ -->
+
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{THM 3.5.2 (Location Family)} Let $f_X(x)$ be any pdf. Then the family of pdfs $f_X(x-\mu)$, indexed by the parameter $\mu$, $-\infty < \mu < \infty$, is called the \textbf{location family} with the standard pdf $f_X(x)$ and $\mu$ is called the location parameter for the family. That is, the standard (or reference) pdf is where $\mu = 0$. 
+\textbf{DEF 3.5.2 (Location Family)} Let $f_X(x)$ be any pdf. Then the family of pdfs $f_X(x-\mu)$, indexed by the parameter $\mu$, $-\infty < \mu < \infty$, is called the \textbf{location family} with the standard pdf $f_X(x)$ and $\mu$ is called the location parameter for the family. That is, the standard (or reference) pdf is where $\mu = 0$. 
 \end{mdframed}
 
-__Note:__ The location parameter $\mu$ shifts the graph of the pdf along the $x$-axis while keeping the same shape.
+__Notes:__ 
+
+* The location parameter $\mu$ shifts the graph of the pdf along the $x$-axis while keeping the same shape.
+* The pdf $f_X(x - \mu)$ is the pdf of the transformed $Y = X - \mu$.
 
 __Examples__ Consider the two pdfs and the graphs of their standard pdf below. What does the parameter $\eta$ represent for each distribution? What happens to the pdf if $\eta$ is shifted? 
 
@@ -69,7 +74,7 @@ $$
 Standard pdf:
 \vspace{1.2cm}
 
-    ```{r, out.width = "60%"}
+    ```{r, out.width = "50%"}
 curve(dexp(x, rate = 1), from = 0, to = 10, lwd = 2, 
       xlim = c(-5,10), ylab = expression(f[X](x)), 
       main = latex2exp::TeX(
@@ -97,7 +102,7 @@ $$
 Standard pdf:
 \vspace{1.2cm}
 
-    ```{r, out.width = "60%"}
+    ```{r, out.width = "50%"}
 curve(extraDistr::dlaplace(x), from = -5, to = 5, lwd = 2, 
       ylab = expression(f[X](x)), 
       main = latex2exp::TeX(
@@ -119,14 +124,17 @@ legend("topright",
 
 \newpage 
 
-What are some commonly used location families? \vspace{1in}
+What are some commonly used location families? \vspace{.8in}
 
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{THM 3.5.4 (Scale Family)} Let $f_X(x)$ be any pdf. Then the family of pdfs $\displaystyle \frac{1}{\sigma}f_X\left(\frac{x}{\sigma}\right)$, indexed by the parameter $\sigma$, $\sigma > 0$, is called the \textbf{scale family} with the standard pdf $f_X(x)$ and $\sigma$ is called the scale parameter for the family. That is, the standard (or reference) pdf is where $\sigma = 1$. 
+\textbf{DEF 3.5.4 (Scale Family)} Let $f_X(x)$ be any pdf. Then the family of pdfs $\displaystyle \frac{1}{\sigma}f_X\left(\frac{x}{\sigma}\right)$, indexed by the parameter $\sigma$, $\sigma > 0$, is called the \textbf{scale family} with the standard pdf $f_X(x)$ and $\sigma$ is called the scale parameter for the family. That is, the standard (or reference) pdf is where $\sigma = 1$. 
 \end{mdframed}
 
-__Note:__ The scale parameter $\sigma$ either stretches ($\sigma > 1$) or contracts ($\sigma < 1$) the graph of $f_X(x)$, while keeping the same basic shape and the center the same. 
+__Notes:__ 
+
+* The scale parameter $\sigma$ either stretches ($\sigma > 1$) or contracts ($\sigma < 1$) the graph of $f_X(x)$, while keeping the same basic shape and the center the same.
+* The pdf $\frac{1}{\sigma}f_X(\frac{x}{\sigma})$ is the pdf of the transformed $Y = \sigma X$.
 
 ```{r, fig.width=8, fig.height=4, echo = FALSE, out.width="0.9\\linewidth"}
 par(mfrow = c(1,2))
@@ -165,15 +173,15 @@ legend("topright", legend = c(latex2exp::TeX("$\\beta = 1$"),
 ```
 
 What are some examples of commonly used scale families? 
-\vspace{1in}
+\vspace{.8in}
+
+<!-- Add DEF 3.5.5 of location-scale family back in -->
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{THM 3.5.6 (Generating location, scale, and location-scale families)} Let $\mu$ be any real number and let $\sigma$ be any positive real number Then, $X$ is a random variable with pdf $f_X(x) = \frac{1}{\sigma}f_X\left(\frac{x- \mu}{\sigma}\right)$ if and only if there exists a random variable $Z$ with pdf $f_Z(z)$ and $X = \sigma Z + \mu$. 
+\textbf{THM 3.5.6 (Generating location, scale, and location-scale families)} Let $\mu$ be any real number and let $\sigma$ be any positive real number. Then, $X$ is a random variable with pdf $f_X(x) = \frac{1}{\sigma}f_X\left(\frac{x- \mu}{\sigma}\right)$ if and only if there exists a random variable $Z$ with pdf $f_Z(z)$ and $X = \sigma Z + \mu$. 
 \end{mdframed}
 
 __Proof:__ On your own (see p. 120 in text)
-
-\vfill
 
 __Take home message:__ We can start with _any_ pdf $f_X(x)$ and generate a family of pdfs by introducing a location and/or scale parameter in the manner described above! Essentially, we can generate location, scale, and location-scale families by subjecting a random variable with standard pdf to a family of transformations. 
 
