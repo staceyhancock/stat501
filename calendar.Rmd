@@ -188,7 +188,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 * _No class. Students are expected to attend at least one hour of the Montana Chapter of the American Statistical Association Annual Meeting in Room 166 of American Indian Hall 10am--4pm._
     * Register for the meeting [here](https://docs.google.com/forms/d/e/1FAIpQLSdT8WbChO4p07HLO4QAZJOPYwHE8kv1Vux3pbRgh9E2UfZ4fA/viewform) (free).
     * [Event schedule](https://andyhoegh.github.io/MT_ASA/)
-* **Project proposal due** in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Project proposal due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
 
 
 ---
@@ -216,7 +216,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Monday_ 
 
 * Section 4.3: Bivariate transformations
-* **Project draft report due** in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Project draft report due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
 
 #### _Wednesday_
 
@@ -247,7 +247,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Friday_
 
 * Section 4.6: Multivariate distributions (cont)
-* **Project final report due** in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Project final report due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
 
 ---
 
