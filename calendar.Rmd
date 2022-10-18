@@ -17,12 +17,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chapters 5--10 in STAT 502 next semester. 
 
-# Week 1: Aug 24-26
+# Week 1: Aug 24--26
 
 #### _Wednesday_
 
 * Introductions to the course and each other  
-* Sections 1.1-1.2.1: Set theory, sigma algebra, basics of probability theory
+* Sections 1.1--1.2.1: Set theory, sigma algebra, basics of probability theory
 
 #### _Friday_ 
 
@@ -30,7 +30,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 2: Aug 29-Sep 2
+# Week 2: Aug 29--Sep 2
 
 #### _Monday_
 
@@ -38,16 +38,16 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Wednesday_
 
-* Section 1.2.3-1.2.4: Combinatorics in probability
-* **Homework 1 due** (Sections 1.1-1.2.2) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* Section 1.2.3--1.2.4: Combinatorics in probability
+* **Homework 1 due** (Sections 1.1--1.2.2) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
-* Section 1.2.3-1.2.4: Combinatorics in probability (cont)
+* Section 1.2.3--1.2.4: Combinatorics in probability (cont)
 
 ---
 
-# Week 3: Sep 5-9
+# Week 3: Sep 5--9
 
 #### _Monday_
 
@@ -56,7 +56,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 1.3: Conditional probability and independence
-* **_QUIZ 1_**: Section 1.1-1.2.2
+* **_QUIZ 1_**: Section 1.1--1.2.2
 
 #### _Friday_
 
@@ -64,7 +64,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 4: Sep 12-16
+# Week 4: Sep 12--16
 
 #### _Monday_
 
@@ -74,7 +74,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 * Section 1.4: Random variables
 * Section 1.5: Distribution functions
-* **Homework 2 due** (Sections 1.2.3-1.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 2 due** (Sections 1.2.3--1.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
@@ -82,7 +82,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 5: Sep 19-23
+# Week 5: Sep 19--23
 
 #### _Monday_
 
@@ -91,7 +91,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 1.6: Density and mass functions (cont)
-* **_QUIZ 2_**: Sections 1.2.3-1.3
+* **_QUIZ 2_**: Sections 1.2.3--1.3
 
 #### _Friday_
 
@@ -99,7 +99,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 6: Sep 26-30
+# Week 6: Sep 26--30
 
 #### _Monday_
 
@@ -108,7 +108,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 2.2: Expected values
-* **Homework 3 due** (Sections 1.4-1.6) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 3 due** (Sections 1.4--1.6) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
@@ -116,7 +116,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 7: Oct 3-7
+# Week 7: Oct 3--7
 
 #### _Monday_
 
@@ -127,7 +127,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 * Section 2.3: Moments and moment generating functions (cont)
 * Section 2.6: Cumulant generating functions and characteristic functions
 * (Skip Section 2.4)
-* **_QUIZ 3_**: Sections 1.4-1.6
+* **_QUIZ 3_**: Sections 1.4--1.6
 
 #### _Friday_
 
@@ -135,7 +135,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 8: Oct 10-14
+# Week 8: Oct 10--14
 
 #### _Monday_
 
@@ -152,28 +152,48 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 * Section 3.4: Exponential families
 * Section 3.5: Location and scale families
 * Section 3.6: Inequalities and Identities
-* **Homework 4 due** (Sections 2.1-2.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 4 due** (Sections 2.1--2.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 ---
 
-# Week 9: Oct 17-21
+# Week 9: Oct 17--21
 
 #### _Monday_
 
-* Section 4.1: Joint and marginal distributions
+* Sections 3.4--3.6 (cont)
 
 #### _Wednesday_
 
-* Section 4.1 (cont): Joint and marginal distributions
-* **_QUIZ 4_**: Sections 2.1-2.3, 3.1-3.3
+* **_QUIZ 4_**: Sections 2.1--2.3
 
 #### _Friday_
 
-* Section 4.2: Conditional distributions and independence
+* Section 4.1: Joint and marginal distributions
 
 ---
 
-# Week 10: Oct 24-28
+# Week 10: Oct 24--28
+
+#### _Monday_
+
+* Section 4.1 (cont): Joint and marginal distributions
+
+#### _Wednesday_
+
+* Section 4.2: Conditional distributions and independence
+* **Homework 5 due** (Sections 3.1--3.6) in [Gradescope](https://www.gradescope.com) by 5:00pm
+
+#### _Friday_
+
+* _No class. Students are expected to attend at least one hour of the Montana Chapter of the American Statistical Association Annual Meeting in Room 166 of American Indian Hall 10am--4pm._
+    * Register for the meeting [here](https://docs.google.com/forms/d/e/1FAIpQLSdT8WbChO4p07HLO4QAZJOPYwHE8kv1Vux3pbRgh9E2UfZ4fA/viewform) (free).
+    * [Event schedule](https://andyhoegh.github.io/MT_ASA/)
+* **Project proposal due** in [Gradescope](https://www.gradescope.com) by 5:00pm
+
+
+---
+
+# Week 11: Oct 31--Nov 4
 
 #### _Monday_
 
@@ -183,45 +203,25 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 4.5: Covariance and correlation (bivariate)
-* **Homework 5 due** (Sections 3.4-3.6, 4.1-4.2) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **_QUIZ 5_**: Sections 3.1--3.6
 
 #### _Friday_
 
 * Section 4.5: Covariance and correlation (cont)
-* **Project proposal due** in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 ---
 
-# Week 11: Oct 31-Nov 4
-
-#### _Monday_
-
-* Section 4.3: Bivariate transformations
-
-
-#### _Wednesday_
-
-* Section 4.3: Bivariate transformations (cont)
-* **_QUIZ 5_**: Sections 3.4-3.6, 4.1-4.2
-
-#### _Friday_
-
-* Section 4.7: Cauchy-Schwarz and Jensen's inequalities
-
-
----
-
-# Week 12: Nov 7-11
+# Week 12: Nov 7--11
 
 #### _Monday_ 
 
-* Section 4.6: Multivariate distributions
+* Section 4.3: Bivariate transformations
 * **Project draft report due** in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Wednesday_
 
-* Section 4.6: Multivariate distributions (cont)
-* **Homework 6 due** (Sections 4.3-4.5) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* Section 4.3: Bivariate transformations (cont)
+* **Homework 6 due** (Sections 4.1--4.2, 4.4--4.5) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
@@ -229,11 +229,29 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-### _Nov 21-25: Fall break_
+### _Nov 21--25: Fall break_
 
 ---
 
-# Week 13: Nov 28-Dec 2
+# Week 13: Nov 28--Dec 2
+
+#### _Monday_
+
+* Section 4.7: Cauchy-Schwarz and Jensen's inequalities
+
+#### _Wednesday_
+
+* Section 4.6: Multivariate distributions
+* **_QUIZ 6_**: Sections 4.1--4.2, 4.4--4.5
+
+#### _Friday_
+
+* Section 4.6: Multivariate distributions (cont)
+* **Project final report due** in [Gradescope](https://www.gradescope.com) by 5:00pm
+
+---
+
+# Week 14: Dec 5--9
 
 #### _Monday_
 
@@ -241,26 +259,8 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Wednesday_
 
-* Simulating random processes (not in textbook)
-* **_QUIZ 6_**: Sections 4.3-4.5
-
-#### _Friday_
-
-* Simulating random processes (cont)
-* **Project final report due** in [Gradescope](https://www.gradescope.com) by 5:00pm
-
----
-
-# Week 14: Dec 5-9
-
-#### _Monday_
-
-* Catch up and review
-
-#### _Wednesday_
-
 * _Project presentations_
-* **Homework 7 due** (Sections 4.6-4.7, Week 13 material) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 7 due** (Sections 4.3, 4.6--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 
 #### _Friday_
