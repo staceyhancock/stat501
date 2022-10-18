@@ -165,9 +165,8 @@ grades %>% ggplot(aes(x=location, y=percent)) +
     * Homework may be hand-written and scanned, or typed, but must be organized and legible. Papers that are too messy to grade will not receive credit.
     * Homework solutions will be graded partially on completeness and partially on accuracy.  
     * Late homework should be avoided in all but the most dire emergencies. In the event of extreme circumstances, other arrangements will be considered if prior notification is provided. 
-    * See [the policy and collaboration and academic misconduct](#policy) section for guidance with regards to collaboration on homework assignments.
+    * See [the policy on collaboration and academic misconduct](#policy) section for guidance with regards to collaboration on homework assignments.
     * The lowest homework score will be dropped. 
-
 
 \vspace{10mm}
 
@@ -175,7 +174,14 @@ grades %>% ggplot(aes(x=location, y=percent)) +
     * Quizzes will closed book and closed notes, in order to give you practice with the setting for the MS Statistics comprehensive exams. A sheet of distributions will be provided when needed. 
     * The lowest quiz score will be dropped. 
 
-3. **Final project** (15%): Communication (written and oral) is an essential part of any job, either in industry or academia. To help develop these skills and extend concepts we have learned in class to other real-world applications, you will complete a final project in groups. The project will involve both a written report, and an 8-10-minute presentation, given in class during the last week of classes. More information will be provided as the semester progresses. 
+\vspace{10mm}
+
+3. **Final project** (15%): Communication (written and oral) is an essential part of any job, either in industry or academia. To help develop these skills and extend concepts we have learned in class to other real-world applications, you will complete a final project in groups. The project will involve both a written report, and a 10-minute presentation, given in class during the last week of classes. All components will be submitted via [D2L](https://ecat1.montana.edu/) (not Gradescope). 
+    * [Final project instructions](project-instructions.pdf)
+    * Report rubric (will post soon) (used both for peer reviews and for grading your final project report)
+    * Presentation rubric (will post soon)
+
+\vspace{10mm}
 
 4. **Final exam** (15%): Our final exam will be on **Monday, December 12, 10:00am-11:50am** in our same classroom. As with quizzes, the final exam will be closed book and closed notes. The same sheet of distributions provided during the MS Statistics comprehensive exams will be provided for use during the STAT 501 final exam.
 

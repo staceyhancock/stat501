@@ -1,0 +1,63 @@
+---
+title: 'Stat 501: Fall 2022 Course Project Instructions'
+output: pdf_document
+fontsize: 12 pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The purpose of the final project is to explore topics in probability that we did not cover
+in class, or to explore topics we covered in class in further detail, and to share these
+explorations with your classmates. 
+
+I am intentionally leaving the project somewhat open-ended, so you have a chance to follow
+whatever interests you may have. You can summarize a branch of probability, do some
+enlightening examples or proofs of topics we already covered, summarize a research paper,
+or go into depth on a topic we covered only briefly. 
+
+# Requirements
+
+Your instructor will assign you into groups of two or three based on common interests.
+You are also encouraged to study and work with your group on other course material.
+A discussion board and "locker" (place to store files) restricted to your group
+will be set up for you to use in D2L.
+You may use that discussion board for group communication,
+or your can set up your own communication preference
+(e.g., Microsoft Team, Slack, etc.).
+Each member of the group has a responsibility to communicate with the other
+members of the group on a regular basis and start on each project component
+well before the deadline.
+
+The final project will consist of:
+
+1. **Proposal**. A short paragraph with the names of your group and a few sentences describing what you plan to research for your project. The proposal must include at least _three_ references of papers, articles, books, etc.\ that you plan to use for your project. 
+
+2. **Report**. A 4--5 page, 12 pt font, single-spaced, written report of your topic. (Tables and figures are included in the page limit; references and appendices (if needed) are not.) It is required that the report be written in R Markdown. The report must include:  
+    * A descriptive title,
+    * Name(s) of your group,
+    * In-text citations and a list of references in a consistent format, e.g., APA.
+    * If applicable, any R code should be included as an appendix.
+    The body of the report is not required to fit a specific outline, since it will vary depending on the topic, but generally papers have some sort of introduction, background, results or discussion, and conclusion.  
+    
+\newpage
+
+3. **Peer review**. Each individual will review one anonymized draft of your peers' projects. Peer reviews will be graded individually, based on the completeness and constructiveness of your feedback. A rubric for providing feedback will be provided.
+
+4. **Presentation**. A 10-minute in-class presentation on your topic. Presentations will be held during the last week of classes---Wednesday December 7 and Friday December 9.
+It is expected that each group member present an equal portion of the material.
+
+
+# Deadlines
+
+All components will be submitted via **D2L** (not Gradescope), due by 5:00pm on the due date. 
+
+| **Project Component** | **Due Date** | **Percent of Project Grade** |
+|-|-|-|
+| Proposal | Fri, Oct 28 | 5% (based on completion)|
+| **Anonymized** draft report | Mon, Nov 7 | 5% (based on completion) |
+| Peer review feedback | Fri, Nov 11 | 10% (graded individually) |
+| Final report | Fri, Dec 2  | 50% |
+| Presentation slides | Prior to presentation | 5% (based on completion) |
+| Presentations | In-class Dec 7 & 9 | 25% |
