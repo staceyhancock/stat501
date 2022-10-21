@@ -2,6 +2,7 @@
 title: 'Stat 501: Fall 2022 Course Project Instructions'
 output: pdf_document
 fontsize: 12 pt
+urlcolor: blue
 ---
 
 ```{r setup, include=FALSE}
@@ -61,3 +62,37 @@ All components will be submitted via **D2L** (not Gradescope), due by 5:00pm on 
 | Final report | Fri, Dec 2  | 50% |
 | Presentation slides | Prior to presentation | 5% (based on completion) |
 | Presentations | In-class Dec 7 & 9 | 25% |
+
+# Potential final project ideas
+
+If you're not sure where to start in your exploration, here is a list of related areas or topics in probability and mathematical statistics (in no particular order):
+
+* Buffon's Needle
+* Martingales
+* Markov chains
+* Permutation and randomization tests
+* Bootstrapping
+* Branching processes
+* Random walks
+* Brownian motion
+* Stochastic calculus
+* Queuing theory
+* Characteristic functions
+* Reliability theory
+* Risk assessment
+* Any topic we might have touched on in class, but covered at a deeper level
+
+\newpage
+
+Alternatively, you could read, digest, study the background for, and explain a journal article related to probability and mathematical statistics:
+
+* Journals published by the American Statistical Society (ASA): [https://www.amstat.org/publications/journals](https://www.amstat.org/publications/journals)
+* Journals published by the Institute of Mathematical Statistics (IMS): [https://imstat.org/journals-and-publications/ims-journals-and-publications/](https://imstat.org/journals-and-publications/ims-journals-and-publications/)
+* Journals published by the Bernoulli Society for Mathematical Statistics and Probability: [https://bernoullisociety.org/publications](https://bernoullisociety.org/publications)
+* _Biometrika_: [https://academic.oup.com/biomet](https://academic.oup.com/biomet)
+* _Journal of Applied Probability:_ [https://www.cambridge.org/core/journals/journal-of-applied-probability](https://www.cambridge.org/core/journals/journal-of-applied-probability)
+* _Journal of the Royal Statistical Society: Series B:_ [https://rss.onlinelibrary.wiley.com/journal/14679868](https://rss.onlinelibrary.wiley.com/journal/14679868)
+
+You could also explore an area of probability and mathematical statistics as it is applied to a domain field such as econometrics, actuarial science, quantitative biology, etc.
+
+
