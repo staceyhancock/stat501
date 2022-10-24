@@ -311,7 +311,7 @@ __Example (cont)__
 
 # 4.2 Conditional Distributions and Independence
 
-Often, when two random variables are observed, the values of the two variables are related. For example, a randomly chosen person's height is typically related to that person's weight. For example, we would think it more likely that a randomly selected person's weight is more than 200 pounds if we were told the person is 73 inches tall than if we were told the person is 41 inches tall. Knowledge about the value of a randomly chosen person's height, $X$ gives us some information about the value of that person's weight, $Y$ even if it doesn't tell us the exact value. In such cases, we are often interested in the conditional probability of $Y$  given knowledge that $X = x$
+Often, when two random variables are observed, the values of the two variables are related. For example, a randomly chosen person's height is typically related to that person's weight---we would think it more likely that a randomly selected person's weight is more than 200 pounds if we were told the person is 73 inches tall than if we were told the person is 41 inches tall. Knowledge about the value of a randomly chosen person's height, $X$, gives us some information about the value of that person's weight, $Y$, even if it doesn't tell us the exact value. In such cases, we are often interested in the conditional probability of $Y$  given knowledge that $X = x$.
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt] 
 \textbf{DEF 4.2.1 (Conditional pmf)} Let $(X,Y)$ be a discrete bivariate random vector with joint pmf $f_{XY}{(x,y)}$ and marginal pmfs $f_X(x)$ and $f_Y(y).$ For any $x$ such that $P(X = x) = f_X(x) > 0$, the \emph{conditional pmf} of $Y$ given that $X = x$ is the function of $y$ denoted by $f_{Y|X}(y|x)$ and defined by
@@ -328,7 +328,7 @@ For any $y$ such that $P(Y = y) > 0$, the \emph{conditional pmf} of $X$ given th
 
 $f_{X|Y}(x|y) =$
 
-\vspace{.2in}
+\vspace{.3in}
 
 \end{mdframed}
 
@@ -349,24 +349,28 @@ For any $y$ such that $f_Y(y) > 0$, the \emph{conditional pdf} of $X$ given that
 
 $f_{X|Y}(x|y) =$
 
-\vspace{.2in}
+\vspace{.3in}
 
 \end{mdframed}
- 
-__Conditional Expectation__ DEF: Let $X$ and $Y$ be two random variables. If $g(Y)$ is a function of $Y$, then the conditional expected value of $g(Y)$ given $X = x$ is, \vspace{.2in}
-
-$E(g(Y)|X = x) =$
- 
 \newpage 
 
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt] 
+\textbf{DEF p.\ 150 (Conditional Expectation)} Let $X$ and $Y$ be two random variables. If $g(Y)$ is a function of $Y$, then the conditional expected value of $g(Y)$ given $X = x$ is, \vspace{.2in}
 
-#### Example
+$E(g(Y)|X = x) =$
+\vspace{.2in}
+\end{mdframed}
+
+
+### Example
 
 Consider the joint pdf $\displaystyle f_{XY}(x,y) = \begin{cases} e^{-y} & 0 < x < y < \infty \\ 0 & \text{else}\end{cases}$. We can show the marginal pdfs of $X$ and $Y$ are $\displaystyle f_{X}(x) = \begin{cases} e^{-x} & 0 < x < \infty \\ 0 & \text{else}\end{cases}$ and $\displaystyle f_{Y}(y) = \begin{cases} ye^{-y} & 0 < y < \infty \\ 0 & \text{else}\end{cases}$, respectively. (_This is left as extra practice for you._)
 
 
-a. For $x > 0$ find the conditional pdf of $Y|X =x$ 
-b. For $y > 0$ find the conditional pdf of $X|Y =y$ 
+a. For $x > 0$, find the conditional pdf of $Y|X =x$. 
+\vspace{1.8in}
+b. For $y > 0$, find the conditional pdf of $X|Y =y$. 
+\vspace{1.8in}
 c. Find $E(X|Y = y)$ and $Var(X|Y=y)$. 
 
 \newpage 
@@ -375,45 +379,67 @@ c. Find $E(X|Y = y)$ and $Var(X|Y=y)$.
 Sometimes the conditional distribution of $Y$ given that $X = x$ is different for different values of $x$ (i.e., $Y|X=x$ depends on $x$). However, in some situations, the knowledge that $X = x$ doesn't give us any more information about $Y$ than what we already had. This important relationship between $X$ and $Y$ is called ___independence___. 
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{DEF 4.2.5 (Independence)} Let $(X,Y)$ be a bivariate random vector with joint pdf or pmf $f_{XY}(x,y)$ and marginal pdfs or pmfs $f_X(x)$ and $f_Y(y)$. Then $X$ and $Y$ are independent random variables if, for every $X \in \mathbb{R}$ and $Y \in \mathbb{R}$
-
-\vspace{1in}
+\textbf{DEF 4.2.5 (Independence)} Let $(X,Y)$ be a bivariate random vector with joint pdf or pmf $f_{XY}(x,y)$ and marginal pdfs or pmfs $f_X(x)$ and $f_Y(y)$. Then $X$ and $Y$ are independent random variables if, for every $x \in \mathbb{R}$ and $y \in \mathbb{R}$\vspace{.2in}
+$$
+f_{XY}(x,y) = \hspace{4in}
+$$
+\vspace{.3in}
 
 \end{mdframed}
 
-\underline{Note:} _If $X$ and $Y$ are independent random variables, then_ $f_{X|Y}(x|y)$ = \hspace{.1in} _regardless of the value of $y$. Similarly,_ $f_{X|Y}(x|y)$ = \hspace{.1in} 
+\underline{Note:} _If $X$ and $Y$ are independent random variables, then_ $$f_{X|Y}(x|y) = \hspace{.1in}$$ 
+_regardless of the value of $y$. Similarly,_ $f_{X|Y}(x|y)$ = \hspace{.1in} 
 
-#### Independence – Revisited
+### Example
 
-__Lemma 4.2.7 (AKA "Factorization THM")__ Let $(X,Y)$ be a bivariate random vector with joint pdf or pmf $f_{XY}(x,y)$. Then $X$ and $Y$ are independent random variables if and only if there exist two functions $g(x)$ and $h(y)$ such that, for every $x \in \mathbb{R}$ and $y \in \mathbb{R}$, 
+Let $X$ and $Y$ be jointly distributed random variables with joint pdf
+$$
+f_{XY}(x,y) = \begin{cases}\begin{array}{ll}
+2x & 0<x<1; x \leq y \leq x+1\\
+0 & \mbox{else}
+\end{array}\end{cases}
+$$
+
+a. Are $X$ and $Y$ independent? Explain why or why not.   
+\vspace{.8in}
+b. Find $E(e^Y | X = x)$.  
+\vspace{1.2in}
+c. For what values of $X$ does the expectation in part b.\ hold?
+\vspace{.8in}
+
+\newpage
+## Independence---Revisited
+\vspace{.1in}
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{Lemma 4.2.7 (AKA "Factorization THM")} Let $(X,Y)$ be a bivariate random vector with joint pdf or pmf $f_{XY}(x,y)$. Then $X$ and $Y$ are independent random variables if and only if there exist two functions $g(x)$ and $h(y)$ such that, for every $x \in \mathbb{R}$ and $y \in \mathbb{R}$, 
 
 \vspace{1.5in}
-
+\end{mdframed}
 
 \underline{Note:} _$g$ and $h$ do not necessarily need to be pdfs or pmfs_
 
 __Proof:__ On your own (see p. 153). 
 
 
-## Examples
+### Examples
 
 For each of the following joint distributions, determine whether or not   $X$ and $Y$ are independent. Explain why or why not.
 
 1. $\displaystyle f_{XY}(x,y) = \begin{cases} e^{-y} & 0 < x < y < \infty \\ 0 & \text{else}\end{cases}$.
 
-\vspace{1.5in}
+\vspace{1in}
 
 2. $\displaystyle f_{XY}(x,y) = \begin{cases} 4xy & 0 \leq x \leq 1; 0\leq y \leq 1 \\ 0 & \text{else}\end{cases}$
 
-\vspace{1.5in}
+\vfill
 
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt] 
-
-\textbf{THM 4.2.10: Using Independence} Let $X$ and $Y$ be independent random variables.
+\textbf{THM 4.2.10 (Using Independence)} Let $X$ and $Y$ be independent random variables.
 \begin{itemize} 
   \item For any $A \subset \mathbb{R}$ and $B \subset \mathbb{R}$, $P(X \in A, Y \in B) = P(X \in A)P(Y     \in B)$.     
-  \item Let $g(X)$ be a function only of $x$ and $h(y)$ a function only of $y$. Then $E(g(X)h(Y)) =$     \vspace{.1in}  
+  \item Let $g(x)$ be a function only of $x$ and $h(y)$ a function only of $y$. Then 
+  $$E(g(X)h(Y)) =\hspace{5in}$$  \vspace{.1in}
 \end{itemize}
 \end{mdframed}
 
@@ -421,7 +447,28 @@ For each of the following joint distributions, determine whether or not   $X$ an
 
 \newpage 
 
-### 4.4 Hierarchical Models and Mixture Distributions 
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt] 
+\textbf{THM 4.2.12 (Using Independence in MGFs)} Let $X$ and $Y$ be independent random variables with moment generating functions $M_X(t)$ and $M_Y(t)$. Then the moment generating function of the random variable $Z = X + Y$ is given by
+$$
+M_Z(t) = \hspace{5in}
+$$
+\vspace{.2in}
+\end{mdframed}
+\underline{Proof:} On your own (see p. 155). 
+
+Theorems 4.2.10 and 4.2.12 extend to $n$ independent random variables (see Theorems 4.6.6 and 4.6.7). That is, if $X_1,\ldots, X_n$ are mutually independent random variables with mgfs $M_{X_1}(t),\ldots, M_{X_n}(t)$, and $g_1,\ldots, g_n$ are real-valued functions such that $g_i(x_i)$ is a function only of $x_i$, $i = 1,\ldots, n$, then
+\begin{itemize}
+\item $E\left[\prod_{i=1}^n g_i(X_i)\right] = \prod_{i=1}^n E(g_i(X_i))$, and
+\item $M_{\sum_{i=1}^nX_i}(t) = \prod_{i=1}^n M_{X_i}(t)$.
+\end{itemize}
+
+### Example
+
+Let $X_1,\ldots, X_n \overset{iid}{\sim} Bernoulli(p)$ ("iid" = independent and identically distributed), and define $Y = \sum_{i=1}^nX_i$. What distribution does $Y$ have? Find the mgf of $Y$.
+
+\newpage
+
+# 4.4 Hierarchical Models and Mixture Distributions 
 
 Through the use of conditional distributions, we can often model complicated processes by a sequence of relatively simple models placed in a hierarchy.
 
@@ -430,23 +477,26 @@ Through the use of conditional distributions, we can often model complicated pro
 \end{mdframed}
 
 
-#### Example
+#### Example (Random Sum)
 
-An insect lays a large number of eggs, each surviving with probability $p$. Suppose the number of eggs laid by the insect, denoted by $Y$, follows a Poisson distribution with mean $\lambda$ and assume the each egg's survival is independent. Let $X$ be a random variable denoting the number of survivors. Why is this a mixture distribution?
+An insect lays a large number of eggs, each surviving with probability $p$. Suppose the number of eggs laid by the insect, denoted by $Y$, follows a Poisson distribution with mean $\lambda$ and assume that each egg's survival is independent of the others. Let $X$ be a random variable denoting the number of survivors. Why is this a mixture distribution?
 
 
 \vspace{1.5in}
 
-How could we find $E(X)$ and $Var(X)$
+How could we find $E(X)$ and $Var(X)$?
 
 \vspace{1.5in}
 
 At times, finding the mean and variance of a random variable in this manner may be difficult and/or tedious. Sometimes, such calculations can be greatly simplified using the following theorems:
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{THM 4.4.3: Conditional Mean Identity} For any two random variables $X$ and $Y$ 
+\textbf{THM 4.4.3 (Conditional Mean Identity)} For any two random variables $X$ and $Y$,
+$$
+E(X) = \hspace{2in}\mbox{and}\hspace{.2in} E(Y) = \hspace{2in}
+$$
 
-\vspace{1.2in}
+\vspace{.2in}
 
 provided the expectations exist. 
 \end{mdframed}
@@ -456,40 +506,45 @@ __Proof:__
 \vspace{4in}
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{THM 4.4.7: Conditional Variance Identity} For any two random variables $X$ and $Y$ 
-
-\vspace{1.2in}
+\textbf{THM 4.4.7 (Conditional Variance Identity)} For any two random variables $X$ and $Y$, 
+$$
+Var(X) = \hspace{5in}
+$$
+\vspace{.2in}
 
 provided the expectations exist. 
 \end{mdframed}
 
 __Proof:__
 
-\newpage 
+\vspace{2in}
 
-__Example (Revisited)__
+#### Example (Revisited)
 
-An insect lays a large number of eggs, each surviving with probability $p$. Suppose the number of eggs laid by the insect, denoted by $Y$ follows a Poisson distribution with mean $\lambda$ and assume the each egg's survival is independent. Let $X$ be a random variable denoting the number of survivors. Earlier, we stated $X|Y \sim Binomial(Y, p)$, where $Y \sim Poisson(\lambda)$. Use this information to find $E(X)$ and $Var(X)$. 
+An insect lays a large number of eggs, each surviving with probability $p$. Suppose the number of eggs laid by the insect, denoted by $Y$ follows a Poisson distribution with mean $\lambda$ and assume the each egg's survival is independent of the others. Let $X$ be a random variable denoting the number of survivors. Earlier, we stated $X|Y \sim Binomial(Y, p)$, where $Y \sim Poisson(\lambda)$. Use this information to find $E(X)$ and $Var(X)$. 
 
 \vfill 
 
-Recall: Earlier in the notes (pg. 10), we used the following joint pmf $$f_{XY}(x,y) = \begin{cases} \binom{y}{x}p^x(1-p)^{y-x}\frac{e^{-\lambda}\lambda^y}{y!} & y = 0,1,2,...; x = 0,...,y\\ 0 & else \end{cases}$$ to show that $Y \sim Poisson(\lambda)$ and $X \sim Poisson(\lambda p)$. We could use this to also show that $X|Y \sim Binomial(Y, p)$. This turns out to be the same mixture distribution that we used above! Use the marginal pmf of $X$ to find $E(X)$ and $Var(X)$ and compare to the results above.
+Recall: Earlier in the notes (pg. 11), we used the following joint pmf $$f_{XY}(x,y) = \begin{cases} \binom{y}{x}p^x(1-p)^{y-x}\frac{e^{-\lambda}\lambda^y}{y!} & y = 0,1,2,...; x = 0,...,y\\ 0 & else \end{cases}$$ to show that $Y \sim Poisson(\lambda)$ and $X \sim Poisson(\lambda p)$. We could use this to also show that $X|Y \sim Binomial(Y, p)$. This turns out to be the same mixture distribution that we used above! Use the marginal pmf of $X$ to find $E(X)$ and $Var(X)$ and compare to the results above.
 
 \newpage 
 
-__Example (Revisited)__ Consider a generalization of the previous example, where instead of one mother insect, there are a large number of mothers and one mother is chosen at random. We are still interested in the number of survivors, but the number of eggs laid does not follow the same Poisson distribution for each mother, i.e., assume the rate at which eggs are laid for a randomly selected insect, $\Lambda$ follows an exponential distribution with mean $\beta > 0$. Let $X$ be a random variable denoting the number of survivors, and let $Y$ be a random variable denoting the number of eggs laid. 
+#### Example (Revisited)
+
+Consider a generalization of the previous example, where instead of one mother insect, there are a large number of mothers and one mother is chosen at random. We are still interested in the number of survivors, but the number of eggs laid does not follow the same Poisson distribution for each mother, i.e., assume the rate at which eggs are laid for a randomly selected insect, $\Lambda$, follows an exponential distribution with mean $\beta > 0$. Let $X$ be a random variable denoting the number of survivors, and let $Y$ be a random variable denoting the number of eggs laid. 
 \vspace{1.5in} 
 
-a. Use this information to find $E(X)$, $E(Y)$, and $Var(Y)$.
-b. Show that  Geometric*  and use this result to find   and  
+a. Use this information to find $E(X)$, $E(Y)$, and $Var(Y)$.  
+\vspace{2in}
+b. Show that  $Y \sim Geometric^*\left(\frac{1}{1+\beta}\right)$^[The asterisk denotes that we are modeling the number of "failures" until the first success rather than the number of trials.] and use this result to find $E(Y)$ and $Var(Y)$.
 
 \newpage 
 
-## Covariance and Correlation 
+# 4.5 Covariance and Correlation 
 
 How can we measure the _linear_ association between two RVs? Consider the following figures, dashed lines represent the the true mean values ($\mu_X$ and $\mu_Y$) for $X$ and $Y$, respectively.
 
-```{r, echo = FALSE, out.width = "0.65\\linewidth", fig.align="center", fig.width=10, fig.height=5}
+```{r, echo = FALSE, out.width = "75%", fig.align="center", fig.width=8, fig.height=3}
 par(mfrow = c(1,3))
 x <- rnorm(20)
 y <- 4 + 1.6*x + rnorm(20, mean = 0, sd = 0.5)
@@ -513,6 +568,7 @@ $Cov(X,Y) =$
 
 \vspace{1.5in}
 Note: $Cov(X,Y) = Cov(Y,X)$. And $Cov(X,X) = $
+\vspace{.2in}
 \end{mdframed}
 \underline{Proof:} On own, (see pg 170 in text).
 
@@ -537,33 +593,38 @@ Note: $Cov(X,Y) = Cov(Y,X)$. And $Cov(X,X) = $
 
 $\rho_{XY} =$
 
-\vspace{0.1in}
+\vspace{0.2in}
 
 Where $\rho_{XY}$ is also called the correlation coefficient. 
 \end{mdframed}
 
 - __Covariance__ is a measure of direction of linear association between two quantitative RVs, whereas __correlation__ measures the direction _and_ strength of the linear association between two quantitative random variables. 
 
-__Example__ Consider the joint pdf $\displaystyle f_{XY} = \begin{cases} e^{-y} & 0 < x < y < \infty\\ 0 & \text{else}\end{cases}$. The marginal pdfs of $X$ and $Y$ are $\displaystyle f_{X}(x) = \begin{cases} e^{-x} & 0 < x < \infty \\ 0 & \text{else}\end{cases}$ and $\displaystyle f_{Y}(y) = \begin{cases} ye^{-y} & 0 < y < \infty \\ 0 & \text{else}\end{cases}$, respectively. Find $Corr(X,Y)$.
+#### Example
+
+Consider the joint pdf $\displaystyle f_{XY} = \begin{cases} e^{-y} & 0 < x < y < \infty\\ 0 & \text{else}\end{cases}$. The marginal pdfs of $X$ and $Y$ are $\displaystyle f_{X}(x) = \begin{cases} e^{-x} & 0 < x < \infty \\ 0 & \text{else}\end{cases}$ and $\displaystyle f_{Y}(y) = \begin{cases} ye^{-y} & 0 < y < \infty \\ 0 & \text{else}\end{cases}$, respectively. Find $Corr(X,Y)$.
 \newpage 
 
 __Facts about Correlation, $\rho_{X,Y}$, (THM 4.5.7)__ For any random variables $X$ and $Y$, 
 
 - \vspace{.2in}
-- $|\rho_{XY} = 1|$ if and only if there exists numbers $a\neq 0$ and $b$ such that $P(Y = aX + b) = 1$. If $\rho_{XY} = 1$, then $a > 0$ and if $\rho_{XY}= -1$, then $a < 0$. That is, if there is a line $Y = aX + b$ with $a \neq 0$ such that the values of $(X,Y)$ have a high probability of being near this line, then the correlation between $X$ and $Y$ will be near 1 or -1. But, if no such line exists, the correlation will be near 0. 
+- $|\rho_{XY} = 1|$ if and only if there exists numbers $a\neq 0$ and $b$ such that $P(Y = aX + b) = 1$. If $\rho_{XY} = 1$, then $a > 0$ and if $\rho_{XY}= -1$, then $a < 0$. 
 
-\underline{Proof:} See text 172-173 (on own). 
+The second property states that if there is a line $Y = aX + b$ with $a \neq 0$ such that the values of $(X,Y)$ have a high probability of being near this line, then the correlation between $X$ and $Y$ will be near 1 or -1. But, if no such line exists, the correlation will be near 0. 
 
-__Independence (THM 4.5.5)__ If $X$ and $Y$ are independent random variables, $Cov(X,Y) = 0 \implies Corr(X,Y) = 0$. 
+\underline{Proof:} See text 172--173 (on own). 
 
-\underline{Proof:} \vspace{1.5in}
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{THM 4.5.5 (Independence)} If $X$ and $Y$ are independent random variables, $Cov(X,Y) = 0 \implies Corr(X,Y) = 0$. 
+\end{mdframed}
+\underline{Proof:} \vspace{1.3in}
 
 
-- Is the converse true? That is $Cov(X,Y) = 0, \rho = 0 \overset{?}{\implies}$ $X$ independent of $Y$? \vspace{1in}
+- Is the converse true? That is does $Cov(X,Y) = \rho_{XY} = 0 \overset{?}{\implies}$ $X$ independent of $Y$? \vspace{.8in}
 
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{THM 4.5.6: Varianc of Linear Functions of Random Variables} If $X$ and $Y$ are any two RVs and $a$ and $b$ are any two constants, then 
+\textbf{THM 4.5.6 (Variance of Linear Functions of Random Variables)} If $X$ and $Y$ are any two RVs and $a$ and $b$ are any two constants, then 
 
 \vspace{0.1in}
 
@@ -589,26 +650,26 @@ $Cov(aX,bY) =$
 
 \vspace{0.1in}
 
-$Cov(X + a,Y + b) =$
+$Cov(X + a, Y + b) =$
  
-\vspace{0.1in}
-
 \vspace{0.1in}
 
 $Cov(X, aX + b) =$
 
-\vspace{0.1in}
+\vspace{0.05in}
 
 
 \underline{Proofs:} On own, see pg. 172 in text. 
 
 \newpage 
 
-__Example (Revisited)__ Consider the joint pdf $\displaystyle f_{XY} = \begin{cases} e^{-y} & 0 < x < y < \infty\\ 0 & \text{else}\end{cases}$. The marginal pdfs of $X$ and $Y$ are $\displaystyle f_{X}(x) = \begin{cases} e^{-x} & 0 < x < \infty \\ 0 & \text{else}\end{cases}$ and $\displaystyle f_{Y}(y) = \begin{cases} ye^{-y} & 0 < y < \infty \\ 0 & \text{else}\end{cases}$, respectively. Find $Var(3X -4Y +2)$.
+#### Example (Revisited)
+
+Consider the joint pdf $\displaystyle f_{XY} = \begin{cases} e^{-y} & 0 < x < y < \infty\\ 0 & \text{else}\end{cases}$. The marginal pdfs of $X$ and $Y$ are $\displaystyle f_{X}(x) = \begin{cases} e^{-x} & 0 < x < \infty \\ 0 & \text{else}\end{cases}$ and $\displaystyle f_{Y}(y) = \begin{cases} ye^{-y} & 0 < y < \infty \\ 0 & \text{else}\end{cases}$, respectively. Find $Var(3X -4Y +2)$.
 \newpage 
 
 
-### Bivariate Transformations (Section 4.3)
+# 4.3 Bivariate Transformations
 
 Often, we are interested in finding the probability distribution of a function of two or more random variables and/or the joint distribution of functions of multiple random variables. For example, suppose two random variables $X$ and $Y$ have the joint distribution $f_{XY}(x,y)$. We are often interested in a new bivariate random vector $(U,V)$ defined by $U = g_1(X,Y)$ and $V = g_2(X,Y)$, where we want to find either the cdf/pdf/pmf of $U$ or $V$ or the joint distribution of $(U,V)$. In such instances, we can extend the methods used in the univariate case to the bivariate case.
 
@@ -680,7 +741,7 @@ In this situation, another option is to find the distribution of $(U,V)$ by rewr
 \newpage 
 
 
-## 4.6 Multivariate Distributions
+# 4.6 Multivariate Distributions
 
 Recall: A (univariate) random variable is a function from a sample space $S$ into the real numbers, $\mathbb{R}$. In the bivariate case, we are interested in a two-dimensional random vector $(X,Y)$ that is, a function from a sample space $S$ into $\mathbb{R}^2$. However, we can also consider \underline{$n$-dimensional random vectors}, or random vectors with more than two random variables. In this case, many of the concepts discussed earlier generalize from the bivariate to the multivariate setting.    
 
