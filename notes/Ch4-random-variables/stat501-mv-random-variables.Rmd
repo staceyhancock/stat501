@@ -503,6 +503,8 @@ provided the expectations exist.
 
 __Proof:__ 
 
+<!-- Add more space here -->
+
 \vspace{4in}
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
