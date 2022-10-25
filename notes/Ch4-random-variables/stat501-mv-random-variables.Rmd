@@ -291,7 +291,7 @@ Let $X$ and $Y$ have a joint density function given by $\displaystyle f_{XY}(x,y
 
 ### Example
 
-Let $X$ and $Y$ have a joint density function given by     
+Let $X$ and $Y$ have a joint probability mass function given by     
 $$
 f_{XY}(x,y) = \begin{cases}\begin{array}{ll}
 \binom{y}{x}p^x(1-p)^{y-x}\dfrac{e^{-\lambda}\lambda^y}{y!} & y = 0,1,2,...; x = 0,...,y\\ 
@@ -387,8 +387,8 @@ $$
 
 \end{mdframed}
 
-\underline{Note:} _If $X$ and $Y$ are independent random variables, then_ $$f_{X|Y}(x|y) = \hspace{.1in}$$ 
-_regardless of the value of $y$. Similarly,_ $f_{X|Y}(x|y)$ = \hspace{.1in} 
+\underline{Note:} _If $X$ and $Y$ are independent random variables, then_ $$f_{Y|X}(y|x) = \hspace{.1in}$$ 
+_regardless of the value of $x$. Similarly,_ $f_{X|Y}(x|y)$ = \hspace{.1in} 
 
 ### Example
 
