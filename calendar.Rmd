@@ -202,12 +202,12 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Wednesday_
 
-* Section 4.5: Covariance and correlation (bivariate)
+* Section 4.4: Hierarchical models and mixture distributions (cont)
 * **_QUIZ 5_**: Sections 3.1--3.6
 
 #### _Friday_
 
-* Section 4.5: Covariance and correlation (cont)
+* Section 4.5: Covariance and correlation (bivariate)
 
 ---
 
@@ -215,12 +215,12 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_ 
 
-* Section 4.3: Bivariate transformations
+* Section 4.5: Covariance and correlation (cont)
 * **Project draft report due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
 
 #### _Wednesday_
 
-* Section 4.3: Bivariate transformations (cont)
+* Section 4.3: Bivariate transformations
 * **Homework 6 due** (Sections 4.1--4.2, 4.4--4.5) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
@@ -230,14 +230,11 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-### _Nov 21--25: Fall break_
-
----
-
-# Week 13: Nov 28--Dec 2
+# Week 13: Nov 14--18
 
 #### _Monday_
 
+* Section 4.3: Bivariate transformations (cont)
 * Section 4.7: Cauchy-Schwarz and Jensen's inequalities
 
 #### _Wednesday_
@@ -252,7 +249,11 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 14: Dec 5--9
+### _Nov 21--25: Fall break_
+
+---
+
+# Week 14: Nov 28 -- Dec 2
 
 #### _Monday_
 
@@ -260,13 +261,32 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Wednesday_
 
-* _Project presentations_
+* More on random vectors
 * **Homework 7 due** (Sections 4.3, 4.6--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 
 #### _Friday_
 
+* Special topics / preview of STAT 502
+
+
+---
+
+# Week 15: Dec 5--9
+
+#### _Monday_
+
+* Special topics / preview of STAT 502
+
+
+#### _Wednesday_
+
 * _Project presentations_
+
+#### _Friday_
+
+* _Project presentations_
+
 
 
 ---
