@@ -221,11 +221,11 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 4.3: Bivariate transformations
-* **Homework 6 due** (Sections 4.1--4.2, 4.4--4.5) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
 * _No classes: Veterans Day_
+* **Homework 6 due** (Sections 4.1--4.2, 4.4--4.5) in [Gradescope](https://www.gradescope.com) by 5:00pm
 * **Project peer review due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
 
 ---
@@ -245,7 +245,6 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Friday_
 
 * Section 4.6: Multivariate distributions (cont)
-* **Project final report due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
 
 ---
 
@@ -268,6 +267,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Friday_
 
 * Special topics / preview of STAT 502
+* **Project final report due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
 
 
 ---
