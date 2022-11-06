@@ -675,67 +675,98 @@ Consider the joint pdf $\displaystyle f_{XY} = \begin{cases} e^{-y} & 0 < x < y 
 
 Often, we are interested in finding the probability distribution of a function of two or more random variables and/or the joint distribution of functions of multiple random variables. For example, suppose two random variables $X$ and $Y$ have the joint distribution $f_{XY}(x,y)$. We are often interested in a new bivariate random vector $(U,V)$ defined by $U = g_1(X,Y)$ and $V = g_2(X,Y)$, where we want to find either the cdf/pdf/pmf of $U$ or $V$ or the joint distribution of $(U,V)$. In such instances, we can extend the methods used in the univariate case to the bivariate case.
 
-__Discrete Case__
+## Discrete Case
 
-Suppose two discrete random variables $X$ and $Y$ have the joint pmf $f_{XY}(x,y)$. To find the joint distribution of $U = g_1(X,Y)$ and $V = g_2(X,Y)$
+Suppose two discrete random variables $X$ and $Y$ have the joint pmf $f_{XY}(x,y)$. To find the joint distribution of $U = g_1(X,Y)$ and $V = g_2(X,Y)$:
 
 1. Find the support for either    
 
-    - $U$ and $V|U = u$ or 
+    - $U$ and $V|U = u$ or
     - $V$ and $U|V =v$. 
     
 2.	Rewrite the joint pmf of $(U,V)$ in terms of $(X,Y)$. 
 
-    - Recall: $f_{XY}(x,y) = P(X = x, Y = y)$  
+    - Recall: $f_{XY}(x,y) = P(X = x, Y = y)$
     - No Jacobians!
-    
-_Note:_ Generally (in this class), $g_1$ and $g_2$ will be 1-1 and given $(u,v) \in \{(u,v): u = g_1(x,y), v = g_2(x,y) \text{  for some  } (x,y) \text{ such that } f_{XY}(x,y) > 0\}$, the set $A_{UV} = \{(x,y): u = g_1(x,y), v = g_2(x,y)\}$ will be a singleton set. In this case, 
 
-\begin{align*}
-f_{UV}(u,v) &= P(U = u, V = v) = P(g_1(X,Y) = u, g_2(X,Y) = v)\\
-&= P(X = h_1(u,v), Y = h_2(u,v)) = f_{XY}(h_1(u,v), h_2(u,v)).\\
-\end{align*}
+    Let $B \subset \mathbb{R}^2$, and define $A$ as the set $(x,y)$ where $(g_1(x,y), g_2(x,y)) \in B$:
+    \vspace{2mm}
+    $$
+    A = \hspace{4in}
+    $$
+    \vspace{2mm}
+    Then
+    \vspace{2mm}
+    $$
+    P((U, V) \in B) = \hspace{3.5in}
+    $$
+    \vspace{1mm}
+   
+_Note:_ Generally (in this class), $g_1$ and $g_2$ will be one-to-one. That is, given 
+$(u,v) \in \{(u,v): u = g_1(x,y), v = g_2(x,y) \text{  for some  } (x,y) \text{ such that } f_{XY}(x,y) > 0\},$
+the set $A_{UV} = \{(x,y): u = g_1(x,y), v = g_2(x,y)\}$ will be a singleton set. In this case, define $h_1$ and $h_2$ as the single-valued inverse mappings of $u = g_1(x,y)$ and $g_2(x,y)$. Then
+<!-- \begin{align*} -->
+<!-- f_{UV}(u,v) &= P(U = u, V = v) = P(g_1(X,Y) = u, g_2(X,Y) = v)\\ -->
+<!-- &= P(X = h_1(u,v), Y = h_2(u,v)) = f_{XY}(h_1(u,v), h_2(u,v)).\\ -->
+<!-- \end{align*} -->
+\vspace{1cm}
 
-Where $h_1$ and $h_2$ are the single-valued inverse mappings of $u = g_1(x,y)$ and $g_2(x,y)$. 
-
-
-__Example:__ Let $X \sim Poisson(\theta)$ and $Y \sim Poisson(\lambda)$ where $X$ and $Y$ are independent random variables. Let $U = X+ Y$ and $V = Y$. Find the distribution (pmf) of $U = X + Y$. 
+$f_{UV}(u, v)$ = 
 
 \newpage
 
-__Example ctd.__
+#### Example
 
-\vspace{5.5in}
+Let $X \sim Pois(\theta)$ and $Y \sim Pois(\lambda)$ where $X$ and $Y$ are independent random variables. Define $U = X+ Y$ and $V = Y$. Find the distribution (pmf) of $U = X + Y$. 
 
-#### Continuous Case
+\newpage
+
+## Continuous Case
+
 Now, suppose $X$ and $Y$ are (absolutely) continuous random variables. If there is a one-to-one transformation from the support of $(X,Y)$ to the support of $(U,V)$, the Jacobian method discussed in the univariate case can be extended to find the joint distribution, $f_{UV}(u,v)$, in the bivariate case.
 
-Suppose $X$ and $Y$ are (absolutely) continuous random variables with joint pdf $f_{XY}(x,y)$. Let $U = g_1(X,Y)$ and $V = g_2(X,Y)$. Also suppose that for all $(x,y)$ such that $f_{XY}(x,y) >0$, the transformation set $u = g_1(x,y)$ and $v = g_2(x,y)$ is one-to-one, and for each $(u,v)$ in the support of $(U,V)$, $x = h_1(u,v)$ and $y = h_2(u,v)$, where $h_1$ and $h_2$ are single-valued inverse mappings. If $x$ and $y$ have continuous partial derivatives with respect to $u$ and $v$ and Jacobian, $J = \left| \begin{matrix} \frac{\partial x}{\partial u} &  \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} &  \frac{\partial y}{\partial v}\end{matrix} \right| = \frac{\partial x}{\partial u}\frac{\partial y}{\partial v} -  \frac{\partial x}{\partial v}\frac{\partial y}{\partial u} \neq 0$, then the joint pdf of $U$ and $V$ is  
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{THM p. 158 (Bivariate transformations)}
+Suppose $X$ and $Y$ are (absolutely) continuous random variables with joint pdf $f_{XY}(x,y)$. Let $U = g_1(X,Y)$ and $V = g_2(X,Y)$. Also suppose that for all $(x,y)$ such that $f_{XY}(x,y) >0$, the transformation set $u = g_1(x,y)$ and $v = g_2(x,y)$ is one-to-one, and for each $(u,v)$ in the support of $(U,V)$, $x = h_1(u,v)$ and $y = h_2(u,v)$, where $h_1$ and $h_2$ are single-valued inverse mappings. If $x$ and $y$ have continuous partial derivatives with respect to $u$ and $v$ and \textbf{Jacobian}, 
+$$
+J = \left| \begin{matrix} \frac{\partial x}{\partial u} &  \frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial u} &  \frac{\partial y}{\partial v}\end{matrix} \right| = \frac{\partial x}{\partial u}\frac{\partial y}{\partial v} -  \frac{\partial x}{\partial v}\frac{\partial y}{\partial u} \neq 0,
+$$
+then the joint pdf of $U$ and $V$ is  
+\vspace{5mm}
+
+$f_{UV}(u, v)$ = 
+\vspace{3cm}
+\end{mdframed}
+
+
+#### Example
+
+Let $X$ and $Y$ be independent exponential random variables, both with mean $\beta$. Let $U = \dfrac{X}{X + Y}$ and $V = X + Y$. Find the marginal pdf of $U$. 
 
 \newpage 
 
-__Example__ Let $X$ and $Y$ be independent exponential random variables, both with mean $\beta$. Let $U = \frac{X}{X + Y}$ and $V = X + Y$. Find the marginal pdf of $U$. 
+#### Example (cont)
 
-\newpage 
+\newpage
 
-__Example__ Let the random variables $X$ and $Y$ respectively denote the premium and claims of a randomly selected insurance policy. Assume $X$ and $Y$ are independent random variables, where $X\sim Gamma(2,5)$ and $Y \sim Exp(5)$. 
+#### Example
+
+Let the random variables $X$ and $Y$, respectively, denote the premium and claims of a randomly selected insurance policy. Assume $X$ and $Y$ are independent random variables, where $X\sim Gamma(2,5)$ and $Y \sim Exp(5)$. 
 
 a. What is the probability a randomly chosen claim will be more than the premium? 
 
 
 \newpage 
 
+b. Find the pdf of $Z  = X/Y$. How would you interpret this variable?
 
-__Example ctd__ 
-
-b. Find the pdf $Z  = X/Y$
 
 \vfill 
 
 
 #### What if the transformations are not one-to-one?
 
-- Example 4.3.6: If the transformations are not one-to-one, we can proceed similar to how we did with univariate transformations. That is, we can divide the support of $(X,Y)$ into regions on which the transformations are one-to-one and sum those which have common support for $(U,V)$. For an example of how to use this approach, please see Example 4.3.6 on p. 162 of the text.
+If the transformations are not one-to-one, we can proceed similar to how we did with univariate transformations. That is, we can divide the support of $(X,Y)$ into regions on which the transformations are one-to-one and sum those which have common support for $(U,V)$. For an example of how to use this approach, please see Example 4.3.6 on p. 162 of the text.
 
 In this situation, another option is to find the distribution of $(U,V)$ by rewriting the cdf $F_{UV}(u,v) = P(U \leq u,V \leq v)$ in terms of $X$ and $Y$.
 
@@ -745,83 +776,105 @@ In this situation, another option is to find the distribution of $(U,V)$ by rewr
 
 # 4.6 Multivariate Distributions
 
-Recall: A (univariate) random variable is a function from a sample space $S$ into the real numbers, $\mathbb{R}$. In the bivariate case, we are interested in a two-dimensional random vector $(X,Y)$ that is, a function from a sample space $S$ into $\mathbb{R}^2$. However, we can also consider \underline{$n$-dimensional random vectors}, or random vectors with more than two random variables. In this case, many of the concepts discussed earlier generalize from the bivariate to the multivariate setting.    
+A (univariate) random variable is a function from a sample space $S$ into the real numbers, $\mathbb{R}$. In the bivariate case, we are interested in a two-dimensional random vector $(X,Y)$; that is, a function from a sample space $S$ into $\mathbb{R}^2$. However, we can also consider \emph{$n$-dimensional random vectors}, or random vectors with more than two random variables (recall Definition 4.1.1). In this case, many of the concepts discussed earlier---marginal and conditional distributions, independence, and so on---generalize from the bivariate to the multivariate setting.    
 
+### Multivariate cdf  
 
-\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{DEF 4.1.1 ($n$-dimensional Random Vector)}
+The joint **cumulative distribution function** of $\mathbf{X} = (X_1, X_2, ..., X_n)'$ on $\mathbb{R}^n$ is defined as,
 
-An n-dimensional random vector is a function from a sample space $S$ into $\mathbb{R}^n$,   $n$-dimensional Euclidean space.
+$$F_{\mathbf{X}}(\mathbf{x}) = P(X_1 \leq x_1, X_2 \leq x_2,..., X_n \leq x_n)$$
+\vspace{5mm}
 
-\vspace{.2in}
-\end{mdframed}
+### Multivariate pmf (Eqn 4.6.1)
 
-As before, the concepts of marginal and conditional distributions, independence, and so on that were extended to bivariate random vectors, can also be extended to $n$–dimensional random vectors.
-
-
-#### Multivariate cdf
-
-__Definition__ The multivariate cumulative distribution function of $\mathbf{X} = (X_1, X_2, ..., X_n)$ on $\mathbb{R}^n$ is defined as,
-
-$$F_{\mathbf{X}}(x_1,...,x_n) = P(X_1 \leq x_1, X_2 \leq x_2,..., X_n \leq x_n)$$
-
-#### Multivariate pmf (Eqn 4.6.1)
-
-If $(X_1, X_2, ..., X_n)$ is a discrete random vector (the sample space is countable), then the __joint pmf__ is a function
+If $\mathbf{X} = (X_1, X_2, ..., X_n)'$ is a discrete random vector (the sample space is countable), then the __joint pmf__ is the function
 
 $$f_{\mathbf{X}}(\mathbf{x}) = P(X_1 = x_1, X_2 = x_2,..., X_n = x_n) \: \text{  for each  } (x_1,...,x_n) \in \mathbb{R}^n.$$
 
 Then for any $A \in \mathbb{R}^n, P(\mathbf{X} \in A) = \sum_{A}f_{\mathbf{X}}(\mathbf{x})$.
 
-#### Multivariate pdf (Eqn 4.6.2)
+\vspace{5mm}
 
-If $(X_1, X_2, ..., X_n)$ is an (absolutely) continuous random vector, then the joint pdf is a function $f_{\mathbf{X}}(\mathbf{x})$ that satisfies
+### Multivariate pdf (Eqn 4.6.2)
+
+If $\mathbf{X}=(X_1, X_2, ..., X_n)$ is an (absolutely) continuous random vector, then the **joint pdf** is the function $f_{\mathbf{X}}(\mathbf{x})$ that satisfies
 $$P(\mathbf{X} \in A) = \int \int ...\int_Af_{\mathbf{X}}(\mathbf{x})d{\mathbf{x}} = \int \int ...\int_Af(x_1,x_2,...,x_n)dx_1...dx_n \text{  for any  } (x_1,...,x_n) \in \mathbb{R}^n.$$
-_Note:_ These integrals are n-fold integrals with limits of integration set so that the integration is over all points $\mathbf{x} \in A$.
+_Note:_ These integrals are $n$-fold integrals with limits of integration set so that the integration is over all points $\mathbf{x} \in A$.
 
-\newpage 
+\vspace{5mm}
 
-#### Marginal Distributions (Equations 4.64 & 4.65)
+### Marginal Distributions (Equations 4.64 & 4.65)
 
-The marginal _pdf_ or _pmf_ of any subset of the coordinates of $can be computed by integrating or summing the joint pdf or pmf over all possible values of the other coordinates.
-
-
-- Continuous Case: If $\mathbf{X} = (X_1, X_2,...,X_k, X_{k+1},...,X_n)$ is an (absolutely) continuous random vector, then the _marginal pdf_ of  $(X_1, X_2,...,X_k)$ is $f(x_1,...,x_k) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} f(x_1,...,x_n)dx_{k+1}dx_{k+2}...dx_{n}$ for every $(x_1,...,x_k) \in \mathbb{R}^{k}$. For example, the marginal pdf of the random variable $X_j$ is $f_{X_j}(x_j) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} f(x_1,...,x_n)dx_{1}dx_{2}...dx_{j-1}dx_{j+1}...dx_{n}$ for every $x_j \in \mathbb{R}$.
-
-That is, if we integrate $n-k$ ($k < n$) continuous random variables out of the multivariate _pdf_, we are left with the marginal _pdf_ of the other $k$ variable(s).
+The marginal pdf or pmf of any subset of the coordinates of $\mathbf{X} = (X_1,\ldots,X_n)'$ can be computed by integrating or summing the joint pdf or pmf over all possible values of the other coordinates.
 
 
-Similarly, we can get the _marginal pmf_ of a discrete random variable by summing the other random variables out of the multivariate _pmf_.
+_Continuous case_: If $\mathbf{X} = (X_1, X_2,...,X_k, X_{k+1},...,X_n)$ is an (absolutely) continuous random vector, then the **marginal pdf** of  $(X_1, X_2,...,X_k)$ is
+$$
+f(x_1,...,x_k) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} f(x_1,...,x_n)dx_{k+1}dx_{k+2}...dx_{n}
+$$
+for every $(x_1,...,x_k) \in \mathbb{R}^{k}$. That is, if we integrate $n-k$ ($k < n$) continuous random variables out of the multivariate _pdf_, we are left with the marginal _pdf_ of the other $k$ variable(s).  
 
-- Discrete Case: If $\mathbf{X} = (X_1, X_2,...,X_k, X_{k+1},...,X_n)$ is discrete random vector, then the _marginal pmf_ of $(X_1, X_2,...,X_k)$ is $f(x_1,...,x_k) = \sum_{(x_{k+1},x_{k+2},...,x_{n})\in \mathbf{R}^{n-k}}f(x_1,...,x_n)$ for every $(x_1,...,x_k) \in \mathbb{R}^{k}$. 
+\newpage
 
-#### Multivariate Expectations (Eqn 4.6.3)
+For example, the marginal pdf of the random variable $X_j$ is
+<!-- $$ -->
+<!-- f_{X_j}(x_j) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} f(x_1,...,x_n)dx_{1}dx_{2}...dx_{j-1}dx_{j+1}...dx_{n} -->
+<!-- $$ -->
+\vspace{3mm}
 
-Suppose $g(\mathbf{x}) = g(x_1,...,x_n)$ is a real-valued function defined on the sample space of $(X_1,...,X_n)$. Then the expected value of $g(\mathbf{X})$ is
-
-- Continuous Case: $\displaystyle E(g(\mathbf{X})) = E\left(g(X_1,..,X_n)\right) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} g(x_1,...,x_n)f(x_1,...,x_n)dx_1,..,dx_n$
-
-- Discrete Case: $\displaystyle E(g(\mathbf{X})) = E\left(g(X_1,..,X_n)\right) = \sum_{\mathcal{X}\in\mathbb{R}^n} g(x_1,...,x_n)f(x_1,...,x_n)$
+$f_{X_j}(x_j)$ = 
+\vspace{3mm}
 
 
+for every $x_j \in \mathbb{R}$.  
+\vspace{2mm}
+
+Similarly, we can get the marginal pmf of a discrete random variable by summing the other random variables out of the joint pmf.
+
+_Discrete case_: If $\mathbf{X} = (X_1, X_2,...,X_k, X_{k+1},...,X_n)$ is discrete random vector, then the **marginal pmf** of $(X_1, X_2,...,X_k)$ is
+$$
+f(x_1,...,x_k) = \sum_{(x_{k+1},x_{k+2},...,x_{n})\in \mathbf{R}^{n-k}}f(x_1,...,x_n)
+$$
+for every $(x_1,...,x_k) \in \mathbb{R}^{k}$. 
+
+\vspace{5mm}
+
+### Multivariate Expectations (Eqn 4.6.3)
+
+Suppose $g(\mathbf{x}) = g(x_1,...,x_n)$ is a real-valued function defined on the sample space of $\mathbf{X}=(X_1,...,X_n)'$. Then the expected value of $g(\mathbf{X})$ is
+
+- _Continuous case_:
+$$
+E(g(\mathbf{X})) = E\left(g(X_1,..,X_n)\right) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} g(x_1,...,x_n)f(x_1,...,x_n)dx_1,..,dx_n
+$$
+
+- _Discrete case_: 
+$$
+E(g(\mathbf{X})) = E\left(g(X_1,..,X_n)\right) = \sum_{\mathcal{X}\in\mathbb{R}^n} g(x_1,...,x_n)f(x_1,...,x_n)
+$$
 
 
-#### Conditional Distributions (Eqn 4.6.6)
+\vspace{5mm}
 
-The conditional _pdf_ or _pmf_ of a subset of the coordinates of $(X_1,...,X_n)$ given the values of the remaining coordinates is obtained by dividing the joint _pdf_ or _pmf_ by the _marginal pdf_ or _pmf_ of the remaining coordinates. For example, if $f(x_1,x_2...,x_k) > 0$, the conditional pdf or pmf of $(X_{k + 1}, ..., X_n)$ given $(X_1,...,X_{k})$ is defined by
+
+### Conditional Distributions (Eqn 4.6.6)
+
+The **conditional pdf or pmf** of a subset of the coordinates of $\mathbf{X}=(X_1,...,X_n)'$ given the values of the remaining coordinates is obtained by dividing the joint pdf or pmf by the marginal pdf or pmf of the remaining coordinates. For example, if $f(x_1,x_2...,x_k) > 0$, the conditional pdf or pmf of $(X_{k + 1}, ..., X_n)$ given $(X_1,...,X_{k})$ is defined by
 
 $$f(x_{k + 1}, ..., x_n|x_1,...,x_k) = \frac{f(x_1,...,x_n)}{f(x_1,...,x_k)}.$$
 
 \newpage 
 
-__Example:__ Let $X_1,X_2,X_3$ be continuous random variables with joint pdf $$\displaystyle f(x_1,x_2,x_3) = \begin{cases} c & 0 < x_1 < x_2 < x_3 < 1\\ 0 & else \end{cases}$$ 
+#### Example
 
-a. Find $c$
-b. What is the marginal pdf of $X_3$
-c. Find $f_{X_1X_2}(x_1, x_2)$ 
-d. Find $E(X_1X_2X_3)$ 
-e. Find the conditional pdf $f_{X_1X_2|X_3}(x_1, x_2|x_3)$ 
-e. Find the conditional pdf $f_{X_3|X_1X_2}(x_3|x_1, x_2)$ 
+Let $X_1,X_2,X_3$ be continuous random variables with joint pdf $$\displaystyle f(x_1,x_2,x_3) = \begin{cases} c & 0 < x_1 < x_2 < x_3 < 1\\ 0 & else \end{cases}$$ 
+
+a. Find $c$.
+b. What is the marginal pdf of $X_3$?
+c. Find $f_{X_1X_2}(x_1, x_2)$. 
+d. Find $E(X_1X_2X_3)$. 
+e. Find the conditional pdf $f_{X_1X_2|X_3}(x_1, x_2|x_3)$. 
+f. Find the conditional pdf $f_{X_3|X_1X_2}(x_3|x_1, x_2)$. 
 
 \newpage 
 
@@ -832,7 +885,7 @@ e. Find the conditional pdf $f_{X_3|X_1X_2}(x_3|x_1, x_2)$
 
 The concept of independence can also be extended from the bivariate case to the multivariate case.
 
-#### Mutual Independence (DEF 4.6.5 Random Variable Version) 
+### Mutual Independence (DEF 4.6.5 Random Variable Version) 
 
 - Let $(X_1,...,X_n)$ be an $n$-dimensional random vector with joint pdf or pmf $f(x_1,...,x_n)$ and marginal pdfs or pmfs for each $X_i$ denoted by $f_{X_i}(x_i)$. Then $X_1,...,X_n$ are mutually independent random variables if, for every $(x_1,...,x_n) \in \mathbb{R}^n$, 
 
