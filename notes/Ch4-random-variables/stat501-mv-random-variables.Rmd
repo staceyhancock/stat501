@@ -776,45 +776,59 @@ In this situation, another option is to find the distribution of $(U,V)$ by rewr
 
 # 4.6 Multivariate Distributions
 
-A (univariate) random variable is a function from a sample space $S$ into the real numbers, $\mathbb{R}$. In the bivariate case, we are interested in a two-dimensional random vector $(X,Y)$; that is, a function from a sample space $S$ into $\mathbb{R}^2$. However, we can also consider \emph{$n$-dimensional random vectors}, or random vectors with more than two random variables (recall Definition 4.1.1). In this case, many of the concepts discussed earlier---marginal and conditional distributions, independence, and so on---generalize from the bivariate to the multivariate setting.    
+A (univariate) random variable is a function from a sample space $S$ into the real numbers, $\mathbb{R}$. In the bivariate case, we are interested in a two-dimensional random vector $(X,Y)$; that is, a function from a sample space $S$ into $\mathbb{R}^2$. In this section, we will consider \emph{$n$-dimensional random vectors}, or random vectors with more than two random variables, in more detail. 
+
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{DEF 4.1.1 (\emph{n}-dimensional random vector)} An \textit{\emph{n}-dimensional random vector} is a function from a sample space $S$ into $\mathbb{R}^n$, $n$-dimensional Euclidean Space.
+\end{mdframed}
+
+In this case, many of the concepts discussed earlier---marginal and conditional distributions, independence, and so on---generalize from the bivariate to the multivariate setting.    
 
 ### Multivariate cdf  
 
-The joint **cumulative distribution function** of $\mathbf{X} = (X_1, X_2, ..., X_n)'$ on $\mathbb{R}^n$ is defined as,
+The joint **cumulative distribution function** of $\mathbf{X} = (X_1, X_2, ..., X_n)'$ on $\mathbb{R}^n$ is defined as,  
 
-$$F_{\mathbf{X}}(\mathbf{x}) = P(X_1 \leq x_1, X_2 \leq x_2,..., X_n \leq x_n)$$
+<!-- $$F_{\mathbf{X}}(\mathbf{x}) = P(X_1 \leq x_1, X_2 \leq x_2,..., X_n \leq x_n)$$ -->
 \vspace{5mm}
+$F_{\mathbf{X}}(\mathbf{x}) =$
+\vspace{1cm}
 
 ### Multivariate pmf (Eqn 4.6.1)
 
-If $\mathbf{X} = (X_1, X_2, ..., X_n)'$ is a discrete random vector (the sample space is countable), then the __joint pmf__ is the function
+If $\mathbf{X} = (X_1, X_2, ..., X_n)'$ is a discrete random vector (the sample space is countable), then the __joint pmf__ is the function  
 
-$$f_{\mathbf{X}}(\mathbf{x}) = P(X_1 = x_1, X_2 = x_2,..., X_n = x_n) \: \text{  for each  } (x_1,...,x_n) \in \mathbb{R}^n.$$
-
-Then for any $A \in \mathbb{R}^n, P(\mathbf{X} \in A) = \sum_{A}f_{\mathbf{X}}(\mathbf{x})$.
-
+<!-- $$f_{\mathbf{X}}(\mathbf{x}) = P(X_1 = x_1, X_2 = x_2,..., X_n = x_n) \: \text{  for each  } (x_1,...,x_n) \in \mathbb{R}^n.$$ -->
 \vspace{5mm}
+$f_{\mathbf{X}}(\mathbf{x}) =$
+\vspace{1cm}
+
+Then for any $A \in \mathbb{R}^n$, $P(\mathbf{X} \in A) = \sum_{A}f_{\mathbf{X}}(\mathbf{x})$.
+
 
 ### Multivariate pdf (Eqn 4.6.2)
 
-If $\mathbf{X}=(X_1, X_2, ..., X_n)$ is an (absolutely) continuous random vector, then the **joint pdf** is the function $f_{\mathbf{X}}(\mathbf{x})$ that satisfies
-$$P(\mathbf{X} \in A) = \int \int ...\int_Af_{\mathbf{X}}(\mathbf{x})d{\mathbf{x}} = \int \int ...\int_Af(x_1,x_2,...,x_n)dx_1...dx_n \text{  for any  } (x_1,...,x_n) \in \mathbb{R}^n.$$
+If $\mathbf{X}=(X_1, X_2, ..., X_n)'$ is an (absolutely) continuous random vector, then the **joint pdf** is the function $f_{\mathbf{X}}(\mathbf{x})$ that, for any $A \in \mathbb{R}^n$, satisfies  
+
+<!-- $$P(\mathbf{X} \in A) = \int \int ...\int_Af_{\mathbf{X}}(\mathbf{x})d{\mathbf{x}} = \int \int ...\int_Af(x_1,x_2,...,x_n)dx_1...dx_n$$  -->
+\vspace{5mm}
+$P(\mathbf{X} \in A) =$
+
+\vfill
+
 _Note:_ These integrals are $n$-fold integrals with limits of integration set so that the integration is over all points $\mathbf{x} \in A$.
 
-\vspace{5mm}
+\newpage
 
 ### Marginal Distributions (Equations 4.64 & 4.65)
 
 The marginal pdf or pmf of any subset of the coordinates of $\mathbf{X} = (X_1,\ldots,X_n)'$ can be computed by integrating or summing the joint pdf or pmf over all possible values of the other coordinates.
 
 
-_Continuous case_: If $\mathbf{X} = (X_1, X_2,...,X_k, X_{k+1},...,X_n)$ is an (absolutely) continuous random vector, then the **marginal pdf** of  $(X_1, X_2,...,X_k)$ is
+_Continuous case_: If $\mathbf{X} = (X_1, X_2,...,X_k, X_{k+1},...,X_n)'$ is an (absolutely) continuous random vector, then the **marginal pdf** of  $(X_1, X_2,...,X_k)'$ is
 $$
 f(x_1,...,x_k) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} f(x_1,...,x_n)dx_{k+1}dx_{k+2}...dx_{n}
 $$
-for every $(x_1,...,x_k) \in \mathbb{R}^{k}$. That is, if we integrate $n-k$ ($k < n$) continuous random variables out of the multivariate _pdf_, we are left with the marginal _pdf_ of the other $k$ variable(s).  
-
-\newpage
+for every $(x_1,...,x_k)' \in \mathbb{R}^{k}$. That is, if we integrate $n-k$ ($k < n$) continuous random variables out of the multivariate _pdf_, we are left with the marginal _pdf_ of the other $k$ variable(s).  
 
 For example, the marginal pdf of the random variable $X_j$ is
 <!-- $$ -->
@@ -823,34 +837,44 @@ For example, the marginal pdf of the random variable $X_j$ is
 \vspace{3mm}
 
 $f_{X_j}(x_j)$ = 
-\vspace{3mm}
+\vspace{1cm}
 
 
 for every $x_j \in \mathbb{R}$.  
-\vspace{2mm}
+\vspace{1mm}
 
-Similarly, we can get the marginal pmf of a discrete random variable by summing the other random variables out of the joint pmf.
-
-_Discrete case_: If $\mathbf{X} = (X_1, X_2,...,X_k, X_{k+1},...,X_n)$ is discrete random vector, then the **marginal pmf** of $(X_1, X_2,...,X_k)$ is
+_Discrete case_: Similarly, we can get the marginal pmf of a discrete random variable by summing the other random variables out of the joint pmf.
+If $\mathbf{X} = (X_1, X_2,...,X_k, X_{k+1},...,X_n)'$ is discrete random vector, then the **marginal pmf** of $(X_1, X_2,...,X_k)'$ is
 $$
 f(x_1,...,x_k) = \sum_{(x_{k+1},x_{k+2},...,x_{n})\in \mathbf{R}^{n-k}}f(x_1,...,x_n)
 $$
 for every $(x_1,...,x_k) \in \mathbb{R}^{k}$. 
 
-\vspace{5mm}
+For example, the marginal pmf of the random variable $X_j$ is
+<!-- $$ -->
+<!-- f_{X_j}(x_j) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} f(x_1,...,x_n)dx_{1}dx_{2}...dx_{j-1}dx_{j+1}...dx_{n} -->
+<!-- $$ -->
+\vspace{3mm}
+
+$f_{X_j}(x_j)$ = 
+\vspace{1cm}
+
+
+for every $x_j \in \mathbb{R}$.  
+\vspace{1mm}
 
 ### Multivariate Expectations (Eqn 4.6.3)
 
-Suppose $g(\mathbf{x}) = g(x_1,...,x_n)$ is a real-valued function defined on the sample space of $\mathbf{X}=(X_1,...,X_n)'$. Then the expected value of $g(\mathbf{X})$ is
+Suppose $g(\mathbf{x}) = g(x_1,...,x_n)$ is a real-valued function defined on the sample space of $\mathbf{X}=(X_1,...,X_n)'$. That is, $g: \mathcal{X} \rightarrow \mathbb{R}$, where $\mathcal{X} \subset \mathbb{R}^n$ is the support of $\mathbf{X}$. Then the expected value of $g(\mathbf{X})$ is
 
-- _Continuous case_:
+_Continuous case_: If $f_{\mathbf{X}}(\mathbf{x})$ is the pdf of $\mathbf{X}$, then
 $$
-E(g(\mathbf{X})) = E\left(g(X_1,..,X_n)\right) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} g(x_1,...,x_n)f(x_1,...,x_n)dx_1,..,dx_n
+E(g(\mathbf{X})) = E\left(g(X_1,..,X_n)\right) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}...\int_{-\infty}^{\infty} g(x_1,...,x_n)f_{\mathbf{X}}(x_1,...,x_n)dx_1,..,dx_n.
 $$
 
-- _Discrete case_: 
+_Discrete case_: If $f_{\mathbf{X}}(\mathbf{x})$ is the pmf of $\mathbf{X}$, then
 $$
-E(g(\mathbf{X})) = E\left(g(X_1,..,X_n)\right) = \sum_{\mathcal{X}\in\mathbb{R}^n} g(x_1,...,x_n)f(x_1,...,x_n)
+E(g(\mathbf{X})) = E\left(g(X_1,..,X_n)\right) = \sum_{\mathcal{X}\in\mathbb{R}^n} g(x_1,...,x_n)f_{\mathbf{X}}(x_1,...,x_n).
 $$
 
 
@@ -862,8 +886,6 @@ $$
 The **conditional pdf or pmf** of a subset of the coordinates of $\mathbf{X}=(X_1,...,X_n)'$ given the values of the remaining coordinates is obtained by dividing the joint pdf or pmf by the marginal pdf or pmf of the remaining coordinates. For example, if $f(x_1,x_2...,x_k) > 0$, the conditional pdf or pmf of $(X_{k + 1}, ..., X_n)$ given $(X_1,...,X_{k})$ is defined by
 
 $$f(x_{k + 1}, ..., x_n|x_1,...,x_k) = \frac{f(x_1,...,x_n)}{f(x_1,...,x_k)}.$$
-
-\newpage 
 
 #### Example
 
@@ -883,23 +905,42 @@ f. Find the conditional pdf $f_{X_3|X_1X_2}(x_3|x_1, x_2)$.
 
 
 
+
+### Independence of Random Vectors
+
 The concept of independence can also be extended from the bivariate case to the multivariate case.
 
-### Mutual Independence (DEF 4.6.5 Random Variable Version) 
-
-- Let $(X_1,...,X_n)$ be an $n$-dimensional random vector with joint pdf or pmf $f(x_1,...,x_n)$ and marginal pdfs or pmfs for each $X_i$ denoted by $f_{X_i}(x_i)$. Then $X_1,...,X_n$ are mutually independent random variables if, for every $(x_1,...,x_n) \in \mathbb{R}^n$, 
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{DEF 4.6.5 (Mutual Independence)} Let $\mathbf{X} = (X_1,...,X_n)'$ be an $n$-dimensional random vector with joint pdf or pmf $f_{\mathbf{X}}(x_1,...,x_n)$ and marginal pdfs or pmfs for each $X_i$ denoted by $f_{X_i}(x_i)$. Then $X_1,...,X_n$ are \textbf{\emph{mutually} independent random variables} if, for every $(x_1,...,x_n)' \in \mathbb{R}^n$, 
 
 $$f(x_1,x_2,...,x_n) = f_{X_1}(x_1)...f_{X_n}(x_n) = \prod_{i = 1}^nf_{X_i}(x_i).$$
 
-- __Note:__ _Mutual independence implies that any pair of random variables is pairwise independent. However, the converse is not true – pairwise independence does not imply mutual independence!_
+\end{mdframed}
 
+_Note:_ Mutual independence implies that any pair of random variables is **pairwise independent**. However, the converse is not true---pairwise independence does not imply mutual independence!
 
-#### Mutual Independence – Revisited
+#### Example
 
-- __Theorem 4.6.11 (Generalization of Lemma 4.2.7 (Factorization THM); Random Variable Version)__ Let $(X_1,...,X_n)$ be an _n_-dimensional random vector with joint pdf or pmf $f(x_1,...,x_n)$. Then, $X_1,...,X_n$ are mutually independent random variables if and only if there exist functions $g_i(x_i)$ such that, for every $(x_1,x_2,...,x_n) \in \mathbb{R}^n$ the joint pdf or pmf of $(X_1,...,X_n)$ can be written as $f(x_1,x_2,...,x_n) = g_1(x_1)g_2(x_2)...g_n(x_n)$. 
+Suppose you flip a fair coin twice. Define the random vector $\mathbf{X} = (X_1, X_2, X_3)'$ as the trio of indicator variables,
 
-- __Note:__ $g_i$ are not necessarily pdfs or pmfs, and the supports must also factor! 
+* $X_1 =$ 1 if head on the first toss; 0 otherwise
+* $X_2 =$ 1 if head on the second toss; 0 otherwise
+* $X_3 =$ 1 if same outcome on both tosses; 0 otherwise
 
+Are $X_1, X_2$, and $X_3$ pairwise independent? mutually independent?
+
+\newpage
+
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{THM 4.6.11 (Generalization of Lemma 4.2.7---Factorization THM; Random Variable Version)} Let $\mathbf{X}=(X_1,...,X_n)'$ be an $n$-dimensional random vector with joint pdf or pmf $f_{\mathbf{X}}(x_1,...,x_n)$. Then, $X_1,...,X_n$ are mutually independent random variables \emph{if and only if} there exist functions $g_i(x_i)$ such that, for every $\mathbf{x}=(x_1,x_2,...,x_n)' \in \mathbb{R}^n$, the joint pdf or pmf of $\mathbf{X} = (X_1,...,X_n)'$ can be written as
+$$
+f_{\mathbf{X}}(x_1,x_2,...,x_n) = g_1(x_1)g_2(x_2)...g_n(x_n).
+$$
+\end{mdframed}
+
+_Note:_ $g_i$ are not necessarily pdfs or pmfs, and the supports must also factor! 
+
+# Start editing here
 
 #### Mutual Independence – Continued: THM 4.6.12. (Generalization of THM 4.3.5 Random Variable Version)
 
