@@ -1180,3 +1180,51 @@ When commercial aircraft are inspected, wing cracks are reported as nonexistent,
 
 * Find the probability that at least one plane has critical cracks.
 
+
+\newpage
+
+# 4.7 Inequalities
+
+In Section 3.6, we encountered probabilistic inequalities derived using probabilistic arguments (e.g., Chebychev’s Inequality). Now, we're going to discuss inequalities that apply to probabilities and expectations, but are based on arguments that use properties of functions and numbers.
+\hfill
+
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{THM 4.7.3 (Cauchy-Schwarz Inequality)} For any two random variables $X$ and $Y$,
+$$
+|E(XY)| \leq E[|XY|] \leq (E|X|^2)^{1/2}(E|Y|^2)^{1/2} = \sqrt{E(X^2)E(Y^2)}.
+$$
+\end{mdframed}
+
+_Note_: The Cauchy-Schwarz Inequality is a special case of Hölder's Inequality when $p = q = 2$. See Theorem 4.7.2 on p.\ 187 for the general version of this inequality.
+
+#### Example
+
+Suppose $X$ and $Y$ have means $\mu_X$ and $\mu_Y$ and variances $\sigma^2_X$ and $\sigma^2_Y$, respectively. Use the Cauchy-Schwarz Inequality to prove $0 \leq \rho_{XY}^2 \leq 1$.
+
+
+\newpage
+
+
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{THM 4.7.7 (Jensen's Inequality)} For any random variable $X$, if $g(x)$ is a convex function, then
+$$
+E(g(X)) \geq g(E(X)).
+$$
+On the other hand, if $g(x)$ is a concave function, then
+$$
+E(g(X)) \leq g(E(X)).
+$$
+\end{mdframed}
+
+_Recall_: A function $g(x)$ is **convex** if
+$$
+g(\lambda x_1 + (1-\lambda) x_2) \leq \lambda g(x_1) + (1-\lambda) g(x_2)
+$$
+for all $x_1$ and $x_2$, and $0 < \lambda < 1$. The function $g(x)$ is **concave** if $-g(x)$ is convex. Basically, this means a convex function lies above all of its tangent lines. To check whether $g(x)$ is convex, we can find the second derivative of $g(x)$, $g''(x)$. If $g''(x)\geq 0$ for all $x$, then $g(x)$ is convex; if $g''(x) \leq 0$ for all $x$, then $g(x)$ is concave.
+
+#### Examples
+
+* Consider the function $g(x) = x^2$. Is this function convex?
+\vspace{2in}
+
+* For $x > 0$, consider the function $g(x) = \dfrac{1}{x}$. Is this function convex over $\{x: x > 0\}$?
