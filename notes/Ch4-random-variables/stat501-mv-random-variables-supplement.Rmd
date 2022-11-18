@@ -215,6 +215,34 @@ e. If $Q_i \overset{ind}{\sim} \chi^2(\nu_i, \lambda_i)$ for $i = 1,\ldots, k$, 
 \sum_{i=1}^k Q_i \sim \chi^2\left(\sum_{i=1}^k\nu_i, \sum_{i=1}^k \lambda_i\right).
 \]
 
+\newpage
+
+# Application: Linear models
+
+Consider a response vector $\mathbf{y} = (y_1, \ldots, y_n)'$, where each $y_i$ is a variable of interest measured on observational unit $i$ in a sample of size $n$. We would like to predict the response for future observations using a set of predictor variables. If $\textbf{y}$ follows a **linear model**, we can write it in the form
+$$
+\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon},
+$$
+where $\mathbf{X}$ is an $n\times p$ matrix of known constants (information from the predictor variables), $\boldsymbol{\beta}$ is a $p \times 1$ vector of unknown parameters that we would like to estimate, and $\boldsymbol{\epsilon}$ is a random error vector with expectation $\boldsymbol{0}$ (an $n\times 1$ vector of zeroes) and variance-covariance matrix $\boldsymbol{\Sigma}$ (an $n \times n$ matrix).
+
+#### Example: Multiple linear regression
+
+An investigator obtained a random sample of $n$ incoming MSU undergraduates. On each case, the investigator observed the undergraduate's high school (HS) GPA and the number of math courses taken in HS. After their first year, the investigator also obtained their college GPA. The investigator believes that college GPA can be predicted from HS GPA as well as the number of HS math courses. Denote the college GPA for the $i$th case as $y_i$, the HS GPA for the $i$th case as $g_i$, and the number of HS math courses as $m_i$. Then a multiple linear regression model for this scenario is
+$$
+y_i = \beta_0 + \beta_1 g_i + \beta_2 m_i + \epsilon_i,
+$$
+where $\beta_0$ is the intercept term, $\beta_1$ is the regression coefficient for HS GPA, and $\beta_2$ is the regression coefficient for number of HS math courses. We also assume that
+$$
+\epsilon_i \overset{iid}{\sim} N(0, \sigma^2),
+$$
+which implies that
+$$
+y_i \overset{ind}{\sim} N(\beta_0 + \beta_1 g_i + \beta_2 m_i, \sigma^2).
+$$
+Express this model in matrix terms.
+
+\vfill
+
 # References
 
 Much of this material was taken directly from Dr.\ Robert Boik's Stat 505 Lecture Notes, _A Pair of Primers: Primer on Matrix Analysis and Primer on Linear Statistical Models_, Fall 2007 edition.
