@@ -54,7 +54,7 @@ We can use _multivariate probability distributions_ as models for random samples
 # 4.1 Joint and Marginal Distributions
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{DEF 4.1.1 (\emph{n}-dimensional random vector)} An \textit{\emph{n}-dimensional random vector} is a function from a sample space $S$ into $\mathbb{R}^n$, $n$-dimensional Euclidean Space.
+\textbf{DEF 4.1.1 (\emph{n}-dimensional random vector)} An \textit{n-dimensional random vector} is a function from a sample space $S$ into $\mathbb{R}^n$, $n$-dimensional Euclidean Space.
 \end{mdframed}
 
 For simplicity, we'll first focus on _bivariate random variables_, denoted $(X,Y)$.  
@@ -779,7 +779,7 @@ In this situation, another option is to find the distribution of $(U,V)$ by rewr
 A (univariate) random variable is a function from a sample space $S$ into the real numbers, $\mathbb{R}$. In the bivariate case, we are interested in a two-dimensional random vector $(X,Y)$; that is, a function from a sample space $S$ into $\mathbb{R}^2$. In this section, we will consider \emph{$n$-dimensional random vectors}, or random vectors with more than two random variables, in more detail. 
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{DEF 4.1.1 (\emph{n}-dimensional random vector)} An \textit{\emph{n}-dimensional random vector} is a function from a sample space $S$ into $\mathbb{R}^n$, $n$-dimensional Euclidean Space.
+\textbf{DEF 4.1.1 (\emph{n}-dimensional random vector)} An \textit{n-dimensional random vector} is a function from a sample space $S$ into $\mathbb{R}^n$, $n$-dimensional Euclidean Space.
 \end{mdframed}
 
 In this case, many of the concepts discussed earlier---marginal and conditional distributions, independence, and so on---generalize from the bivariate to the multivariate setting.    
@@ -901,12 +901,7 @@ f. Find the conditional pdf $f_{X_3|X_1X_2}(x_3|x_1, x_2)$.
 \newpage 
 
 
-
-
-
-
-
-### Independence of Random Vectors
+## Independence of Random Vectors
 
 The concept of independence can also be extended from the bivariate case to the multivariate case.
 
@@ -940,199 +935,248 @@ $$
 
 _Note:_ $g_i$ are not necessarily pdfs or pmfs, and the supports must also factor! 
 
-# Start editing here
 
-#### Mutual Independence – Continued: THM 4.6.12. (Generalization of THM 4.3.5 Random Variable Version)
+### Properties of Mutually Independent Random Variables
 
-- Let $X_1,...,X_n$ be independent random variables, and let $g_i(x_i)$ be a function of $x_i$ only. Then the random variables $U_i = g_i(X_i)$ are mutually independent.
+Mutually independent random variables have many nice properties! These properties are particularly helpful when working with random samples from a large population, where $X_1, \ldots, X_n$ are independent and identically distributed according to some probability model.
 
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{THM 4.6.12 (Generalization of THM 4.3.5---Random Variable Version)}
+Let $X_1,...,X_n$ be independent random variables, and let $g_i(x_i)$ be a function of $x_i$ only. Then the random variables $U_i = g_i(X_i)$ are mutually independent.
+\end{mdframed}
 
-- _Mutually independent random variables have many nice properties!_
+### Variance of Linear Functions of Random Variables
 
-#### Variance of Linear Functions of Random Variables
+Let $(X_1,...,X_n)$ be an $n$-dimensional random vector, and let $a_1,\ldots, a_n$ and $b_1,\ldots, b_n$ be real-valued constants. In general, 
 
-- Let $(X_1,...,X_n)$ be an n-dimensional random vector. In general, $\displaystyle Var\left(\sum_{i = 1}^n a_iX_i\right) = \sum_{i = 1}^{n}a_i^2Var(X_i) + 2\sum\sum_{i < j}a_ia_jCov(X_i, X_j).$
+$$
+Var\left(\sum_{i = 1}^n a_iX_i + b_i\right) = \hspace{5in}
+$$
 
+<!-- \sum_{i = 1}^{n}a_i^2Var(X_i) + 2\sum\sum_{i < j}a_ia_jCov(X_i, X_j). -->
 \vspace{.1in}
 
-- However, if $X_1,...,X_n$ are mutually independent random variables, then $\displaystyle Var\left(\sum_{i = 1}^n a_iX_i\right) =$
+However, if $X_1,...,X_n$ are _mutually independent_ random variables, then 
 
+$$
+Var\left(\sum_{i = 1}^n a_iX_i + b_i\right) = \hspace{5in}
+$$
+\vspace{.1in}
+
+### Multivariate Expectations---Mutually Independent Random Variables
+
+\hfill
+
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{THM 4.6.6 (Generalization of THM 4.2.12)} Let $X_1,...,X_n$ be mutually independent random variables, and let $g_i(x_i)$ be real-valued functions such that $g_i(x_i)$ is a function of $x_i$ only. Then
+$$
+E(g_1(X_1)g_2(X_2)...g_n(X_n)) = \hspace{5in}
+$$ 
 \vspace{.2in}
+\end{mdframed}
 
-#### Multivariate Expectations – Mutually Independent Random Variables
-
-\vspace{.1in}
-
-- __Theorem 4.6.6 (Generalization of Theorem 4.2.12):__ Let $X_1,...,X_n$ be mutually independent random variables, and let $g_i(x_i)$ be real-valued functions such that $g_i(x_i)$ is a function of $x_i$ only. Then $E(g_1(x_1)g_2(x_2)...g_n(x_n)) = [E(g_1(X_1))][E(g_2(X_2))]\times ... \times [E(g_n(X_n))]$. 
-
-#### Multivariate Transformations for Continuous Random Variables (One-to-One Version)
-
-Suppose $X_1,...,X_n$ are (absolutely) continuous random variables with joint pdf $f_{X_1...X_n}(x_1,...,x_n)$. Let $A = \{\mathbf{x}: f_{\mathbf{X}}(\mathbf{x}) > 0\}$. Consider the random vector $(U_1,...,U_n)$, defined by $U_i = g_i(X_1,...,X_n)$. Suppose that the transformation $(U_1,...,U_n) = g_1(\mathbf{X}), ...,g_n(\mathbf{X})$ is a one-to-one transformation from $A$ to $B = \{\mathbf{u}: (u_1,...,u_n) = (g_1(\mathbf{x}),...,g_n(\mathbf{x})) \text{ for some } \mathbf{x}\}$. Then, for each $i$, if the $i^{th}$ inverse exists, $x_i = h_i(u_1,...,u_n)$, $i = 1,...,n$. If $x_1,x_2,...,x_n$ have continuous partial derivatives with respect to $u_1,u_2,...,u_n$ and Jacobian, $$J = \left| \begin{matrix} \frac{\partial x_1}{\partial u_1} &  \frac{\partial x_1}{\partial u_2} & ... & \frac{\partial x_1}{\partial u_n}\\ 
+## Multivariate Transformations for Continuous Random Variables (One-to-One Version)    
+\hfill
+Suppose $X_1,...,X_n$ are (absolutely) continuous random variables with joint pdf $f_{X_1...X_n}(x_1,...,x_n)$. Let $A = \{\mathbf{x}: f_{\mathbf{X}}(\mathbf{x}) > 0\}$ be the support of $\mathbf{X}$. Consider the random vector $(U_1,...,U_n)$, defined by $U_i = g_i(X_1,...,X_n)$. Suppose that the transformation $(U_1,...,U_n) = (g_1(\mathbf{X}), ...,g_n(\mathbf{X}))$ is a one-to-one transformation from $A$ to $B = \{\mathbf{u}: (u_1,...,u_n) = (g_1(\mathbf{x}),...,g_n(\mathbf{x})) \text{ for some } \mathbf{x}\}$. Then, for each $i$, if the $i^{th}$ inverse exists, $x_i = h_i(u_1,...,u_n)$, $i = 1,...,n$, and if $x_1,x_2,...,x_n$ have continuous partial derivatives with respect to $u_1,u_2,...,u_n$ and Jacobian, $$J = \left| \begin{matrix} \frac{\partial x_1}{\partial u_1} &  \frac{\partial x_1}{\partial u_2} & ... & \frac{\partial x_1}{\partial u_n}\\ 
 \frac{\partial x_2}{\partial u_1} &  \frac{\partial x_2}{\partial u_2} & ... & \frac{\partial x_2}{\partial u_n}\\
 \vdots &  \vdots & \ddots & \vdots\\
 \frac{\partial x_n}{\partial u_1} &  \frac{\partial x_n}{\partial u_2} & \dots & \frac{\partial x_n}{\partial u_n}\\
-\end{matrix} \right| \neq 0$$, then the joint pdf of $U_1,U_2,...$ and $U_n$ for $\mathbf{u}\in B$ is,  
+\end{matrix} \right| \neq 0,$$ 
 
-$$f_{U_1\dots U_n} = \begin{cases} f_{X_1\dots X_n}(h_1(u_1,\dots,u_n), \dots h_n(u_1,\dots,u_n))|J| & (u_1,...,u_n) \in B\\
+then the joint pdf of $\mathbf{U}=(U_1,U_2,\ldots,U_n)$ is,  
+
+$$f_{U_1\dots U_n}(\mathbf{u}) = \begin{cases} f_{X_1\dots X_n}(h_1(\mathbf{u}), \dots h_n(\mathbf{u}))|J| & \mathbf{u} \in B\\
 0 & else\end{cases}.$$ 
 
 Although we can use this approach, we are often interested in obtaining the distribution of $Y = \sum_{i = 1}^{n} X_i$. In some of these instances, moment generating functions can be very helpful.
 
-
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
 \textbf{DEF: Multivariate Moment Generating Function} Suppose $X_1,...,X_n$ are random variables with joint pdf $f_{X_1,...,X_n}(x_1,...,x_n)$. The \textbf{multivariate moment generating function} of $X_1,...,X_n$ is, 
 
+$$
+M_{X_1,\ldots, X_n}(t_1,\ldots, t_n) = \hspace{5in}
+$$
 \vspace{1in}
 
 for all $t_i$ near zero $(|t_i| < h_i, i = 1,2,...n)$ where the expectation exists. 
-
 \end{mdframed}
 
-__Multivariate MGFs can be used to...__
+Multivariate MGFs can be used to...
 
-- \underline{find moments:} \vspace{.1in}    
+\underline{Find moments:}
+
+\vspace{.1in}    
 $E(X_i^k)$ = \vspace{.25in} 
-- \underline{Example:} \vspace{.1in}    
-$\frac{\partial}{\partial t_1}m_{X_1,...,X_n}(t_1 = 0,...,t_n = 0)$ = \vspace{.5in} 
 
-- \underline{Example:} \vspace{.1in}    
-$\frac{\partial^2}{\partial t_1^2}m_{X_1,...,X_n}(t_1 = 0,...,t_n = 0)$ = \vspace{.5in} 
+\newpage
 
-- \underline{Example:} \vspace{.1in}    
-$\frac{\partial^2}{\partial t_1t_3}m_{X_1,...,X_n}(t_1 = 0,...,t_n = 0)$ = \vspace{.25in} 
+- Example: \vspace{.1in}    
+$\frac{\partial}{\partial t_1}M_{X_1,...,X_n}(\mathbf{t})\Big|_{\mathbf{t}=\boldsymbol{0}}$ = \vspace{.5in} 
 
-- \underline{find Univariate MGFs} \vspace{.1in}    
-$m_{X_1,...,X_n}(t_1 = t,t_2= 0,...,t_n = 0)$ = \newpage
+- Example: \vspace{.1in}    
+$\frac{\partial^2}{\partial t_1^2}M_{X_1,...,X_n}(\mathbf{t})\Big|_{\mathbf{t}=\boldsymbol{0}}$ = \vspace{.5in} 
 
-- \underline{conduct transformations:}
-Suppose $X_1,...,X_n$ are random variables. Often, we are interested in the distribution of $Y = \sum_{i = 1}^{n}X_i = X_1 + X_2 + X_3 + ... + X_n$. In this case, the MGF of the transformed RV, $Y$ is \vspace{.1in}  
-$m_Y(t)$ = 
-\vspace{1.2in}
+- Example: \vspace{.1in}    
+$\frac{\partial^2}{\partial t_1t_3}M_{X_1,...,X_n}(\mathbf{t})\Big|_{\mathbf{t}=\boldsymbol{0}}$ = \vspace{.25in} 
 
-__THM 4.6.7:__ In the case where $X_1,...,X_n$ are \underline{mutually independent},     
+\underline{Find univariate MGFs:}
 
-\vspace{1.2in}
+\vspace{.1in}    
+$M_{X_1,...,X_n}(t_1 = t,t_2= 0,...,t_n = 0)$ =
+\vspace{.2in}
 
-__THM 4.6.7:__ In the very special case where $X_1,...,X_n$ are independent and identically distributed (iid), 
+\underline{Conduct transformations:}
 
-\vspace{1.2in}
+Suppose $\mathbf{X}=(X_1,...,X_n)'$ is an $n$-dimensional random vector. Often, we are interested in the distribution of $Y = \mathbf{X}'\cdot \boldsymbol{1}=\sum_{i = 1}^{n}X_i = X_1 + X_2 + X_3 + ... + X_n$. In this case, the MGF of the transformed RV, $Y$ is \vspace{.1in}  
+$M_Y(t)$ = 
+\vspace{1in}
 
-__Example__ Suppose $X_1,...,X_n$ are independent random variables where $X_i \sim Poisson(\lambda_i)$ Use mgfs to find the distribution of $Y = \sum_{i = 1}^{n} X_i$
+__THM 4.6.7:__ In the case where $X_1,...,X_n$ are **mutually independent**,     
+\vspace{.1in}  
+$M_Y(t)$ = 
+\vspace{1in}
 
-\newpage 
+__THM 4.6.7:__ In the very special case where $X_1,...,X_n$ are **independent and identically distributed (iid)**, 
+\vspace{.1in}  
+$M_Y(t)$ = 
+
+\newpage
+
+#### Example
+
+Suppose $X_1,...,X_n$ are independent random variables where $X_i \sim Poisson(\lambda_i)$. Use mgfs to find the distribution of $Y = \sum_{i = 1}^{n} X_i$.
+
+\vspace{4in}
 
 
-__Example__ Suppose $X_1,...,X_n$ are independent random variables where $X_i \sim Normal(\mu, \sigma^2)$ Use mgfs to find the distribution of $\overline{X} = \frac{1}{n}\sum_{i = 1}^{n} X_i$
+#### Example
+
+Suppose $X_1,...,X_n$ are independent and identically distributed random variables where $X_i \sim Normal(\mu, \sigma^2)$ Use mgfs to find the distribution of $\overline{X} = \frac{1}{n}\sum_{i = 1}^{n} X_i$.
+
+
+\newpage
+
+
+
+## Special Multivariate Distributions
+
+In the next part, we explore two different multivariate distributions: the bivariate normal distribution (Section 4.5) and the multinomial distribution (Section 4.6). The multivariate normal distribution is the foundation for most modern statistical theory. In general, the multivariate normal distribution is defined for $n$ continuous random variables, $X_1,...,X_n$. Because of its complexity, we look only at the bivariate normal distribution.
+
+### Bivariate Normal Distribution
+
+\hfill
+
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{DEF 4.5.10 (Bivariate Normal Distribution)} Let $-\infty < \mu_X < \infty$, $-\infty < \mu_Y < \infty$, $0< \sigma_X$, $0 < \sigma_Y$, and $-1 < \rho_{XY}< 1$ be five real numbers. The \textbf{bivariate normal pdf} with means $\mu_X$ and $\mu_Y$, variances $\sigma^2_X$ and $\sigma^2_Y$ and correlation $\rho_{XY}$ is the bivariate pdf given by,
+
+\begin{align*}
+f_{XY}(x,y) = & \left(2\pi\sigma_X\sigma_Y\sqrt{1-\rho^2_{XY}}\right)^{-1} \times \\
+& \exp\left\{\frac{-1}{2(1-\rho^2_{XY})}\left[
+\left(\frac{x-\mu_X}{\sigma_X}\right)^2 - 2\rho_{XY}\left(\frac{x-\mu_X}{\sigma_X}\right)\left(\frac{y-\mu_Y}{\sigma_Y}\right) + \left(\frac{y-\mu_Y}{\sigma_Y}\right)^2\right]\right\}
+\end{align*}
+
+for $-\infty < x < \infty$ and $-\infty < y < \infty$. We denote this as $(X, Y) \sim N_2(\mu_X, \mu_Y, \sigma^2_X, \sigma^2_Y, \rho_{XY})$, or, in matrix notation,
+$$
+\begin{pmatrix} X \cr Y \end{pmatrix} \sim 
+N_2\left(\begin{pmatrix}\mu_X \cr \mu_Y\end{pmatrix}, 
+\begin{pmatrix} \sigma^2_X & \rho_{XY}\sigma_X\sigma_Y \cr \rho_{XY}\sigma_X\sigma_Y & \sigma^2_Y\end{pmatrix}\right).
+$$
+\end{mdframed}
+
+### Properties of the Bivariate Normal Distribution
+
+Suppose the random vector $(X, Y)$ has a bivariate normal distribution with means $\mu_X$ and $\mu_Y$, variances $\sigma^2_X$ and $\sigma^2_Y$ and correlation $\rho_{XY}$. Then the following properties hold.
+
+1. $E(X) = \mu_X$, $E(Y) = \mu_Y$, $Var(X) = \sigma^2_X$, $Var(Y) = \sigma^2_Y$, and $Cor(X, Y) = \rho_{XY}$.
+
+2. $X$ and $Y$ both have marginal normal distributions: $X \sim N(\mu_X, \sigma_X^2)$ and $Y \sim N(\mu_Y, \sigma_Y^2)$.
+
+
+3. For any constants $a$, $b$, and $c$, the distribution of $aX + bY + c$ is normal:
+$$
+aX+bY+c \sim N\left(a\mu_X + b\mu_Y + c, a^2\sigma^2_X + b^2\sigma^2_Y + 2ab\rho_{XY}\sigma_X\sigma_Y\right).
+$$
+
+4. The conditional density of $Y|X = x$ is normal:
+$$
+Y | X = x \sim N\left(\mu_Y + \rho_{XY}\frac{\sigma_Y}{\sigma_X}(x - \mu_X), \sigma^2_Y(1-\rho^2_{XY})\right).
+$$
+
+_Note_: All of the normal marginal and conditional distributions are derived from the starting point of a bivariate normal distribution. The derivation does not go in the opposite direction---marginal normality does not imply joint normality!
+
+
+#### Proof:
+
+Show the conditional distribution of $Y|X = x$ is:
+$$
+Y | X = x \sim N\left(\mu_Y + \rho_{XY}\frac{\sigma_Y}{\sigma_X}(x - \mu_X), \sigma^2_Y(1-\rho^2_{XY})\right).
+$$
+\newpage
+
+
+
+#### Proof:
+
+Show $Cor(X,Y) = \rho_{XY} = \rho$.
 
 
 \vspace{5in}
 
 
-<!-- ### Special Multivariate Distributions -->
+### Bivariate Normal Distribution---Independence
 
-<!-- In the next part, we explore two different multivariate distributions, the bivariate normal distribution (Section 4.5) and the multinomial distribution (Section 4.6). The multivariate normal distribution is the foundation for most modern statistical theory. In general, the multivariate normal distribution is defined for $n$ continuous random variables, $X_1,...,X_n$. Because of its complexity, we look only at the bivariate normal distribution. -->
+For any random variables $X$ and $Y$, we have shown that if $X$ and $Y$ are independent, then $\rho_{XY} = Cor(X, Y) = 0$. However, this result does not go in the other direction---$\rho_{XY} = 0$ does _not_ imply that $X$ and $Y$ are independent... unless $(X, Y)$ has a bivariate normal distribution.
 
-<!-- __Bivariate Normal Distribution (Definition 4.5.10):__ Let $-\infty < \mu_X < \infty$, $-\infty < \mu_Y < \infty$, $0< \sigma_X$, $0 < \sigma_Y$, and $\rho_{XY} \in (-1,1)$ be five real numbers. The bivariate normal pdf with means $\mu_X$ and $\mu_Y$, variances $\sigma^2_X$ and $\sigma^2_Y$ and correlation $\rho_{XY}$ is the bivariate pdf given by,  -->
+Let $(X, Y)$ be a bivariate normal random vector and assume $\rho_{XY} = 0$. Show that $X$ and $Y$ are independent. 
 
-<!-- $$f_{XY}(x,y) = \left(\frac{1}{2\pi\sigma_X\sigma_Y\sqrt{1-\rho^2_{XY}}}\right)exp\left\{-\frac{1}{2(1-\rho^2_{XY})}\right}$$ -->
 
+\vfill
 
+Summary of result: Assume $(X, Y)$ has a bivariate normal distribution where $\rho_{XY} = Cor(X, Y)$. Then $X$ and $Y$ are independent _if and only if_ $\rho_{XY}=0$!
 
-<!-- for   and  We denote this as   -->
 
-<!-- Properties of the Bivariate Normal Distribution: -->
+\newpage
 
+### Multinomial Distribution
 
-<!-- 1)	  and   both have marginal normal distributions. That is,   and   -->
+\hfill
 
-<!-- 2)	  is the correlation between    and   -->
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{DEF 4.6.2 (Multinomial Distribution)} Let $m$ and $n$ be positive integers, and let $p_1,\ldots, p_n$ be numbers satisfying $0 \leq p_i \leq 1$ for each $i = 1,\ldots, n$ and $\sum_{i=1}^n p_i = 1$. Then the random vector $\mathbf{X} = (X_1,\ldots, X_n)'$ has a \textbf{multinomial distribution} with $m$ trials and cell probabilities $p_1,\ldots, p_n$ if the joint pmf of $\textbf{X}$ is
 
-<!-- 1)	The conditional density of   is   -->
+$$
+f_{\textbf{X}}(x_1,\ldots, x_n | p_1,\ldots, p_n) = \frac{m!}{x_1!x_2!\cdots x_n!}p_1^{x_1}p_2^{x_2}\cdots p_n^{x_n} I_A({\textbf{x}}) = \begin{pmatrix} m \cr x_1, x_2,\ldots, x_n\end{pmatrix}\prod_{i=1}^n p_i^{x_i}I_A({\textbf{x}}) ,
+$$
+where $A = \{\textbf{x} \in \mathbb{R}^n | x_i \in \{0, 1, \ldots, m\}, \sum_{i=1}^n x_i = m\}$. The quantity $ \begin{pmatrix} m \cr x_1, x_2,\ldots, x_n\end{pmatrix} = \dfrac{m!}{x_1!x_2!\cdots x_n!}$ is called a \textbf{multinomial coefficient}.
+\end{mdframed}
 
-<!-- Proof: Show the conditional density of   is   What do we need to find this? -->
+The multinomial distribution models the following scenario:
 
+1. $m$ independent, identical trials.  
+2. Each trial results in one of $n$ possible outcomes.  
+3. An outcome of type $i$ has probability $p_i$, where $\sum_{i=1}^n p_i = 1$ and $p_i$ remains the same from trial to trial.  
+4. The random variables of interest are $X_1, \ldots, X_n$, where $X_i$ equals the number of trials that result in outcome $i$, so the sum $\sum_{i=1}^n X_i = m$.  
 
+Hmmm... this should sound vaguely familiar... Why?
 
-<!-- Proof: Show   is the correlation between    and   -->
 
+\vfill
 
+_Notes:_
 
+* This distribution is extremely useful for understanding the distribution of an order statistic.
 
+* Often, the number of possible outcomes per trial is more than two. For example, experiments that involve blood typing have at least four possible outcomes per trial. In addition, surveys might have multiple choices for a single question.
 
+\newpage
 
+#### Example
 
+When commercial aircraft are inspected, wing cracks are reported as nonexistent, detectable, or critical. The history of a particular fleet indicates that 70% of the planes inspected have no wing cracks, 25% have detectable wing cracks, and 5% have critical wing cracks. Five planes are randomly selected.
 
+* Find the probability that one has a critical crack, two have detectable cracks, and two have no cracks.
 
-<!--   -->
-<!-- Bivariate Normal Distribution - Independence: -->
+\vspace{4in}
 
-<!-- •	If   and  are independent, then   -->
-
-<!-- •	Let   and  be bivariate normally distributed random variables. What happens if    What does the bivariate normal pdf reduce to? What does this imply? -->
-
-
-
-
-
-
-
-
-<!-- Summary of result: Let   and   be bivariate normally distributed random variables.   and  are independent if and only if   -->
-
-<!-- Bivariate Normal Distribution – Additional Notes: -->
-
-<!-- •	Bivariate normality implies marginal normality, but marginal normality does NOT imply bivariate normality! -->
-<!-- Multinomial Distribution -->
-<!-- Definition 4.6.2 -->
-
-<!-- Let   and   be positive integers and let   be numbers satisfying     and   Then the random vector  has a multinomial distribution with   trials and cell probabilities   if the join pmf of   is  -->
-
-
-<!-- on the set  such that each   is a nonnegative integer and    -->
-
-<!-- To summarize, the multinomial distribution is characterized by the following: -->
-
-<!-- 1.	  identical, independent trials. -->
-<!-- 2.	Each trial results in one of   outcomes. -->
-<!-- 3.	An outcome of type   has probability   where  and   remains the same from trial to trial. -->
-<!-- 4.	The random variables of interest are   where   equals the number of trials that result in outcome   and the sum,  -->
-
-
-<!-- Hmmm…this should sound vaguely familiar….Why? -->
-
-<!-- Notes: -->
-
-<!-- •	This distribution is extremely useful for understanding the distribution of an order statistic. -->
-
-<!-- •	Often, the number of possible outcomes per trial is more than two. For example, experiments that involve blood typing have at least four possible outcomes per trial. In addition, surveys might have multiple choices for a single question. -->
-<!--   -->
-<!-- Example -->
-<!-- When commercial aircraft are inspected, wing cracks are reported as nonexistent, detectable, or critical. The history of a particular fleet indicates that 70% of the planes inspected have no wing cracks, 25% have detectable wing cracks, and 5% have critical wing cracks. Five planes are randomly selected. -->
-
-<!-- •	Find the probability that one has a critical crack, two have detectable cracks, and two have no cracks.  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- •	Find the probability that at least one plane has critical cracks. -->
+* Find the probability that at least one plane has critical cracks.
 

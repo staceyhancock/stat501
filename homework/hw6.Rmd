@@ -31,7 +31,7 @@ You are encouraged to use R Markdown for your homework, but it is not required. 
     e. Find the conditional pdf of $Y$ given $X = x$, $f_{Y|X}(y|x)$.   
     
 \vspace{2mm}
-2. Let $X$ be the number of customers arriving at a given minute at the drive-up window of a local bank. Let $Y$ be the number who make withdrawals. Assume $X$ is Poisson with $E(X) = 3$, and that the conditional expectation and variance of $Y|X = x$ are $E(Y|X = x) = x/2$ and $Var(Y|X = x) = (x+1)/3$.
+2. Let $X$ be the number of customers arriving at a given minute at the drive-up window of a local bank. Let $Y$ be the number who make withdrawals in that same minute. Assume $X$ is Poisson with $E(X) = 3$, and that the conditional expectation and variance of $Y|X = x$ are $E(Y|X = x) = x/2$ and $Var(Y|X = x) = (x+1)/3$.
     a. Find $E(Y)$.
     b. Find $Var(Y)$.
     c. Find $E(XY)$.
