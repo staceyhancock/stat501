@@ -235,7 +235,6 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Monday_
 
 * Section 4.3: Bivariate transformations (cont)
-* Section 4.7: Cauchy-Schwarz and Jensen's inequalities
 
 #### _Wednesday_
 
@@ -256,19 +255,17 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
+* Section 4.7: Cauchy-Schwarz and Jensen's inequalities
 * Covariance and correlation for random vectors (not in textbook)
 
 #### _Wednesday_
 
 * More on random vectors
-* **Homework 7 due** (Sections 4.3, 4.6--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
-
 
 #### _Friday_
 
 * Special topics / preview of STAT 502
 * **Project final report due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
-
 
 ---
 
@@ -276,6 +273,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
+* **Homework 7 due** (Sections 4.3, 4.6--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
 * Special topics / preview of STAT 502
 
 
