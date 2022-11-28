@@ -1186,7 +1186,7 @@ When commercial aircraft are inspected, wing cracks are reported as nonexistent,
 # 4.7 Inequalities
 
 In Section 3.6, we encountered probabilistic inequalities derived using probabilistic arguments (e.g., Chebychev’s Inequality). Now, we're going to discuss inequalities that apply to probabilities and expectations, but are based on arguments that use properties of functions and numbers.
-\hfill
+
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
 \textbf{THM 4.7.3 (Cauchy-Schwarz Inequality)} For any two random variables $X$ and $Y$,
