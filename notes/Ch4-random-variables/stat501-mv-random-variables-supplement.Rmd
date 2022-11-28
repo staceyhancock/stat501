@@ -163,6 +163,9 @@ and
 \[
 \bs{\Sigma} = \begin{pmatrix} \bs{\Sigma}_{11} & \bs{\Sigma}_{12} \cr \bs{\Sigma}_{21} & \bs{\Sigma}_{22} \end{pmatrix}.
 \]
+
+We often may be interested in the conditional distribution of $\bm{y}_1$ given a particular value of $\bm{y}_2$. This is expressed in the following result.
+\begin{myresult}
 If $\bs{\Sigma}_{22}$ is positive definite, then conditional on $\bm{y}_2 = \bm{\ddot{y}}$, $\bm{y}_1$ has the multivariate normal distribution
 \[
 \bm{y}_1 | \bm{y}_2 = \bm{\ddot{y}} \sim N_p(\bs{\mu}_{1\cdot 2}, \bs{\Sigma}_{11\cdot 2}),
@@ -175,6 +178,21 @@ and
 \[
 \bs{\Sigma}_{11\cdot 2} := \bs{\Sigma}_{11} - \bs{\Sigma}_{12}\bs{\Sigma}_{22}^{-1}\bs{\Sigma}_{21}.
 \]
+\end{myresult}
+
+The previous result took a multivariate random vector, partitioned it into two vectors, and gave the conditional distribution of one of these vectors given the other. But what if we are given the conditional distribution and want to go back to the joint distribution?
+
+\begin{myresult}
+Suppose $\mathbf{v}_1 \sim N_r(\boldsymbol{\mu}_1, \boldsymbol{\Sigma}_{11})$ and $\mathbf{v}_2 | \mathbf{v}_1 \sim N_{p-r}(\mathbf{A}\mathbf{v}_1 + \mathbf{b}, \boldsymbol{\Omega})$, where $\bm{\Omega}$ does not depend on $\mathbf{v}_1$. Then 
+$$
+\mathbf{v} = \begin{pmatrix} \mathbf{v}_1 \\ \mathbf{v}_2 \end{pmatrix} \sim N_p(\boldsymbol{\mu}, \bs{\Sigma}),
+$$
+where
+$$
+\mu = \begin{pmatrix} \bs{\mu}_1 \\ A \bs{\mu}_1 + \bm{b} \end{pmatrix} \hspace{1mm}\text{ and }\hspace{1mm}
+\bs{\Sigma} = \begin{pmatrix} \bs{\Sigma}_{11} &  \bs{\Sigma}_{11}\bm{A}'\\ \bm{A}\bs{\Sigma} & \bs{\Omega} + \bm{A}\bs{\Sigma} \bm{A}' \end{pmatrix}.
+$$ 
+\end{myresult}
 
 \newpage
 ## MVN distribution's relation to the chi-squared distribution
@@ -241,7 +259,46 @@ y_i \overset{ind}{\sim} N(\beta_0 + \beta_1 g_i + \beta_2 m_i, \sigma^2).
 $$
 Express this model in matrix terms.
 
-\vfill
+\newpage
+
+#### Example: One mean
+
+Consider the linear model $y_i \overset{iid}{\sim} N(\mu, \sigma^2)$, and define $\bm{y} = (y_1,\ldots, y_n)'$. Two statistics of primary interest are the sample mean and sample variance, respectively:
+$$
+\bar{y} = \frac{\sum_{i=1}^n y_i}{n} \hspace{1mm}\text{ and }\hspace{1mm}
+S^2 = \frac{\sum_{i=1}^n (y_i - \bar{y})^2}{n-1}.
+$$
+Express $\bar{y}$ and $S^2$ as linear and quadratic functions of $\bm{y}$.
+
+
+
+\vspace{4in}
+
+The previous example can be extended to the **general linear model**,
+$$
+\bm{y} \sim N_n(\bm{X}\bs{\beta}, \sigma^2 \bs{\Omega}),
+$$
+where $\bm{X}$ is an $n\times p$ design matrix, $\bs{\beta}$ is a $p\times 1$ parameter vector, $\sigma^2$ is a scalar, and $\bs{\Omega}$ is a $n\times n$ positive definite matrix.
+The **generalized least squares (and maximum likelihood) estimator** of $\bs{\beta}$ is the minimizer of the **sum of squared errors**,
+$$
+SSE(\bs{\beta}) = (\bm{y}-\bm{X}\bs{\beta})'\bs{\Omega}^{-1}(\bm{y}-\bm{X}\bs{\beta}).
+$$
+
+It turns out that this minimizer is a linear function of $\bm{y}$,
+$$
+\bs{\hat\beta} = (\bm{X}'\bs{\Omega}^{-1}\bm{X})^{-1}\bm{X}'\bs{\Omega}^{-1}\bm{y},
+$$
+which also implies that the predicted values are a linear function of $\bm{y}$,
+$$
+\bs{\bm{\hat{y}}} = \bm{X}\bs{\hat{\beta}} = \bm{X}(\bm{X}'\bs{\Omega}^{-1}\bm{X})^{-1}\bm{X}'\bs{\Omega}^{-1}\bm{y}.
+$$
+The matrix $\bm{P} = \bm{X}(\bm{X}'\bs{\Omega}^{-1}\bm{X})^{-1}\bm{X}'\bs{\Omega}^{-1}$ is called a **projection operator**---it projects the response vector onto the column space of $\bm{X}$ (all vectors in $\mathbb{R}^n$ that can be expressed in the form $\bm{X}\bm{b}$ for some $\bm{b}\in \mathbb{R}^p$).
+
+Additionally, an unbiased estimator of $\sigma^2$ is $SSE(\bs{\hat{\beta}})/(n-p)$, which can be expressed as a quadratic function of $\bm{y}$:
+$$
+\hat{\sigma^2} = \frac{SSE(\bs{\hat{\beta}})}{n-p} = (\bm{y}-\bm{X}\bs{\hat{\beta}})'\bs{\Omega}^{-1}(\bm{y}-\bm{X}\bs{\hat{\beta}}) = \frac{\bm{e}'\bs{\Omega}^{-1}\bm{e}}{n-p} = \frac{\bm{y}'\bs{\Omega}^{-1}(\bm{I}_n-\bm{P})\bm{y}}{n-p},
+$$
+where $\bm{e}$ is the $n\times 1$ vector of residuals.
 
 # References
 
