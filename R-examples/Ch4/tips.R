@@ -39,11 +39,11 @@ tips$Message <- relevel(factor(tips$Message), ref = "None")
 ############
 ## Boxplots
 tips %>% 
-  ggplot(aes(x = Message, y = TipPct, fill = Sex)) +
+  ggplot(aes(x = Sex, y = TipPct, fill = Message)) +
   geom_boxplot() +
   geom_dotplot(binaxis = 'y', stackdir = 'center',
                position = position_dodge(0.8)) +
-  labs(x = "Message", y = "Tip Percentage",
+  labs(x = "Sex", y = "Tip Percentage",
        title = "Tip Percentage vs Message and Sex")
 
 # Group means
@@ -89,6 +89,7 @@ y <- tips$TipPct
 X <- model.matrix(mod)
 
 betahat <- solve(t(X) %*% X) %*% t(X) %*% y
+P <- X %*% solve(t(X) %*% X) %*% t(X)
 sse <- t(y - X%*%betahat) %*% (y - X%*%betahat)
 sigma2hat <- as.vector(sse/(89-4))
 sqrt(sigma2hat) # Should match "Residual standard error"
