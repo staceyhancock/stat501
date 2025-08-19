@@ -1,5 +1,5 @@
 ---
-title: 'STAT 501 Fall 2022 Course Notes'
+title: 'STAT 501 Fall 2025 Course Notes'
 date: "Chapter 1: Probability Theory"
 output: 
   pdf_document: 
