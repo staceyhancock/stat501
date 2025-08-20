@@ -1,5 +1,5 @@
 ---
-title: "M/STAT 501 Fall 2022 Course Calendar"
+title: "M/STAT 501 Fall 2025 Course Calendar"
 output:
   html_document:
       theme: cerulean
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chapters 5--10 in STAT 502 next semester. 
 
-# Week 1: Aug 24--26
+# Week 1: Aug 20--22
 
 #### _Wednesday_
 
@@ -30,7 +30,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 2: Aug 29--Sep 2
+# Week 2: Aug 25--29
 
 #### _Monday_
 
@@ -47,7 +47,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 3: Sep 5--9
+# Week 3: Sep 1--5
 
 #### _Monday_
 
@@ -64,7 +64,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 4: Sep 12--16
+# Week 4: Sep 8--12
 
 #### _Monday_
 
@@ -82,7 +82,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 5: Sep 19--23
+# Week 5: Sep 15--19
 
 #### _Monday_
 
@@ -99,7 +99,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 6: Sep 26--30
+# Week 6: Sep 22--26
 
 #### _Monday_
 
@@ -116,7 +116,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 7: Oct 3--7
+# Week 7: Sep 29--Oct 3
 
 #### _Monday_
 
@@ -135,7 +135,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 8: Oct 10--14
+# Week 8: Oct 6--10
 
 #### _Monday_
 
@@ -145,18 +145,18 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 3.3: Continuous families of distributions (cont)
-
+* **Homework 4 due** (Sections 2.1--2.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
 * Section 3.4: Exponential families
 * Section 3.5: Location and scale families
 * Section 3.6: Inequalities and Identities
-* **Homework 4 due** (Sections 2.1--2.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
+
 
 ---
 
-# Week 9: Oct 17--21
+# Week 9: Oct 13--17
 
 #### _Monday_
 
@@ -172,7 +172,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 10: Oct 24--28
+# Week 10: Oct 20--24
 
 #### _Monday_
 
@@ -185,15 +185,12 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Friday_
 
-* _No class. Students are expected to attend at least one hour of the Montana Chapter of the American Statistical Association Annual Meeting in Room 166 of American Indian Hall 10am--4pm._
-    * Register for the meeting [here](https://docs.google.com/forms/d/e/1FAIpQLSdT8WbChO4p07HLO4QAZJOPYwHE8kv1Vux3pbRgh9E2UfZ4fA/viewform) (free).
-    * [Event schedule](https://andyhoegh.github.io/MT_ASA/)
-* **Project proposal due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
+* TBD
 
 
 ---
 
-# Week 11: Oct 31--Nov 4
+# Week 11: Oct 27--31
 
 #### _Monday_
 
@@ -211,26 +208,25 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 12: Nov 7--11
+# Week 12: Nov 3--7
 
 #### _Monday_ 
 
 * Section 4.5: Covariance and correlation (cont)
-* **Project draft report due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
+
 
 #### _Wednesday_
 
 * Section 4.3: Bivariate transformations
+* **Homework 6 due** in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
-* _No classes: Veterans Day_
-* **Homework 6 due** (Sections 4.1--4.2, 4.4--4.5) in [Gradescope](https://www.gradescope.com) by 5:00pm
-* **Project peer review due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
+* TBD
 
 ---
 
-# Week 13: Nov 14--18
+# Week 13: Nov 10--14
 
 #### _Monday_
 
@@ -245,13 +241,10 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 * Section 4.6: Multivariate distributions (cont)
 
----
-
-### _Nov 21--25: Fall break_
 
 ---
 
-# Week 14: Nov 28 -- Dec 2
+# Week 14: Nov 17--21
 
 #### _Monday_
 
@@ -261,29 +254,34 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * More on random vectors
+* **Homework 7 due** in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
 * Special topics / preview of STAT 502
-* **Project final report due** in [D2L](https://ecat1.montana.edu/) by 5:00pm
+
 
 ---
 
-# Week 15: Dec 5--9
+### _Nov 24--28: Fall break_
+
+---
+
+# Week 15: Dec 1--5
 
 #### _Monday_
 
-* **Homework 7 due** (Sections 4.3, 4.6--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
 * Special topics / preview of STAT 502
 
 
 #### _Wednesday_
 
-* _Project presentations_
+* **Homework 8 due** (Sections 4.3, 4.6--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
+
 
 #### _Friday_
 
-* _Project presentations_
+* Final exam review
 
 
 
@@ -291,4 +289,4 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 # Finals week
 
-* Final exam in Wilson Hall 1-124 on Monday, December 12, 10:00am-11:50am
+* Final exam in Wilson Hall 1-124 on Monday, December 8, 10:00am-11:50am
