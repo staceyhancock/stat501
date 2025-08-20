@@ -202,6 +202,22 @@ In addition, in scheduling exams, we have attempted to avoid conflicts with majo
  
 ---
 
+# Policy on the use of generative AI {#ai}
+
+This class will strive to create an environment that fosters learning, critical thinking, and effective communication. To achieve these goals, I have decided to prohibit the use of ChatGPT or similar tools during this course, with the exception of assistance in writing computer code.
+
+While ChatGPT and other language models can be powerful and useful tools in certain contexts, I believe that relying on them for this course undermines the learning objectives. I want you to develop your skills in independent thinking, problem-solving, and engagement with the subject matter. By restricting the use of AI language models to help with coding only, you will utilize your knowledge, creativity, and critical analysis to complete your assignments and actively participate in class discussions.
+
+I understand that technology plays an increasingly prominent role in various aspects of our lives, and I acknowledge its potential benefits. However, in the context of this course, I believe that relying on personal effort and intellectual exploration will enhance your learning experience and contribute to your long-term development as a knowledgeable and well-rounded individual.
+
+It is important to note that this requirement applies to all aspects of the course, including assignments, exams, and any form of communication related to the course content. Any use of AI language models, including ChatGPT, during these activities, outside of appropriate use to aid in computer coding, will be considered a violation of the student code of conduct.
+
+Should you have any questions or concerns regarding this course expectation, please feel free to discuss them with me. I am here to support and guide you throughout this educational journey.
+
+_The wording above was adapted from MSU's guidance on [establishing expectations, syllabus language, and policies for generative AI use](https://www.montana.edu/facultyexcellence/teaching-advising/courseclassdesign/genai/expectations.html)._
+
+
+
 # Policy on collaboration and academic misconduct {#policy}
 
 In M/STAT 501, at a minimum, any act of academic dishonesty, which includes but is not limited to plagiarism, cheating, multiple submissions, or facilitating others’ misconduct, will result in a score of zero on the assignment/quiz/exam in question and notification of department and university officials. Further action may be taken as warranted. If you have any questions about the limits of collaboration or about using and citing sources, you are expected to ask for clarification.
@@ -209,10 +225,10 @@ In M/STAT 501, at a minimum, any act of academic dishonesty, which includes but 
 ### Homework
 _After attempting to complete homework problems on your own_, you are permitted to collaborate on homework in a constructive manner for all involved---each individual in the collaboration needs to ensure they understand and could explain the process of solving each problem. While I encourage you to talk through problems with fellow students, the work you turn in must be your own and must be written in your own words (unless the assignment specifically states otherwise). 
 
-**Each homework will require a "citations" page where you cite all sources (including web forums such as Stack Overflow and AI) and individuals used to complete that homework assignment.** Paraphrasing or quoting another’s work without citing the source is a form of academic dishonesty. Even inadvertent or unintentional misuse or appropriation of another's work (such as relying heavily on source material that is not expressly acknowledged) is considered plagiarism.  Homework assignments that do not cite sources or individuals, or assignments where answers are copied directly from another student, will be considered and treated as plagiarism, and will receive a zero grade. If you have any questions about the limits of collaboration or about using and citing sources, you are expected to ask for clarification.  
+**Each homework will require a "citations" page where you cite all sources (including web forums such as Stack Overflow, Google searches, and AI (for coding questions only)) and individuals used to complete that homework assignment.** Paraphrasing or quoting another’s work without citing the source is a form of academic dishonesty. Even inadvertent or unintentional misuse or appropriation of another's work (such as relying heavily on source material that is not expressly acknowledged) is considered plagiarism.  Homework assignments that do not cite sources or individuals, or assignments where answers are copied directly from another student, will be considered and treated as plagiarism, and will receive a zero grade. If you have any questions about the limits of collaboration or about using and citing sources, you are expected to ask for clarification.  
 
 ### Quizzes and Final exam
-Quizzes and final exam in this course will be closed notes and closed book and must be completed individually. 
+Quizzes and final exam in this course will be closed notes and closed book and must be completed individually. The same sheet of distributions provided during the MS Statistics comprehensive exams will be provided for use during the final exam, and portions of it when needed during quizzes.
 
 
 ### MSU policy
@@ -224,6 +240,6 @@ Students in an academic setting are responsible for approaching all assignments 
 3. learning and using appropriate citation conventions within the field in which they are studying; and
 4. asking their instructor for guidance when they are uncertain of how to acknowledge the contributions of others in their thinking and writing.
 
-[More information about Academic Misconduct from the Dean of Students](https://www.montana.edu/deanofstudents/syllabus.html)
+[More information about Student Conduct from the Dean of Students](https://www.montana.edu/deanofstudents/our-programs/student-conduct/index.html)
 
 <a href="#top">Back to top</a>
