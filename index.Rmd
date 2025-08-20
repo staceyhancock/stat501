@@ -134,22 +134,20 @@ Your grade in M/STAT 501 will contain the following components.
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, out.width="75%"}
 grades <- tribble(
   ~category,  ~percent,
-  "Homework", 15,
+  "Homework", 20,
   "Bi-weekly quizzes", 50,
-  "Final project", 10,
-  "Final exam", 25,
+  "Final exam", 30,
 )
-grades$category <- fct_relevel(grades$category, "Homework", "Bi-weekly quizzes", "Final project", "Final exam")
-grades$location <- rep(1, 4)
+grades$category <- fct_relevel(grades$category, "Homework", "Bi-weekly quizzes", "Final exam")
+grades$location <- rep(1, 3)
 grades %>% ggplot(aes(x=location, y=percent)) +
   geom_col(aes(fill=category), col='black') + 
   guides(fill=FALSE) + 
-  geom_text(aes(x=rep(1, 4), 
-                label=c("Homework (15%)",
+  geom_text(aes(x=rep(1, 3), 
+                label=c("Homework (20%)",
                         "Bi-weekly quizzes (50%)",
-                        "Final project (10%)",
-                        "Final exam (25%)"), 
-                y=c(92.5,60,30,12.5),
+                        "Final exam (30%)"), 
+                y=c(90,55,15),
                 size=18)) + 
   labs(x='', y='Cumulative percent') + 
   theme(axis.text.x = element_blank(), 
@@ -158,7 +156,7 @@ grades %>% ggplot(aes(x=location, y=percent)) +
   scale_fill_manual(values=pal)
 ```
 
-1. **Homework** (15%): The only way to learn probability and statistics is to practice working problems, and homework is therefore an essential part of the course. Homeworks will be assigned bi-weekly, alternating weeks with quizzes. Access the homework assignment and turn in the assignment via [Gradescope](https://www.gradescope.com/). 
+1. **Homework** (20%): The only way to learn probability and statistics is to practice working problems, and homework is therefore an essential part of the course. Homeworks will be assigned bi-weekly, alternating weeks with quizzes. Access the homework assignment and turn in the assignment via [Gradescope](https://www.gradescope.com/). 
     * Homeworks will be due by **5:00pm on Wednesdays**. 
     * Homework may be hand-written and scanned, or typed, but must be organized and legible. Papers that are too messy to grade will not receive credit.
     * Homework solutions will be graded partially on completeness and partially on accuracy.  
@@ -174,11 +172,7 @@ grades %>% ggplot(aes(x=location, y=percent)) +
 
 \vspace{10mm}
 
-3. **Final project** (10%): Communication (written and oral) is an essential part of any job, either in industry or academia. To help develop these skills and extend concepts we have learned in class to other real-world applications, you will complete a final project in groups. More details will be provided as we progress through the semester. 
-
-\vspace{10mm}
-
-4. **Final exam** (25%): Our final exam will be on **Monday, December 8, 10:00am-11:50am** in our same classroom. As with quizzes, the final exam will be closed book and closed notes. The same sheet of distributions provided during the MS Statistics comprehensive exams will be provided for use during the STAT 501 final exam.
+3. **Final exam** (30%): Our final exam will be on **Monday, December 8, 10:00am-11:50am** in our same classroom. As with quizzes, the final exam will be closed book and closed notes. The same sheet of distributions provided during the MS Statistics comprehensive exams will be provided for use during the STAT 501 final exam.
 
 Letter grades generally follow the typical scale:
 
@@ -210,12 +204,12 @@ In addition, in scheduling exams, we have attempted to avoid conflicts with majo
 
 # Policy on collaboration and academic misconduct {#policy}
 
-In M/STAT 502, at a minimum, any act of academic dishonesty, which includes but is not limited to plagiarism, cheating, multiple submissions, or facilitating others’ misconduct, will result in a score of zero on the assignment/quiz/exam in question and notification of department and university officials. Further action may be taken as warranted. If you have any questions about the limits of collaboration or about using and citing sources, you are expected to ask for clarification.
+In M/STAT 501, at a minimum, any act of academic dishonesty, which includes but is not limited to plagiarism, cheating, multiple submissions, or facilitating others’ misconduct, will result in a score of zero on the assignment/quiz/exam in question and notification of department and university officials. Further action may be taken as warranted. If you have any questions about the limits of collaboration or about using and citing sources, you are expected to ask for clarification.
 
 ### Homework
 _After attempting to complete homework problems on your own_, you are permitted to collaborate on homework in a constructive manner for all involved---each individual in the collaboration needs to ensure they understand and could explain the process of solving each problem. While I encourage you to talk through problems with fellow students, the work you turn in must be your own and must be written in your own words (unless the assignment specifically states otherwise). 
 
-**Each homework will require a "citations" page where you cite all sources (including web forums such as Stack Overflow) and individuals used to complete that homework assignment.** Paraphrasing or quoting another’s work without citing the source is a form of academic dishonesty. Even inadvertent or unintentional misuse or appropriation of another's work (such as relying heavily on source material that is not expressly acknowledged) is considered plagiarism.  Homework assignments that do not cite sources or individuals, or assignments where answers are copied directly from another student, will be considered and treated as plagiarism, and will receive a zero grade. If you have any questions about the limits of collaboration or about using and citing sources, you are expected to ask for clarification.  
+**Each homework will require a "citations" page where you cite all sources (including web forums such as Stack Overflow and AI) and individuals used to complete that homework assignment.** Paraphrasing or quoting another’s work without citing the source is a form of academic dishonesty. Even inadvertent or unintentional misuse or appropriation of another's work (such as relying heavily on source material that is not expressly acknowledged) is considered plagiarism.  Homework assignments that do not cite sources or individuals, or assignments where answers are copied directly from another student, will be considered and treated as plagiarism, and will receive a zero grade. If you have any questions about the limits of collaboration or about using and citing sources, you are expected to ask for clarification.  
 
 ### Quizzes and Final exam
 Quizzes and final exam in this course will be closed notes and closed book and must be completed individually. 
