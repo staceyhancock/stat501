@@ -60,12 +60,16 @@ for downloads as well as documentation of manuals, FAQs and many other resources
 ## Section 2.2: Install RStudio
 
 Although this program is not necessary to use R, it provides a better user interface.
+Note that in recent years, RStudio expanded its offerings under the wider
+company name "Posit". Thus, the old <http://www.rstudio.com/> link listed
+in the Torfs & Brauer article will redirect to the link below.
 
-1.	Go to <http://www.rstudio.com/>.
-2.	Click on the Products tab and choose "RStudio" under "Open Source".
-3.  Scroll down to find the download link for RStudio Desktop.
+1.	Go to <https://posit.co/>.
+2.	Click on the "Free & Open Source" tab and choose "RStudio IDE".
+3.  Scroll down to find the download link for Free Open Source Edition of RStudio IDE,
+then click "[Download RStudio](https://posit.co/download/rstudio-desktop/)".
 
-A short video with installation instructions  for R and RStudio can be found here: <https://rconnect.math.montana.edu/InstallDemo/>.
+A short video with installation instructions for R and RStudio can be found here: <https://rconnect.math.montana.edu/InstallDemo/>.
 
 ## Section 2.4: Working Directory
 
@@ -73,6 +77,7 @@ A short video with installation instructions  for R and RStudio can be found her
 # Comments, reminders, etc. can be typed after the pound sign
 
 # Specify the location where you want everything saved, etc.
+# For example...
 setwd("/Users/staceyhancock/Documents/Repos/staceyhancock/stat501")
 ```
 
