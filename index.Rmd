@@ -2,15 +2,15 @@
 title: 'M/STAT 501: Intermediate Mathematical Statistics'
 subtitle: Fall 2025 Syllabus
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     theme: cerulean
     toc: yes
     toc_depth: 3
     toc_float: yes
     css: styles.css
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
 ---
 
 ```{r setup, include=FALSE}

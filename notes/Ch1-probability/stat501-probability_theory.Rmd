@@ -194,10 +194,15 @@ __Examples__
 \vspace{2in}
 
 
-<!-- TODO: Add Inclusion-Exclusion identity here (Miscellanea 1.8.1 in textbook) -->
 
+#### Inclusion-Exclusion Identity \newline
 
+The result in Theorem 1.2.9 for a probability of a union of two events can be generalized to find the probability of a finite union of $n$ events. This is called the **inclusion-exclusion identity** (see Miscellanea Section 1.8.1): If $P$ is a probability function and $A_1,A_2,...,A_n \in \mathcal{B}$, then
+$$
+P\left(\cup_{i = 1}^{\infty}A_i\right) = \sum_{i=1}^nP(A_i)-\sum_{i<j}P(A_i\cap A_j) + \sum_{i<j<k}P(A_i \cap A_j \cap A_k) + \cdots + (-1)^{n-1}P(\cap_{i=1}^nA_i).
+$$
 
+\newpage
 
 ## 1.2.3-1.2.4 Combinatorics (Counting)
 
@@ -226,7 +231,7 @@ __Examples__
 
 \vspace{1.2 in}
 
-
+\newpage
 __Possible methods of counting (Table 1.2.1 p. 16)__ 
 
 The number of possible arrangements of size $r$ from $n$ distinct objects, $n\geq r$:
