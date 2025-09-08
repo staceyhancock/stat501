@@ -25,7 +25,7 @@ $$
 P(S(A,B)) = P(A) + P(B) - 2P(A\cap B).
 $$
 
-2. Prove Bonferroni’s Inequality: $P(A\cap B) \geq P(A) + P(B) - 1$. Then verify Bonferroni's Inequality using Venn diagrams. (Hint: For the Venn diagram, consider the rearranged identity $1 \geq P(A) + P(B) - P(A\cap B)$.)
+2. Prove Bonferroni’s Inequality: $P(A\cap B) \geq P(A) + P(B) - 1$ _without using Boole's Inequality_. Then verify Bonferroni's Inequality using Venn diagrams. (Hint: For the Venn diagram, consider the rearranged identity $1 \geq P(A) + P(B) - P(A\cap B)$.)
 
 3. A manufacturing company has two retail outlets. It is known that 25\% of all potential customers buy products from outlet 1 only, 35\% buy from outlet 2 only, and 8\% buy from both 1 and 2. Let $A$ denote the event that a potential customer, randomly chosen, buys from outlet 1, and let $B$ denote the event that the customer buys from outlet 2. Suppose a potential customer is chosen at random. For each of the following events, 
      * represent the event symbolically in terms of $A$ and $B$, 

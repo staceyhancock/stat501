@@ -1,6 +1,6 @@
 ---
-title: "M/STAT 501 Fall 2022: Homework 2"
-subtitle: Due Wednesday, Sep 14 by 5:00pm in Gradescope
+title: "M/STAT 501 Fall 2025: Homework 2"
+subtitle: Due Wednesday, Sep 10 by 5:00pm in Gradescope
 output: pdf_document
 ---
 
@@ -10,7 +10,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Directions**: For this homework, there are three different types of problems: 1) _Graded for Accuracy Problems_, 2) _Graded for Completion Problems_, and 3) _Extra Practice Problems_. Please turn in your work for the _Graded for Accuracy Problems_ and the _Graded for Completion Problems_, as well as any _Sources Used_ by Wednesday, August 31 by 5:00pm via Gradescope. Show work and/or provide justification for credit---neatness counts! _The Extra Practice Problems_ do not need to be turned in, and the solutions will be posted for you to check and compare your work.
+**Directions**: For this homework, there are three different types of problems: 1) _Graded for Accuracy Problems_, 2) _Graded for Completion Problems_, and 3) _Extra Practice Problems_. Please turn in your work for the _Graded for Accuracy Problems_ and the _Graded for Completion Problems_, as well as any _Sources Used_ by Wednesday, September 10 by 5:00pm via Gradescope. Show work and/or provide justification for credit---neatness counts! _The Extra Practice Problems_ do not need to be turned in, and the solutions will be posted for you to check and compare your work.
 
 You are encouraged to use R Markdown for your homework, but it is not required.
 
