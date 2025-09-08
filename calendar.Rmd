@@ -134,7 +134,8 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Friday_
 
-* Sections 3.1 and 3.2: Discrete families of distributions
+* Attend the Montana ASA Chapter Meeting at NoROCK instead of class. Please register in advance. Link will be posted soon!
+
 
 ---
 
@@ -142,12 +143,11 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Sections 3.1 and 3.2: Discrete families of distributions (cont)
-* Section 3.3: Continuous families of distributions
+* Sections 3.1 and 3.2: Discrete families of distributions
 
 #### _Wednesday_
 
-* Section 3.3: Continuous families of distributions (cont)
+* Section 3.3: Continuous families of distributions
 * **Homework 4 due** (Sections 2.1--2.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
