@@ -124,7 +124,7 @@ Many other properties of the probability function can be derived from the Axioms
 \begin{mdframed}
 \textbf{THM 1.2.8} If $P$ is a probability function and $A$ is any set in $\mathcal{B}$, then
 \vspace{-0.5in}
-\begin{enumerate}	
+\begin{enumerate}[a.]	
 \item \vspace{0.6in}
 \item \vspace{0.6in}
 \item \vspace{0.6in}
@@ -140,7 +140,7 @@ __Proof:__ On your own - see textbook.
 \textbf{THM 1.2.9} If $P$ is a probability function and $A$ and $B$ are any sets in $\mathcal{B}$, then
 \vspace{-0.5in}
 
-\begin{enumerate}	
+\begin{enumerate}[a.]	
 \item \vspace{0.6in}
 \item \vspace{0.6in}
 \item \vspace{0.6in}
@@ -150,11 +150,11 @@ __Proof:__ On your own - see textbook.
 \newpage
 __Proof:__ 
 
-1. $P(B \cap A^c) = P(B) - P(A\cap B)$ \vspace{3.5in}
+a. $P(B \cap A^c) = P(B) - P(A\cap B)$ \vspace{3.5in}
 
-2. $P(A \cup B) = P(A) + P(B) - P(A\cap B)$ \newpage
+b. $P(A \cup B) = P(A) + P(B) - P(A\cap B)$ \newpage
 
-3. If $A \subset B$, then $P(A) \leq P(B)$ \vspace{3.5in}
+c. If $A \subset B$, then $P(A) \leq P(B)$ \vspace{3.5in}
 
 
 #### Results for Collections of Events \newline
@@ -165,7 +165,7 @@ The first part of the next theorem is the basis for the Law of Total Probability
 \begin{mdframed}
 \textbf{THM 1.2.11} If $P$ is a probability function, then
 
-\begin{enumerate}	
+\begin{enumerate}[a.]	
 \item $\displaystyle P(A) = \sum_{i = 1}^{\infty} P(A \cap C_i)$ for any partition $C_1,C_2,...$
 \item Boole's Inequality $\displaystyle P\left(\cup_{i = 1}^{\infty}A_i\right) \leq \sum_{i = 1}^{\infty} P(A_i)$ for any sets $A_1, A_2,...,$ 
 \end{enumerate}
@@ -173,9 +173,9 @@ The first part of the next theorem is the basis for the Law of Total Probability
 
 __Proof:__
 
-1. $\displaystyle P(A) = \sum_{i = 1}^{\infty} P(A \cap C_i)$ for any partition $C_1,C_2,...$ \vspace{4in}
+a. $\displaystyle P(A) = \sum_{i = 1}^{\infty} P(A \cap C_i)$ for any partition $C_1,C_2,...$ \vspace{4in}
 
-2. $\displaystyle P\left(\cup_{i = 1}^{\infty}A_i\right) \leq \sum_{i = 1}^{\infty} P(A_i)$ for any sets $A_1, A_2,...,$  \vspace{4in}
+b. $\displaystyle P\left(\cup_{i = 1}^{\infty}A_i\right) \leq \sum_{i = 1}^{\infty} P(A_i)$ for any sets $A_1, A_2,...,$  \vspace{4in}
 
 
 #### Bonferroni’s Inequality \newline
@@ -222,7 +222,7 @@ __Proof by tree diagram:__
 
 __Examples__ 
 
-1. Dr. Hancock’s three-year-old daughter, Adeline, has five summer shirts, three pairs of shorts, and two pairs of sandals. How many possible outfits can Adeline wear?
+1. Dr. Hancock’s six-year-old daughter, Adeline, has five summer shirts, three pairs of shorts, and two pairs of sandals. How many possible summer outfits can Adeline wear?
 
 \vspace{1.2 in}
 
@@ -291,10 +291,10 @@ If there are $r$ places, and we have $m$ different numbers repeated $k_1,k_2,...
 \vspace{1.5in}
 
 
-__Example:__ There are eight Statistics faculty in the Department of Mathematical Sciences at MSU --- three women and five men. These faculty need to be divided among three committees, with 3 assigned to committee A, 3 assigned to Committee B, and 2 assigned to Committee C. In how many ways can the committee assignments be made?
+__Example:__ There are eight Statistics faculty in the Department of Mathematical Sciences at MSU --- three men and five women. These faculty need to be divided among three committees, with 3 assigned to committee A, 3 assigned to Committee B, and 2 assigned to Committee C. In how many ways can the committee assignments be made?
 
-<!-- John B., John S., Andy, Ian, Mark -->
-<!-- Katie, Stacey, Shinjini -->
+<!-- Andy, Ian, Mark -->
+<!-- Katie, Stacey, Shinjini, Jessie, Samidha -->
 
 \vspace{1in}
 
@@ -407,7 +407,7 @@ Also, it follows that $P(A \cap B) =$ \vspace{.2in}
 #### Statistical Independence
 
 \begin{mdframed}
-\textbf{DEF 1.3.7}  Two events,$A$ and $B$ are \emph{statistically independent} if and only if  \vspace{2in}
+\textbf{DEF 1.3.7}  Two events, $A$ and $B$ are \emph{statistically independent} if and only if  \vspace{2in}
 
 \end{mdframed}
 
