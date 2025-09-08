@@ -2,15 +2,15 @@
 title: 'M/STAT 501: Intermediate Mathematical Statistics'
 subtitle: Fall 2025 Syllabus
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
   html_document:
     theme: cerulean
     toc: yes
     toc_depth: 3
     toc_float: yes
     css: styles.css
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
 ---
 
 ```{r setup, include=FALSE}
@@ -45,8 +45,10 @@ Phone: (406) 993-5350
 
 _Office hours_: 
 
-* TBD
-* I will post a poll in Canvas. Office hours will be determined based on student availability.
+* Mondays 9:30-10:30am
+* Tuesdays 2:00-3:00pm
+* Wednesdays 12:00-1:00pm
+* Also available by appointment.
 
 ---
 
