@@ -550,7 +550,7 @@ __Properties of CDFs__
 
 \newpage
 
-__Example (Discrete)__ A certain basketball player has a free-throw percentage of $p$. Assume independence from shot to shot. Let $X$ be the number of shots required to make a basket. Find the cdf of $X$ and verify that it is indeed a cdf.
+__Example (Discrete)__ A certain basketball player has a free-throw percentage of $p\times 100%$. Assume independence from shot to shot. Let $X$ be the number of shots required to make a basket. Find the cdf of $X$ and verify that it is indeed a cdf.
 
 \newpage 
 
@@ -580,7 +580,7 @@ What are the major differences between cdfs for discrete and continuous RVs?
   
     \item A random variable $X$ is continuous if $F_X(x)$ is a continuous function of $x$.
     
-    \item A random variable $X$ is continuous if $F_X(x)$ is a step function of $x$
+    \item A random variable $X$ is discrete if $F_X(x)$ is a step function of $x$.
   \end{itemize}
 \end{mdframed}
 
@@ -637,7 +637,7 @@ $F_X(x) = \begin{cases} 0 & x < 0\\ 25/36 & 0 \leq x < 1\\ 35/36 & 1 \leq x < 2\
 #### Probability density function (pdf)
 
 \begin{mdframed}
-\textbf{DEF 1.6.3} The \emph{probability density function (pmf)} of an absolutely continuous random variable $X$, denoted $f_X(x)$, is the function that satisfies  \vspace{0.5in}
+\textbf{DEF 1.6.3} The \emph{probability density function (pdf)} of an absolutely continuous random variable $X$, denoted $f_X(x)$, is the function that satisfies  \vspace{0.5in}
 \end{mdframed}
 
 Furthermore, by the Fundamental Theorem of Calculus, 

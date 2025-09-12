@@ -1,5 +1,5 @@
 ---
-title: 'STAT 501 Fall 2022 Course Notes'
+title: 'STAT 501 Fall 2025 Course Notes'
 date: "Chapter 2: Transformations and Expectations"
 output: 
   pdf_document: 
