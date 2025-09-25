@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
-Generate a random sample from $F_X(x) = 1 - \exp{-x}I_{(0,\infty)}(x)$.
+Generate a random sample from $F_X(x) = [1 - \exp^{-x}]I_{(0,\infty)}(x)$.
 Note: $X \sim Exp(\beta = 1)$.
 
 ```{r}
