@@ -79,8 +79,8 @@ Item response theory (IRT) is a model-based measurement paradigm in which indivi
 
 Find a resource or set of resources that describe and compare normal ogive and logistic IRFs. If desired, you may use the following online resources: 
 
-* Castro, S. _Psychometrics: Item Response Theory_. RPubs. Online: [https://rpubs.com/castro/irt1](https://rpubs.com/castro/irt1) (Note that this resource has some awesome Shiny apps that allow you to explore different IRFs and how they change for items with different properties!)
-* Wikipedia. Item response theory. Online: [https://en.wikipedia.org/wiki/Item_response_theory](https://rpubs.com/castro/irt1). 
+* Castro, S. _Psychometrics: Item Response Theory_. RPubs. Online: [https://rpubs.com/castro/irt1](https://rpubs.com/castro/irt) (Note that this resource has some awesome Shiny apps that allow you to explore different IRFs and how they change for items with different properties!)
+* Wikipedia. Item response theory. Online: [https://en.wikipedia.org/wiki/Item_response_theory](https://en.wikipedia.org/wiki/Item_response_theory). 
 
 For fixed item properties, briefly explain how the cumulative distribution function (cdf) of the standard normal distribution is used to construct an IRF.   
 
