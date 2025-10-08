@@ -159,7 +159,7 @@ This theorem allows us to generate observations from a particular distribution. 
 
 \newpage 
 
-__Example__ Generate a random sample from $F_X(x) = 1-e^{-x}I_{(0,\infty)}(x)$. _Note:_ $X \sim Exp(\beta = 1)$
+__Example__ Generate a random sample from $F_X(x) = (1-e^{-x})I_{(0,\infty)}(x)$. _Note:_ $X \sim Exp(\beta = 1)$.
 
 \vspace{1.25in}
 
