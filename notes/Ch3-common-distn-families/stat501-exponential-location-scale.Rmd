@@ -1,6 +1,6 @@
 ---
-title: 'STAT 501 Fall 2022 Course Notes'
-date: "Chapter 3: Common Families of Distributions (Sections 3.4-3.6)"
+title: 'STAT 501 Fall 2025 Course Notes'
+date: "Chapter 3: Common Families of Distributions"
 output: 
   pdf_document: 
       includes: 
