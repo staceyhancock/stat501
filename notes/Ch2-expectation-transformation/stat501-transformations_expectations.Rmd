@@ -327,7 +327,7 @@ __Example (Revisited)__ A machine produces copper wire, and occasionally there i
 
 __Example__ A __Poisson__ random variable is a special discrete RV with _pmf_: 
 
-$$f_X(x) = \begin{cases} \frac{e^{-\lambda}\lambda^x}{x!} & x = 0,1,2,3,...\\ 0 & else \end{cases}$$
+$$f_X(x) = \begin{cases} \dfrac{e^{-\lambda}\lambda^x}{x!} & x = 0,1,2,3,...\\ 0 & else \end{cases}$$
 
 The Poisson distribution "counts" things in a fixed amount of time space, volume, etc. For example, the number of accidents at an intersection in a week, the number of hits to a website each minute, and the number of plants of a particular species found in a 1 $m^2$ area are all examples of random variables that may be modeled by a Poisson distribution. The constant, $\lambda$, is a parameter of the distribution; it determines the numerical characteristics of the distribution. Find the expected value and variance of a Poisson random variable.
 
