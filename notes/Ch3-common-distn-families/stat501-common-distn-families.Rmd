@@ -767,7 +767,7 @@ $$
 
 ### Examples
 
-The normal distribution is an appropriate model for a variety of real-world variables such as cognitive and psychological attributes (e.g., IQ scores, standardized test scores) and various physical and biological characteristics (e.g., height, weight, blood pressure). The \textbf{Central Limit Theorem} (Theorem 5.5.14) states that a the distribution of a sum of independent and identically distributed random variables will converge to a normal distribution; thus, any phenomenon that could be conceptually thought of as a sum of errors can also be modeled with a normal distribution.
+The normal distribution is an appropriate model for a variety of real-world variables such as cognitive and psychological attributes (e.g., IQ scores, standardized test scores) and various physical and biological characteristics (e.g., height, weight, blood pressure). The \textbf{Central Limit Theorem} (Theorem 5.5.14) states that the distribution of a sum of independent and identically distributed random variables will converge to a normal distribution; thus, any phenomenon that could be conceptually thought of as a sum of errors can also be modeled with a normal distribution.
 
 Where does the normal distribution appear in regression models?
 \vfill
