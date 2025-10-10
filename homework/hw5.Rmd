@@ -1,6 +1,6 @@
 ---
-title: "M/STAT 501 Fall 2022: Homework 5"
-subtitle: Due Wednesday, Oct 26 by 5:00pm in Gradescope
+title: "M/STAT 501 Fall 2025: Homework 5"
+subtitle: Due Wednesday, Oct 22 by 5:00pm in Gradescope
 output: pdf_document
 urlcolor: blue
 ---
