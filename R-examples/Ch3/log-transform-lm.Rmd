@@ -1,6 +1,6 @@
 ---
 title: 'Example:  Log transformations in regression'
-date: "10/12/2022"
+date: "10/13/2025"
 output: pdf_document
 ---
 
@@ -77,10 +77,10 @@ glimpse(GunReg)
 GunReg %>% arrange(desc(pop)) %>% slice_head(n = 10)
 
 # Top 10 number of homicides
-GunReg %>% arrange(desc(pop)) %>% slice_head(n = 10)
+GunReg %>% arrange(desc(homicides)) %>% slice_head(n = 10)
 
 # Bottom 10 number of homicides
-GunReg %>% arrange(desc(pop)) %>% slice_tail(n = 10)
+GunReg %>% arrange(desc(homicides)) %>% slice_tail(n = 10)
 
 ```
 
