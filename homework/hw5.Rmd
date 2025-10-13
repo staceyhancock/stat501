@@ -34,16 +34,16 @@ Suppose we take a random sample of 10 cars (of similar weight as the cars tested
 
 1. Explore the following references. If anything sparks your interest, explore further!    
     * Skim through the Leemis & McQuestion article ["Univariate Distribution Relationships"](https://www.stat.rice.edu/~dobelman/courses/texts/leemis.distributions.2008amstat.pdf)^[https://www.stat.rice.edu/~dobelman/courses/texts/leemis.distributions.2008amstat.pdf] (_The American Statistician_, 62(1), pp.\ 45--53), then explore their interactive distribution relationships at [http://www.math.wm.edu/~leemis/chart/UDR/UDR.html](http://www.math.wm.edu/~leemis/chart/UDR/UDR.html).  
-    * Read through the "Common Families of Distributions in R" document posted in D2L Content $\rightarrow$ Scaffolded Notes and try out the code using the R Markdown file of this document.  
-    * Explore and run the code in the `hw5-distribution-exploration.R` R script file (posted in D2L Content $\rightarrow$ Homework $\rightarrow$ Homework Assignments).  
+    * Explore the "Common Families of Distributions in R" document and Rmd file (posted in Canvas  $\rightarrow$ Modules $\rightarrow$ Chapter 3 Scaffolded Notes and R Examples) and try out the code using the R Markdown file of this document.  
+    * Explore and run the code in the `hw5-distribution-exploration.R` R script file (posted in Canvas $\rightarrow$ Modules $\rightarrow$ Homework Assignments).  
     After working through these sources, post two discussion posts in the D2L Discussion topic "Probability Distribution Exploration":  
-    a. Create a new post that answers the following three questions:    
+    a. Create a new Canvas Discussions post in the "Probability Distribution Exploration" Discussion that answers the following three questions:    
         * What is your favorite probability distribution and why?
         * Name one question that your probability distribution exploration brought up?
         * Name one other "fun fact" about a specific distributional family or relationships between families that you discovered besides the ones mentioned in class?  
     b. Respond to another person's post commenting on any of their answers. Note that you must post first before you can see other posts.
 \vspace{2mm}
-2. Read the article ["A Poisson Distribution and Poisson Process Explained"](https://towardsdatascience.com/the-poisson-distribution-and-poisson-process-explained-4e2cb17d459)^[https://towardsdatascience.com/the-poisson-distribution-and-poisson-process-explained-4e2cb17d459] by Will Koehrsen. Then answer the following questions.  
+2. Read the article ["A Poisson Distribution and Poisson Process Explained"](https://productivityhub.org/2019/11/12/the-poisson-distribution-and-poisson-process-explained/)^[https://productivityhub.org/2019/11/12/the-poisson-distribution-and-poisson-process-explained/] by Will Koehrsen. Then answer the following questions.  
     a. The article defines the rate parameter $\lambda$ as follows (bold and italics in the original):
     \vspace{2mm}
     \begin{quote}
