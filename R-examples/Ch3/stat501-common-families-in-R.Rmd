@@ -1,10 +1,10 @@
 ---
-title: 'STAT 501 Fall 2022 Course Notes'
-date: "Common Distributions in R"
+title: 'Common Distributions in R'
+date: "Dr. K. Banner STAT 422 Notes (Fall 2020)"
 output:
   pdf_document:
     includes:
-      in_header: ../header-Banner.tex
+      in_header: ../../notes/header-Banner.tex
   html_document:
     df_print: paged
 fontsize: 12 pt
@@ -13,7 +13,7 @@ fontsize: 12 pt
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, height = 5, width = 5, out.width="0.5\\linewidth", fig.align="center", collapse = TRUE)
 ```
-See the .Rmd file in the course [Github repository](https://github.com/staceyhancock/stat501) for code to generate all figures.
+<!-- See the .Rmd file in the course [Github repository](https://github.com/staceyhancock/stat501) for code to generate all figures. -->
 
 #### Using \textsf{R} to further investigate the Binomial$(n,p)$ distribution
 
@@ -101,7 +101,7 @@ points(x = x_obs + 1, y = x3, pch = 20)
 
 What parameterization does \textsf{R} use for the geometric RV? 
 
-\includegraphics{img/Rgeom-param}
+\includegraphics[width=\textwidth]{img/Rgeom-param}
 
 
 To use \textsf{R} to compute quantities of interst from the same Geometric($p$) distribution provided in the text, do the following:
@@ -166,7 +166,7 @@ points(x = x_r3[1:20], y = x3, pch = 20)
 
 Just like `_geom`, `_nbinom` is parameterized differently in \textsf{R}! 
 
-\includegraphics{img/nbinom-param}
+\includegraphics[width=\textwidth]{img/nbinom-param}
 
 To use \textsf{R} to compute quantities of interst from the same parameterization of the NegativeBinomial($r$, $p$) distribution that is provided in the text, do the following:
 
@@ -229,7 +229,7 @@ points(x = x_obs, y = x3, pch = 20)
 The help file for `_hyper` is shown below, what does each argument provide for the conventional notation $n$ = sample size, $N$ = total in population, $M$ = total number of successes. 
 
 
-\includegraphics[width=6.5in]{img/r-hypergeometric}
+\includegraphics[width=\textwidth]{img/r-hypergeometric}
 
 
 - To find $P(Y=y)$ use `dhyper(x = y, m = M, n = N-M, k = n)` 
