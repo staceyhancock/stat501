@@ -1,5 +1,5 @@
 ---
-title: 'STAT 501 Fall 2022 Course Notes'
+title: 'STAT 501 Fall 2025 Course Notes'
 date: "Chapter 4: Multiple Random Variables"
 output: 
   pdf_document: 
@@ -76,13 +76,13 @@ $F_{\mathbf{X}}(x_1,\dots, x_n) = $
 
 __Bivariate Die-roll Example__ Suppose we roll two 6-sided fair dice and let $(X, Y)$ be the random vector of the two outcomes. The visualization of the cdf, $F_{X, Y}(x, y)$, below helps provide some intuition about properties of bivariate cdfs.  
 
-```{r, message=FALSE, warning=FALSE, results = "hide", fig.width=10, fig.height=6, out.width="0.99\\linewidth", fig.pos="center", echo = FALSE, eval = FALSE}
+```{r, message=FALSE, warning=FALSE, results = "hide", out.width="0.99\\linewidth", fig.pos="center", echo = FALSE, eval = FALSE}
 # The bivariate and intoo packages were removed from CRAN.
 # Use the following to install: 
 # install.packages("https://cran.r-project.org/src/contrib/Archive/kubik/kubik_0.3.0.tar.gz", repos = NULL, type = "source")
 # install.packages("https://cran.r-project.org/src/contrib/Archive/barsurf/barsurf_0.7.0.tar.gz", repos = NULL, type = "source")
-# install.packages("https://cran.r-project.org/src/contrib/Archive/bivariate/bivariate_0.7.0.tar.gz", type = "source") # This line no longer works
-# install.packages("https://cran.r-project.org/src/contrib/Archive/intoo/intoo_0.1.0.tar.gz", repos=NULL, type="source")
+# install.packages("https://cran.r-project.org/src/contrib/Archive/bivariate/bivariate_0.7.0.tar.gz", type = "source")
+# install.packages("https://cran.r-project.org/src/contrib/Archive/intoo/intoo_0.4.0.tar.gz", repos=NULL, type="source")
 library(intoo)
 library(bivariate)
 library(MASS)
@@ -92,7 +92,7 @@ plot(dubvcdf(1,6,1,6), T, xlim = c(0,10), ylim = c(0,10))
 ```
 
 
-\includegraphics{img/bivariate-die-roll}
+\includegraphics[width=\textwidth]{img/bivariate-die-roll}
 
 \newpage
 
@@ -176,7 +176,7 @@ points(x = rnorm(500, 0, 1), y = rnorm(500, 0,1), pch = 20,
        col = rgb(0.1,0.1,0.1, alpha = 0.5))
 ```
 
-\includegraphics{img/bivariate-normal-pdf}
+\includegraphics[width=\textwidth]{img/bivariate-normal-pdf}
 
 
 ```{r, message=FALSE, warning=FALSE, results = "hide", fig.width=10, fig.height=6, out.width="0.99\\linewidth", fig.pos="center", echo = FALSE, eval = FALSE}
@@ -187,7 +187,7 @@ plot(nbvcdf(0, 0, 1,1, cor = 0),
      xlim = c(-10, 10), ylim = c(-10,10), use.plot3d = TRUE)
 ```
 
-\includegraphics{img/bivariate-normal-cdf}
+\includegraphics[width=\textwidth]{img/bivariate-normal-cdf}
 
 \newpage 
 
@@ -208,10 +208,12 @@ Let $X$ and $Y$ have a joint density function given by $\displaystyle f_{XY}(x,y
 
 \newpage
 
-- Find the joint cdf of $X$ and $Y$. Use this cdf to obtain $f_{XY}(x,y)$ given above. 
-\vspace{4.8in}
+__Example (cont)__
 
-\newpage
+- Find the joint cdf of $X$ and $Y$. Use this cdf to obtain $f_{XY}(x,y)$ given above. 
+\vfill
+
+
 
 ## Marginal Distributions
 
@@ -240,17 +242,16 @@ $f_Y(y) =$
 
 \vspace{.2in}
 \end{mdframed}
-
+\newpage
 
 __Notes:__
 
 - If we sum/integrate one of the RVs out of the bivariate joint \emph{pmf/pdf}, we are left with the \emph{pmf/pdf} of the other variable. Visually, we could "smash down onto a single axis or margin," which is where the term \textbf{marginal probability density function} comes from.
 
-\vfill
+\vspace{1in}
 
 - The marginal pmf/pdf of $X$ or $Y$ can be used to compute probabilities or expectations that involve only $X$ or $Y$. However, to compute a probability or an expectation that simultaneously involves both $X$ and $Y$, we must use the joint pmf/pdf of $X$ and $Y$. In general, a joint distribution often tells us additional information about the distribution of $X$ and $Y$ that is not found in the marginal distributions. Therefore, we can find a marginal distribution from a joint distribution, but the converse may not be true! 
 
-\newpage
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
 \textbf{DEF (Bivariate Expectations)} Suppose $g(x,y)$ is a real-valued function. If $X$ and $Y$ are random variables with joint pmf/pdf $f_{XY}(x,y)$, \vspace{.8in}
@@ -267,13 +268,14 @@ Let $X$ and $Y$ have a joint density function given by $\displaystyle f_{XY}(x,y
 
 - Find the marginal density functions (pdfs) of $X$ and $Y$. 
 
-\vspace{2in}
+\newpage
+
+__Example (cont)__
 
 - Find $E(X^2)$ using both $f_{XY}(x,y)$ and $f_X(x)$ to verify you get the same result! 
 
-\vspace{3in}
+\vspace{2in}
 
-\newpage
 
 ### Example
 
@@ -281,8 +283,9 @@ Let $X$ and $Y$ have a joint density function given by $\displaystyle f_{XY}(x,y
 
 - Find $E(X^2Y)$. 
 
-\vspace{3in}
+\newpage
 
+__Example (cont)__
 
 - Find $P(X + Y \geq 1)$. 
 
