@@ -1157,12 +1157,18 @@ __Examples__ Determine whether the family of pdfs/pmfs is an exponential family.
 We've discussed common families of continuous distributions, and in this section, we investigate different techniques for constructing families of distributions that are useful for modeling. These families include location families, scale families, and location-scale families, and the general process for constructing each of these three types of families is similar: specify a standard (or reference) pdf, and then transform that pdf in a specified way.
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{THM 3.5.1 (Theorem about PDFs)} Let $f_X(x)$ be any pdf and let $\mu$ and $\sigma >0$ be any given constants. Then the function $g(x|\mu, \sigma) = \frac{1}{\sigma}f_X\left(\frac{x- \mu}{\sigma}\right)$ is a pdf. 
+\textbf{THM 3.5.1 (Theorem about PDFs)} Let $f(\cdot)$ be any pdf and let $-\infty < \mu < \infty$ and $\sigma >0$ be any given constants. Then the function
+$$
+g(x|\mu, \sigma) = \frac{1}{\sigma}f\left(\frac{x- \mu}{\sigma}\right)
+$$ is a pdf. 
 \end{mdframed}
 
-__Proof:__ On your own (see p. 116 in text)
+__Proof:__ Show the function $g(x|\mu, \sigma)$ satisfies the properties of a pdf for all values of $-\infty < \mu < \infty$ and $\sigma >0$ on your own. That is, show this function is non-negative for all $x \in \mathbb{R}$ and integrates to 1 (see p. 116 in text).
 
-<!-- Add space here to show that this is the pdf of $Y = \sigma X + \mu$ -->
+__Where does this pdf come from?__ Let Z have pdf $f(z)$. What transformation of $Z$, $X = h(Z)$, has the pdf defined in the Theorem above?
+<!-- Show that this is the pdf of $X = \sigma Z + \mu$ -->
+
+\newpage
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
 \textbf{DEF 3.5.2 (Location Family)} Let $f_X(x)$ be any pdf. Then the family of pdfs $f_X(x-\mu)$, indexed by the parameter $\mu$, $-\infty < \mu < \infty$, is called the \textbf{location family} with the standard pdf $f_X(x)$ and $\mu$ is called the location parameter for the family. That is, the standard (or reference) pdf is where $\mu = 0$. 
@@ -1182,7 +1188,8 @@ $$
 Standard pdf:
 \vspace{1.2cm}
 
-    ```{r, out.width = "50%"}
+
+    ```{r, out.width = "60%"}
 curve(dexp(x, rate = 1), from = 0, to = 10, lwd = 2, 
       xlim = c(-5,10), ylab = expression(f[X](x)), 
       main = latex2exp::TeX(
@@ -1202,6 +1209,7 @@ legend("topright",
        lty = c(3, 1, 2), lwd = c(1, 1, 1))
     ```
 
+\newpage
 
 * Double exponential distribution with $\mu = \eta$ and $\sigma = 1$:
 $$
@@ -1210,7 +1218,7 @@ $$
 Standard pdf:
 \vspace{1.2cm}
 
-    ```{r, out.width = "50%"}
+    ```{r, out.width = "60%"}
 curve(extraDistr::dlaplace(x), from = -5, to = 5, lwd = 2, 
       ylab = expression(f[X](x)), 
       main = latex2exp::TeX(
@@ -1230,10 +1238,10 @@ legend("topright",
        lty = c(3, 1, 2), lwd = c(1, 1, 1))
     ```
 
-\newpage 
 
 What are some commonly used location families? \vspace{.8in}
 
+\newpage 
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
 \textbf{DEF 3.5.4 (Scale Family)} Let $f_X(x)$ be any pdf. Then the family of pdfs $\displaystyle \frac{1}{\sigma}f_X\left(\frac{x}{\sigma}\right)$, indexed by the parameter $\sigma$, $\sigma > 0$, is called the \textbf{scale family} with the standard pdf $f_X(x)$ and $\sigma$ is called the scale parameter for the family. That is, the standard (or reference) pdf is where $\sigma = 1$. 
@@ -1281,12 +1289,18 @@ legend("topright", legend = c(latex2exp::TeX("$\\beta = 1$"),
 ```
 
 What are some examples of commonly used scale families? 
-\vspace{.8in}
-
-<!-- Add DEF 3.5.5 of location-scale family back in -->
+\newpage
 
 \begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
-\textbf{THM 3.5.6 (Generating location, scale, and location-scale families)} Let $\mu$ be any real number and let $\sigma$ be any positive real number. Then, $X$ is a random variable with pdf $f_X(x) = \frac{1}{\sigma}f_X\left(\frac{x- \mu}{\sigma}\right)$ if and only if there exists a random variable $Z$ with pdf $f_Z(z)$ and $X = \sigma Z + \mu$. 
+\textbf{DEF 3.5.5 (Location-Scale Family)} Let $f_X(x)$ be any pdf. Then the family of pdfs $\displaystyle \frac{1}{\sigma}f_X\left(\frac{x-\mu}{\sigma}\right)$, indexed by the parameters $\mu$ and $\sigma$, where $-\infty < \mu < \infty$ and $\sigma > 0$, is called the \textbf{location-scale family} with the standard pdf $f_X(x)$; $\mu$ is called the location parameter and $\sigma$ is called the scale parameter for the family. That is, the standard (or reference) pdf is where $\mu = 0$ and $\sigma = 1$. 
+\end{mdframed}
+
+What are some examples of commonly used location-scale families? 
+
+
+
+\begin{mdframed}[skipabove = 8pt, skipbelow = 8pt]
+\textbf{THM 3.5.6 (Generating location, scale, and location-scale families)} Let $f(\cdot)$ be any pdf. Let $\mu$ be any real number, and let $\sigma$ be any positive real number. Then, $X$ is a random variable with pdf $f_X(x) = \frac{1}{\sigma}f\left(\frac{x- \mu}{\sigma}\right)$ if and only if there exists a random variable $Z$ with pdf $f(z)$ and $X = \sigma Z + \mu$. 
 \end{mdframed}
 
 __Proof:__ On your own (see p. 120 in text)
