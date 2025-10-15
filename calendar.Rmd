@@ -170,12 +170,11 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 * Section 3.4: Exponential families
 * Section 3.5: Location and scale families
 * Section 3.6: Inequalities and Identities
-* **_QUIZ 4_**: Sections 2.1--2.3
 
 #### _Friday_
 
-* Sections 3.4--3.6 (cont)
 * Section 4.1: Joint and marginal distributions
+* **_QUIZ 4_**: Sections 2.1--2.3
 
 ---
 
