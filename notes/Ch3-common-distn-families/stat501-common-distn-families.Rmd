@@ -1148,7 +1148,7 @@ __Examples__ Determine whether the family of pdfs/pmfs is an exponential family.
 
 \vspace{4.5in}
 
-- Let $X \sim Pareto(\alpha, \beta)$. Then $f_X(x|\alpha, \beta) = \displaystyle \frac{\beta\alpha^\beta}{x^{\beta +1}}I_{(\alpha, 0)}(x)$; $\alpha$, $\beta > 0$. 
+- Let $X \sim Pareto(\alpha, \beta)$. Then $f_X(x|\alpha, \beta) = \displaystyle \frac{\beta\alpha^\beta}{x^{\beta +1}}I_{(\alpha, \infty)}(x)$; $\alpha$, $\beta > 0$. 
 
 \newpage
 
