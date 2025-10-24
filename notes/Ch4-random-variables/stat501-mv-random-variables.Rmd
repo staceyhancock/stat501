@@ -13,11 +13,13 @@ knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
 ```
 
+<!-- Need to add section on conditional independence! (Not in Casella and Berger) -->
+
 __Motivation:__ $Y$ is a RV that denotes a random numerical outcome of an "experiment". A random variable was defined to be a function from a sample space $S$ into the real numbers. Often we are interested _simultaneously_ in two or more outcomes of a random experiment like... 
 
 - $Y_1$ = the number of eggs in a hen Mallard's nest, AND $Y_2$ = the number of eggs that survive and hatch 
 - $Y_1$ = GRE, AND $Y_2$ = GPA of a prospective graduate student
-- A 501 student's $Y_1 =$ number of hours spent on extra practice problems, AND $Y_2 =$ midterm score
+- A 501 student's $Y_1 =$ number of hours spent on extra practice problems, AND $Y_2 =$ final exam score
 
 In each of these situations, we are interested in the 2-dimensional _random vector_ $(Y_1, Y_2)$. A natural extension of this is to more than two dimensions. In fact, consider taking a random sample of $n$ MSU students who live in the dorms and measure whether or not they are registered to vote (1 = yes, 0 = no; assume 18+ years old), define  
 
