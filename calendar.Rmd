@@ -191,7 +191,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Friday_
 
-* Section 4.2: Conditional distributions and independence
+* Section 4.1 (cont): Joint and marginal distributions
 
 
 ---
@@ -200,17 +200,17 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Section 4.4: Hierarchical models and mixture distributions
+* Section 4.2: Conditional distributions and independence
 
 
 #### _Wednesday_
 
-* Section 4.4: Hierarchical models and mixture distributions (cont)
+* Section 4.4: Hierarchical models and mixture distributions
 * **_QUIZ 5_**: Sections 3.1--3.6
 
 #### _Friday_
 
-* Section 4.5: Covariance and correlation (bivariate)
+* Section 4.4: Hierarchical models and mixture distributions (cont)
 
 ---
 
@@ -218,17 +218,17 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_ 
 
-* Section 4.5: Covariance and correlation (cont)
+* Section 4.5: Covariance and correlation (bivariate)
 
 
 #### _Wednesday_
 
-* Section 4.3: Bivariate transformations
-* **Homework 6 due** in [Gradescope](https://www.gradescope.com) by 5:00pm
+* Section 4.5: Covariance and correlation (cont)
+* **Homework 6 due** (Sections 4.1--4.2, 4.4) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
-* TBD
+* Section 4.3: Bivariate transformations
 
 ---
 
@@ -241,7 +241,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 4.6: Multivariate distributions
-* **_QUIZ 6_**: Sections 4.1--4.2, 4.4--4.5
+* **_QUIZ 6_**: Sections 4.1--4.2, 4.4
 
 #### _Friday_
 
@@ -260,7 +260,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * More on random vectors
-* **Homework 7 due** in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 7 due** (Sections 4.3, 4.5--4.6) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
@@ -282,7 +282,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Wednesday_
 
-* **Homework 8 due** (Sections 4.3, 4.6--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 8 due** (Section 4.7, Random vectors, Review) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 
 #### _Friday_
