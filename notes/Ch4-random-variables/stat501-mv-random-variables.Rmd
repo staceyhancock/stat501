@@ -303,6 +303,7 @@ f_{XY}(x,y) = \begin{cases}\begin{array}{ll}
 0 & else 
 \end{array}\end{cases}
 $$
+where $0 < p < 1$ and $\lambda > 0$.
 
 - Use the joint _pmf_ to show that $Y \sim Poisson(\lambda)$ and $X \sim Poisson(p\lambda)$.
 
