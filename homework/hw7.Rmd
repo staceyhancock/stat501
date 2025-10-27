@@ -8,7 +8,7 @@ output:
 urlcolor: blue
 ---
 
-<!-- Material covered: 4.3, 4.6, extra random vector stuff -->
+<!-- Material covered: 4.5, 4.3, 4.6, extra random vector stuff: covariance and correlation, bivariate transformations, multivariate distributions -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -47,13 +47,24 @@ and let $\mathbf{x} = \mathbf{y}_1 + \cdots + \mathbf{y}_n$.
     
 ## Graded for Completion Problems (turn in)
 
-1. Consider the vector form of a multivariate normal pdf with mean $\boldsymbol{\mu}$ and variance-covariance matrix $\boldsymbol{\Sigma}$:
+1. Let $X_1,\ldots, X_n$ and $Y_1,\ldots, Y_m$ be random variables, all of whose expectations and variances exist. Let $a_1,\ldots, a_n$, $b_1\ldots, b_n$, $c_1\ldots, c_m$, and $d_1,\ldots, d_m$ be constants not all equal to zero.
+    a. Show
+    $$
+    Cov\left(\sum_{i=1}^n (a_iX_i + b_i), \sum_{j=1}^m(c_jY_j + d_j)\right) = \sum_{i=1}^n \sum_{j=1}^m a_ic_j Cov(X_i, Y_j).
+    $$
+    b. Use the result in part a. to show that
+    \begin{eqnarray*}
+    Var(\sum_{i=1}^n (a_iX_i + b_i)) &=& \sum_{i=1}^n a_i^2 Var(X_i) + \sum\sum_{i\neq j}a_ia_jCov(X_i, X_j) \\
+    &=& \sum_{i=1}^n a_i^2 Var(X_i) + 2\sum\sum_{i< j}a_ia_jCov(X_i, X_j).
+    \end{eqnarray*}
+    
+2. Consider the vector form of a multivariate normal pdf with mean $\boldsymbol{\mu}$ and variance-covariance matrix $\boldsymbol{\Sigma}$:
 $$
 f(\bm{y}) = \frac{\exp\left\{-\frac{1}{2}(\bm{y} - \bs{\mu})'\bs{\Sigma}^{-1}(\bm{y} - \bs{\mu})\right\}}{|\bs{\Sigma}|^{\frac{1}{2}}(2\pi)^{\frac{n}{2}}}.
 $$
 Show that, for $n = 2$, this pdf reduces to the form given in Definition 4.5.10 on p.\ 175 of our textbook.
 
-2. Let $Y$ be a positive (univariate) random variable.  (Assume that the expectations below exist).  Show that:
+3. Let $Y$ be a positive (univariate) random variable.  (Assume that the expectations below exist).  Show that:
     a. $E[Y^\alpha] \leq (E[Y])^\alpha$ when $0 \leq \alpha \leq 1$
     b. $E[Y^\alpha] \geq (E[Y])^\alpha$ when $\alpha \leq 0$ or $\alpha \geq 1$
     c. $\frac{E[Y^{\alpha-1}]}{E[Y^\alpha]} \leq E[1/Y]$ for $0 < \alpha < 1$
@@ -67,7 +78,9 @@ If you did not use any sources besides our textbook or the course notes, please 
 
 ## Extra Practice Problems (do not turn in, solutions posted in D2L)
 
-1. Let $X$ and $Y$ be two random variables with finite means and variances. Under what conditions are $X+Y$ and $X-Y$ uncorrelated?
+1. Let $X$ and $Y$ denote the values of two stocks at the end of a five-year period. $X$ is uniformly distributed on the interval $(0, 12)$. Given $X = x$, $Y$ is uniformly distributed on the interval $(0, x)$. Find the covariance and correlation between $X$ and $Y$.
 
-2. Casella and Berger book problems:  4.45, 4.46, 4.62, 4.64
+2. Let $X$ and $Y$ be two random variables with finite means and variances. Under what conditions are $X+Y$ and $X-Y$ uncorrelated?
+
+3. Casella and Berger book problems:  4.45, 4.46, 4.62, 4.64
 
