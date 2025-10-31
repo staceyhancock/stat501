@@ -51,7 +51,7 @@ k xy & 0 \leq x \leq 1, 0 \leq y \leq 1, 0 \leq x+y \leq 1\\
 
 <!-- Steve Cherry Homework 5 Fall 2014 -->
 1. Let $X \sim Poisson(\mu)$. 
-    a. Find $P(X = x | X > 0)$. This distribution is called a \textbf{zero-truncated Poisson distribution}.
+    a. Find $P(X = x | X > 0)$. This distribution is called a \textbf{zero-truncated Poisson distribution}.  
     b. Find an example of where a zero-truncated Poisson model is used in practice. Describe the example in a few sentences, and include the source of this example (i.e., full citation and link to webpage or article).
   
 
