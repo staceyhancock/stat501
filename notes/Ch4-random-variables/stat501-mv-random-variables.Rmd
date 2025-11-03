@@ -14,6 +14,8 @@ library(knitr)
 ```
 
 <!-- Need to add section on conditional independence! (Not in Casella and Berger) -->
+<!-- Add in definition of conditional variance after defn of conditional expectation -->
+
 
 __Motivation:__ $Y$ is a RV that denotes a random numerical outcome of an "experiment". A random variable was defined to be a function from a sample space $S$ into the real numbers. Often we are interested _simultaneously_ in two or more outcomes of a random experiment like... 
 
@@ -367,6 +369,7 @@ $E(g(Y)|X = x) =$
 \vspace{.2in}
 \end{mdframed}
 
+<!-- Add in definition of conditional variance -->
 
 ### Example
 
@@ -616,7 +619,7 @@ Consider the joint pdf $\displaystyle f_{XY} = \begin{cases} e^{-y} & 0 < x < y 
 __Facts about Correlation, $\rho_{X,Y}$, (THM 4.5.7)__ For any random variables $X$ and $Y$, 
 
 - \vspace{.2in}
-- $|\rho_{XY} = 1|$ if and only if there exists numbers $a\neq 0$ and $b$ such that $P(Y = aX + b) = 1$. If $\rho_{XY} = 1$, then $a > 0$ and if $\rho_{XY}= -1$, then $a < 0$. 
+- $|\rho_{XY}| = 1$ if and only if there exists numbers $a\neq 0$ and $b$ such that $P(Y = aX + b) = 1$. If $\rho_{XY} = 1$, then $a > 0$ and if $\rho_{XY}= -1$, then $a < 0$. 
 
 The second property states that if there is a line $Y = aX + b$ with $a \neq 0$ such that the values of $(X,Y)$ have a high probability of being near this line, then the correlation between $X$ and $Y$ will be near 1 or -1. But, if no such line exists, the correlation will be near 0. 
 
