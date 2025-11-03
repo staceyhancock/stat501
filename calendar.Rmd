@@ -260,7 +260,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * More on random vectors
-* **Homework 7 due** (Sections 4.3, 4.5--4.6) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 7 due** (Sections 4.3, 4.5--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
@@ -283,7 +283,8 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * **Optional group review quiz** - option to work in teams during class; this score will replace your second lowest quiz score.
-* **Homework 8 due** (Section 4.7, Random vectors, Review) in [Gradescope](https://www.gradescope.com) by 5:00pm
+
+<!-- **Homework 8 due** (Section 4.7, Random vectors, Review) in [Gradescope](https://www.gradescope.com) by 5:00pm -->
 
 
 #### _Friday_
