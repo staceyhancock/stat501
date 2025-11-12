@@ -1,6 +1,6 @@
 ---
-title: "M/STAT 501 Fall 2022: Homework 7"
-subtitle: Due _Monday_, Dec 5 by 5:00pm in Gradescope
+title: "M/STAT 501 Fall 2025: Homework 7"
+subtitle: Due Wednesday, Nov 19 by 5:00pm in Gradescope
 output: 
    pdf_document:
       includes:
@@ -8,7 +8,7 @@ output:
 urlcolor: blue
 ---
 
-<!-- Material covered: 4.5, 4.3, 4.6, extra random vector stuff: covariance and correlation, bivariate transformations, multivariate distributions -->
+<!-- Material covered: 4.3, 4.5, 4.6, 4.7: covariance and correlation, bivariate transformations, multivariate distributions, inequalities -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -20,29 +20,29 @@ You are encouraged to use R Markdown for your homework, but it is not required. 
 
 ## Graded for Accuracy Problems (turn in)
 
-1. Suppose $X$ and $Y$ are independent Exponential random variables, both with mean $\theta$. Define $U = X-Y$.
+1. Recall the continuous random vector  $(X, Y)$ with joint pdf
+\[
+f(x, y) = \begin{cases}\begin{array}{ll}
+24 xy & 0 \leq x \leq 1, 0 \leq y \leq 1, 0 \leq x+y \leq 1\\
+0 & \mbox{else}
+\end{array}\end{cases}
+\]
+from the last homework. Find $Corr(X, Y)$.
+
+2. Suppose $X$ and $Y$ are independent Exponential random variables, both with mean $\theta$. Define $U = X-Y$.
     a. Use the Jacobian method for transformations of continuous random variables (Equation (4.3.2) on p. 158) to find the marginal pdf of $U$.
     b. Verify that you get the same answer if you find the moment generating function of $U$ and use it to determine the distribution of $U$.  
     
-2. Let $\mathbf{y}_i \sim Multinoulli(\mathbf{p})$, $i = 1, \cdots, n$, where $\sum_{j = 1}^K p_j = 1$.  The Multinoulli pmf is given as:
-    \[
-    f(\mathbf{y}) = \begin{cases}\begin{array}{ll}
-     \prod_{j = 1}^K p_j^{y_j} & \mathbf{y} \in \left\{\mathbf{v} \in \{0,1\}^K : \sum_{i = 1}^K v_i = 1\right\}\\
-    0 & \text{else}
-    \end{array}\end{cases}
-    \]
-and let $\mathbf{x} = \mathbf{y}_1 + \cdots + \mathbf{y}_n$.
-    a. Show that $\mathbf{x} \sim Multinomial(n, \mathbf{p})$.
-    b. Find the joint moment generating function of $\mathbf{x}$.  
-    
-    
-3. Let $\mathbf{x}= (X_1, X_2)'$ be bivariate normal with $\bs{\mu}_{X} = \begin{pmatrix} 1 \cr 2\end{pmatrix}$ and $\bs{\Sigma}_X = \begin{pmatrix} 2 & 1 \\1 &2 \end{pmatrix}$, and let  
-\begin{align*}
-\mathbf{y} | \mathbf{x} \sim N_2\left(\bs{\mu}_{\mathbf{y} | \mathbf{x}} = \begin{pmatrix} x_1 \\ x_1 + x_2\end{pmatrix}, \bs{\Sigma}_{\mathbf{y} | \mathbf{x}} = \begin{pmatrix} 1 & 0 \\0 &1 \end{pmatrix}\right)
-\end{align*}
-    a. Denoting $\bm{y} = (Y_1, Y_2)'$, what is the distribution of $Y_2 | Y_1 = y_1$? (Note that this is a univariate distribution.)
-    b. What is the distribution of $\mathbf{w} = \mathbf{x} - \mathbf{y}$? (Note that this is a bivariate distribution.)  
+<!-- Larsen and Marx p. 220 Them 3.8.1(1) -->
+3. Assume $X$ and $Y$ are independent discrete random variables with pmfs $f_X(x)$ and $f_Y(x)$, and supports $\mathcal{X}$ and $\mathcal{Y}$, respectively. Let $W = X+Y$. Show that the pmf of $W$ is
+$$
+f_W(w) = \sum_{x\in\mathcal{X}, ~w-x\in\mathcal{Y}}f_X(x)f_Y(w-x).
+$$
 
+4. Two University of Missoula (UM) students are tasked with the reconnaissance activity of collecting survey data on MSU students to estimate the proportion of MSU students that plan on watching the Cat-Griz football game. Each collect a simple random sample of MSU students and ask each student in the sample whether they plan on watching. Assume UM student A collects a random sample of $n$ students, and UM student B collects a random sample of $m$ students. Let $X$ be the number of students in UM student A's sample that respond "yes", and $Y$ be the number of students in UM student B's sample that respond "yes."   
+    a. In the context of this problem, discuss what assumptions would need to be met in order for us to model $X$ and $Y$ as independent random variables with distributions $X \sim Bin(n, p)$ and $Y\sim Bin(m, p)$.
+    b. Assuming the model in part a., use the result in Problem 2 to find the distribution of $W = X+Y$. What is the name of this distribution and its parameters? _Hint_: Use the fact that the sum of a hypergeometric pmf is equal to 1 to evaluate the required sum.
+    
 
     
 ## Graded for Completion Problems (turn in)
@@ -57,17 +57,16 @@ and let $\mathbf{x} = \mathbf{y}_1 + \cdots + \mathbf{y}_n$.
     Var(\sum_{i=1}^n (a_iX_i + b_i)) &=& \sum_{i=1}^n a_i^2 Var(X_i) + \sum\sum_{i\neq j}a_ia_jCov(X_i, X_j) \\
     &=& \sum_{i=1}^n a_i^2 Var(X_i) + 2\sum\sum_{i< j}a_ia_jCov(X_i, X_j).
     \end{eqnarray*}
-    
-2. Consider the vector form of a multivariate normal pdf with mean $\boldsymbol{\mu}$ and variance-covariance matrix $\boldsymbol{\Sigma}$:
-$$
-f(\bm{y}) = \frac{\exp\left\{-\frac{1}{2}(\bm{y} - \bs{\mu})'\bs{\Sigma}^{-1}(\bm{y} - \bs{\mu})\right\}}{|\bs{\Sigma}|^{\frac{1}{2}}(2\pi)^{\frac{n}{2}}}.
-$$
-Show that, for $n = 2$, this pdf reduces to the form given in Definition 4.5.10 on p.\ 175 of our textbook.
 
-3. Let $Y$ be a positive (univariate) random variable.  (Assume that the expectations below exist).  Show that:
-    a. $E[Y^\alpha] \leq (E[Y])^\alpha$ when $0 \leq \alpha \leq 1$
-    b. $E[Y^\alpha] \geq (E[Y])^\alpha$ when $\alpha \leq 0$ or $\alpha \geq 1$
-    c. $\frac{E[Y^{\alpha-1}]}{E[Y^\alpha]} \leq E[1/Y]$ for $0 < \alpha < 1$
+2. Recall the hypergeometric model: a population contains $N < \infty$ items, $M$ of which have a characteristic of interest (and $N-M$ do not), and we select a simple random sample of size $n$. For each of the items sampled, define
+$$
+X_i = \begin{cases}
+1 & \text{if the } i \text{th item has the characteristic}\\
+0 & \text{else}
+\end{cases}
+$$
+Then note that $Y = \sum_{i=1}^n X_i$ has a hypergeometric distribution. Use the result shown in the previous problem to derive $Var(Y)$.
+
 
 
 ## Sources Used (turn in)
@@ -76,7 +75,7 @@ At the end of your assignment, list and cite **all** sources used when working o
 If you did not use any sources besides our textbook or the course notes, please note this.
 
 
-## Extra Practice Problems (do not turn in, solutions posted in D2L)
+## Extra Practice Problems (do not turn in, solutions posted in Canvas)
 
 1. Let $X$ and $Y$ denote the values of two stocks at the end of a five-year period. $X$ is uniformly distributed on the interval $(0, 12)$. Given $X = x$, $Y$ is uniformly distributed on the interval $(0, x)$. Find the covariance and correlation between $X$ and $Y$.
 
