@@ -34,7 +34,7 @@ from the last homework. Find $Corr(X, Y)$.
     b. Verify that you get the same answer if you find the moment generating function of $U$ and use it to determine the distribution of $U$.  
     
 <!-- Larsen and Marx p. 220 Them 3.8.1(1) -->
-3. Assume $X$ and $Y$ are independent discrete random variables with pmfs $f_X(x)$ and $f_Y(x)$, and supports $\mathcal{X}$ and $\mathcal{Y}$, respectively. Let $W = X+Y$. Show that the pmf of $W$ is
+3. Assume $X$ and $Y$ are independent discrete random variables with pmfs $f_X(x)$ and $f_Y(y)$, and supports $\mathcal{X}$ and $\mathcal{Y}$, respectively. Let $W = X+Y$. Show that the pmf of $W$ is
 $$
 f_W(w) = \sum_{x\in\mathcal{X}, ~w-x\in\mathcal{Y}}f_X(x)f_Y(w-x).
 $$
