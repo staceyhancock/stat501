@@ -254,17 +254,17 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Section 4.7: Cauchy-Schwarz and Jensen's inequalities
-* Covariance and correlation for random vectors (not in textbook)
+* Section 4.6: Multivariate distributions (cont)
 
 #### _Wednesday_
 
-* More on random vectors
+* Section 4.7: Cauchy-Schwarz and Jensen's inequalities
+* Covariance and correlation for random vectors (not in textbook)
 * **Homework 7 due** (Sections 4.3, 4.5--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
 
 #### _Friday_
 
-* Special topics / preview of STAT 502
+* More on random vectors
 
 
 ---
@@ -277,7 +277,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Special topics / preview of STAT 502
+* More on random vectors
 
 
 #### _Wednesday_
