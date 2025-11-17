@@ -14,7 +14,7 @@ urlcolor: blue
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Directions**: This homework only consists of _Practice Problems_. Solutions will be posted in Gradescope, and you should check and compare your work to these problems by Friday, Dec. 5. 
+**Directions**: This homework only consists of _Practice Problems_. Solutions will be posted in Canvas, and you should check and compare your work to these problems by Friday, Dec. 5. 
 
 ## Practice Problems (do not turn in, solutions posted in Canvas)
 
