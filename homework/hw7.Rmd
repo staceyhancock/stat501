@@ -41,7 +41,7 @@ $$
 
 4. Two University of Missoula (UM) students are tasked with the reconnaissance activity of collecting survey data on MSU students to estimate the proportion of MSU students that plan on watching the Cat-Griz football game. Each collect a simple random sample of MSU students and ask each student in the sample whether they plan on watching. Assume UM student A collects a random sample of $n$ students, and UM student B collects a random sample of $m$ students. Let $X$ be the number of students in UM student A's sample that respond "yes", and $Y$ be the number of students in UM student B's sample that respond "yes."   
     a. In the context of this problem, discuss what assumptions would need to be met in order for us to model $X$ and $Y$ as independent random variables with distributions $X \sim Bin(n, p)$ and $Y\sim Bin(m, p)$.
-    b. Assuming the model in part a., use the result in Problem 2 to find the distribution of $W = X+Y$. What is the name of this distribution and its parameters? _Hint_: Use the fact that the sum of a hypergeometric pmf is equal to 1 to evaluate the required sum.
+    b. Assuming the model in part a., use the result in Problem 3 to find the distribution of $W = X+Y$. What is the name of this distribution and its parameters? _Hint_: Use the fact that the sum of a hypergeometric pmf is equal to 1 to evaluate the required sum.
     
 
     
