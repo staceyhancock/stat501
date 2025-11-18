@@ -2,19 +2,14 @@
 title: "M/STAT 501 Fall 2025 Course Calendar"
 output:
   html_document:
-    theme: cerulean
     toc: true
     toc_depth: 2
     toc_float: true
-    css: styles.css
   pdf_document:
     toc: false
     toc_depth: '2'
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 #### [Back to M/STAT 501 syllabus...](index.html)
 

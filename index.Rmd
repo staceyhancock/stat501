@@ -1,9 +1,10 @@
 ---
-title: 'M/STAT 501: Intermediate Mathematical Statistics'
+title: |
+       | M/STAT 501
+       | Intermediate Mathematical Statistics
 subtitle: Fall 2025 Syllabus
 output:
   html_document:
-    theme: cerulean
     toc: yes
     toc_depth: 3
     toc_float: yes
@@ -245,3 +246,4 @@ Students in an academic setting are responsible for approaching all assignments 
 [More information about Student Conduct from the Dean of Students](https://www.montana.edu/deanofstudents/our-programs/student-conduct/index.html)
 
 <a href="#top">Back to top</a>
+
