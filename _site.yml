@@ -11,7 +11,7 @@ navbar:
     - icon: fa-envelope fa-lg
       href: mailto:<stacey.hancock@montana.edu>
     - icon: fa-github fa-lg
-      href: https://github.com/staceyhancock/stat501
+      href: https://github.com/staceyhancock/stat501-content
 output:
   html_document:
     theme: flatly

@@ -5,13 +5,11 @@ title: |
 subtitle: Fall 2025 Syllabus
 output:
   html_document:
+    theme: flatly
     toc: yes
     toc_depth: 3
     toc_float: yes
     css: styles.css
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
 ---
 
 ```{r setup, include=FALSE}
@@ -24,9 +22,9 @@ pal <- brewer.pal(4, 'Pastel1')
 ```
 
 
-# Course calendar
+# Course calendar and content
 
-See our [course calendar](calendar.html) for material covered each week.
+See our [course calendar](calendar.html) for material covered each week. Click the Github icon in the top right of the navigation bar on this page to access the course content repository, which includes .Rmd and pdf files of scaffolded notes, homework assignments, and R examples.
 
 ---
 
