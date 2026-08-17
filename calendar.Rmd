@@ -1,5 +1,5 @@
 ---
-title: "M/STAT 501 Fall 2025 Course Calendar"
+title: "M/STAT 501 Fall 2026 Course Calendar"
 output:
   html_document:
     toc: true
@@ -15,7 +15,7 @@ output:
 
 STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chapters 5--10 in STAT 502 next semester. 
 
-# Week 1: Aug 20--22
+# Week 1: Aug 26--28
 
 #### _Wednesday_
 
@@ -28,7 +28,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 2: Aug 25--29
+# Week 2: Aug 31--Sep 4
 
 #### _Monday_
 
@@ -45,7 +45,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 3: Sep 1--5
+# Week 3: Sep 7--11
 
 #### _Monday_
 
@@ -62,7 +62,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 4: Sep 8--12
+# Week 4: Sep 14--18
 
 #### _Monday_
 
@@ -80,7 +80,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 5: Sep 15--19
+# Week 5: Sep 21--25
 
 #### _Monday_
 
@@ -97,7 +97,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 6: Sep 22--26
+# Week 6: Sep 28--Oct 2
 
 #### _Monday_
 
@@ -114,7 +114,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 7: Sep 29--Oct 3
+# Week 7: Oct 5--9
 
 #### _Monday_
 
@@ -134,7 +134,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 8: Oct 6--10
+# Week 8: Oct 12--16
 
 #### _Monday_
 
@@ -153,7 +153,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 9: Oct 13--17
+# Week 9: Oct 19--23
 
 #### _Monday_
 
@@ -173,7 +173,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 10: Oct 20--24
+# Week 10: Oct 26--30
 
 #### _Monday_
 
@@ -191,7 +191,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 11: Oct 27--31
+# Week 11: Nov 2--6
 
 #### _Monday_
 
@@ -209,7 +209,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 12: Nov 3--7
+# Week 12: Nov 9--13
 
 #### _Monday_ 
 
@@ -227,7 +227,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-# Week 13: Nov 10--14
+# Week 13: Nov 16--20
 
 #### _Monday_
 
@@ -242,10 +242,13 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 * Section 4.6: Multivariate distributions (cont)
 
+---
+
+### _Nov 23--27: Fall break_
 
 ---
 
-# Week 14: Nov 17--21
+# Week 14: Nov 30--Dec 4
 
 #### _Monday_
 
@@ -264,11 +267,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 ---
 
-### _Nov 24--28: Fall break_
-
----
-
-# Week 15: Dec 1--5
+# Week 15: Dec 7--11
 
 #### _Monday_
 
@@ -292,4 +291,4 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 # Finals week
 
-* Final exam in Wilson Hall 1-124 on Monday, December 8, 10:00am-11:50am
+* Final exam in Wilson Hall 1-124 on Monday, December 14, 10:00am-11:50am

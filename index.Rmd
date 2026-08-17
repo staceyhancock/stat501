@@ -2,7 +2,7 @@
 title: |
        | M/STAT 501
        | Intermediate Mathematical Statistics
-subtitle: Fall 2025 Syllabus
+subtitle: Fall 2026 Syllabus
 output:
   html_document:
     theme: flatly
@@ -44,9 +44,7 @@ Phone: (406) 993-5350
 
 _Office hours_: 
 
-* Mondays 9:30-10:30am
-* Tuesdays 2:00-3:00pm
-* Wednesdays 12:00-1:00pm
+* TBD
 * Also available by appointment.
 
 ---
