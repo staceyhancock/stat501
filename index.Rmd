@@ -160,7 +160,7 @@ grades %>% ggplot(aes(x=location, y=percent)) +
 1. **Engagement** (5%): Each week will include an "engagement" grade for the course (pass/fail). In order to earn engagement credit, you must either visit office hours or post on our Canvas Discussion boards that week. (For the first week only, the engagement credit consists of filling out the welcome survey in Canvas.) Excessive class absences (without communication with the instructor) will decrease this portion of your grade.
 
 2. **Homework** (20%): The only way to learn probability and statistics is to practice working problems, and homework is therefore an essential part of the course. Homeworks will be assigned bi-weekly, alternating weeks with quizzes. Access the homework assignment and turn in the assignment via [Gradescope](https://www.gradescope.com/). 
-    * Homeworks will be due by **5:00pm on Wednesdays**. 
+    * Homeworks will be due by **11:59pm on Wednesdays**. 
     * Homework may be hand-written and scanned, or typed, but must be organized and legible. Papers that are too messy to grade will not receive credit.
     * Homework solutions will be graded partially on completeness and partially on accuracy.  
     * Late homework should be avoided in all but the most dire emergencies. In the event of extreme circumstances, other arrangements will be considered if prior notification is provided. 

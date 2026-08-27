@@ -37,7 +37,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 1.2.3--1.2.4: Combinatorics in probability
-* **Homework 1 due** (Sections 1.1--1.2.2) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 1 due** (Sections 1.1--1.2.2) in [Gradescope](https://www.gradescope.com) by 11:59pm
 
 #### _Friday_
 
@@ -72,7 +72,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 * Section 1.4: Random variables
 * Section 1.5: Distribution functions
-* **Homework 2 due** (Sections 1.2.3--1.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 2 due** (Sections 1.2.3--1.3) in [Gradescope](https://www.gradescope.com) by 11:59pm
 
 #### _Friday_
 
@@ -106,11 +106,12 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 2.2: Expected values
-* **Homework 3 due** (Sections 1.4--1.6) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 3 due** (Sections 1.4--1.6) in [Gradescope](https://www.gradescope.com) by 11:59pm
 
 #### _Friday_
 
-* Section 2.2: Expected values (cont)
+* Attend the Montana ASA Chapter Meeting in Wilson Hall 001 instead of class. Register and view the schedule here: <https://shinjini8.github.io/mt-asa-meeting-2026/>
+
 
 ---
 
@@ -118,19 +119,18 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Section 2.3: Moments and moment generating functions
+* Section 2.2: Expected values (cont)
 
 #### _Wednesday_
 
-* Section 2.3: Moments and moment generating functions (cont)
-* Section 2.6: Cumulant generating functions and characteristic functions
-* (Skip Section 2.4)
+* Section 2.3: Moments and moment generating functions
 * **_QUIZ 3_**: Sections 1.4--1.6
 
 #### _Friday_
 
-* Attend the Montana ASA Chapter Meeting in Wilson Hall 001 instead of class. Register and view the schedule here: <https://samidhasshetty.github.io/MT-ASA-2025/>
-
+* Section 2.3: Moments and moment generating functions (cont)
+* Section 2.6: Cumulant generating functions and characteristic functions
+* (Skip Section 2.4)
 
 ---
 
@@ -143,7 +143,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 3.2 (cont): Discrete families of distributions
-* **Homework 4 due** (Sections 2.1--2.3) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 4 due** (Sections 2.1--2.3) in [Gradescope](https://www.gradescope.com) by 11:59pm
 
 #### _Friday_
 
@@ -182,7 +182,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 4.1 (cont): Joint and marginal distributions
-* **Homework 5 due** (Sections 3.1--3.6) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* **Homework 5 due** (Sections 3.1--3.6) in [Gradescope](https://www.gradescope.com) by 11:59pm
 
 #### _Friday_
 
@@ -218,12 +218,13 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Wednesday_
 
-* Section 4.5: Covariance and correlation (cont)
-* **Homework 6 due** (Sections 4.1--4.2, 4.4) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* _No classes: Veteran's Day_
 
 #### _Friday_
 
-* Section 4.3: Bivariate transformations
+
+* Section 4.5: Covariance and correlation (cont)
+* **Homework 6 due** (Sections 4.1--4.2, 4.4) in [Gradescope](https://www.gradescope.com) by 11:59pm
 
 ---
 
@@ -231,16 +232,16 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Section 4.3: Bivariate transformations (cont)
+* Section 4.3: Bivariate transformations
 
 #### _Wednesday_
 
-* Section 4.6: Multivariate distributions
+* Section 4.3: Bivariate transformations (cont)
 * **_QUIZ 6_**: Sections 4.1--4.2, 4.4
 
 #### _Friday_
 
-* Section 4.6: Multivariate distributions (cont)
+* Section 4.6: Multivariate distributions
 
 ---
 
@@ -256,13 +257,13 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Wednesday_
 
-* Section 4.7: Cauchy-Schwarz and Jensen's inequalities
-* Covariance and correlation for random vectors (not in textbook)
-* **Homework 7 due** (Sections 4.3, 4.5--4.7) in [Gradescope](https://www.gradescope.com) by 5:00pm
+* Section 4.6: Multivariate distributions (cont)
+* **Homework 7 due** (Sections 4.3, 4.5--4.6) in [Gradescope](https://www.gradescope.com) by 11:59pm
 
 #### _Friday_
 
-* More on random vectors
+* Section 4.7: Cauchy-Schwarz and Jensen's inequalities
+* Covariance and correlation for random vectors (not in textbook)
 
 
 ---
@@ -278,7 +279,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 * **Optional group review quiz** - option to work in teams during class; this score will replace your second lowest quiz score.
 
-<!-- **Homework 8 due** (Section 4.7, Random vectors, Review) in [Gradescope](https://www.gradescope.com) by 5:00pm -->
+<!-- **Homework 8 due** (Section 4.7, Random vectors, Review) in [Gradescope](https://www.gradescope.com) by 11:59pm -->
 
 
 #### _Friday_
