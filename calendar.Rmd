@@ -67,6 +67,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Monday_
 
 * Section 1.3: Conditional probability and independence (cont)
+* **_QUIZ 1_ Take 2**: Section 1.1--1.2.2
 
 #### _Wednesday_
 
