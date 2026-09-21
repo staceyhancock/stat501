@@ -78,6 +78,7 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Friday_
 
 * Section 1.5: Distribution functions (cont)
+* Section 1.6: Density and mass functions
 
 ---
 
@@ -85,16 +86,16 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 
 #### _Monday_
 
-* Section 1.6: Density and mass functions
+* Section 1.6: Density and mass functions (cont)
 
 #### _Wednesday_
 
-* Section 1.6: Density and mass functions (cont)
+* Section 2.1: Distributions of functions of a random variable 
 * **_QUIZ 2_**: Sections 1.2.3--1.3
 
 #### _Friday_
 
-* Section 2.1: Distributions of functions of a random variable 
+* Section 2.1: Distributions of functions of a random variable (cont)
 
 ---
 
