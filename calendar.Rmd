@@ -163,11 +163,11 @@ STAT 501 aims to cover Chapters 1--4 in Casella and Berger, continuing with Chap
 #### _Wednesday_
 
 * Section 3.3: Continuous families of distributions
+* **_QUIZ 4_**: Sections 2.1--2.3
 
 #### _Friday_
 
 * Section 3.3 (cont): Continuous families of distributions
-* **_QUIZ 4_**: Sections 2.1--2.3
 
 ---
 
